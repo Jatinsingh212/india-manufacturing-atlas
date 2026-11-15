@@ -344,7 +344,6 @@ export default function ExplorePage() {
               footer={
                 <span className="inline-flex flex-wrap items-center gap-2">
                   <ProvenanceBadge provenance={tradeProvenance()} size="xs" />
-                  Trade values are HS6 subheading totals for 2024; lines that share a subheading show the same value. Click a row for the product page; use the pin to compare.
                 </span>
               }
             />
