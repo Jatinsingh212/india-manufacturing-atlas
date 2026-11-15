@@ -1,5 +1,7 @@
 ﻿# India Manufacturing Atlas
 
+> **Secondary copy.** This repository and its Git-connected Vercel project (`india-manufacturing-atlas-git`) are a parallel, secondary version. The source of truth is the directly deployed Vercel project `india-manufacturing-atlas` (https://india-manufacturing-atlas.vercel.app), deployed from the local folder with the Vercel CLI.
+
 An HSN-code intelligence platform for India: search and analyse India's 2-, 4-, 6- and 8-digit HS codes,
 their ministry ownership, trade, tariffs, value chains and production. The backend is FastAPI + SQLite; the
 dashboard is React 19 + TypeScript + Vite. Every figure carries provenance: **Verified** (official or
