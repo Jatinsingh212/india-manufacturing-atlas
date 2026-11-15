@@ -1,42 +1,32 @@
-/**
+﻿/**
  * MobileTabBar - the phone / tablet primary navigation.
  *
- * Four destinations cover the everyday workflow (Overview, HSN Explorer, Ministries, Value chains);
- * "More" opens the full navigation drawer for Intelligence, Operations and About. The bar sits above
- * the iOS home indicator, and the shell reserves its height so no page content hides underneath.
+ * The three visible modules (HSN Explorer, Ministry Wise HSN, Product workflow), same order as the
+ * sidebar. The bar sits above the iOS home indicator, and the shell reserves its height so no page
+ * content hides underneath.
  */
 import { Link, useLocation } from 'react-router';
 import clsx from 'clsx';
-import { Landmark, LayoutDashboard, ListTree, Menu, Workflow } from 'lucide-react';
+import { Landmark, ListTree, Route } from 'lucide-react';
 import { isNavActive, NAV_ITEMS } from '@/app/nav';
 
-const CORE = ['/', '/explore', '/ministries', '/value-chains'] as const;
+const CORE = ['/explore', '/ministries', '/workflow/sports_goods'] as const;
 
-/** Short labels: the five tabs must fit a 320 px phone without truncation. */
+/** Short labels: the tabs must fit a 320 px phone without truncation. */
 const CORE_LABELS: Record<(typeof CORE)[number], string> = {
-  '/': 'Overview',
-  '/explore': 'Explorer',
-  '/ministries': 'Ministries',
-  '/value-chains': 'Value chains',
+  '/explore': 'HSN Explorer',
+  '/ministries': 'Ministry HSN',
+  '/workflow/sports_goods': 'Workflow',
 };
 
 const CORE_ICONS = {
-  '/': LayoutDashboard,
   '/explore': ListTree,
   '/ministries': Landmark,
-  '/value-chains': Workflow,
+  '/workflow/sports_goods': Route,
 } as const;
 
-export interface MobileTabBarProps {
-  onOpenMenu: () => void;
-}
-
-export function MobileTabBar({ onOpenMenu }: MobileTabBarProps) {
+export function MobileTabBar() {
   const { pathname } = useLocation();
-  const coreActive = CORE.some((to) => {
-    const item = NAV_ITEMS.find((i) => i.to === to);
-    return item ? isNavActive(item, pathname) : pathname === to;
-  });
 
   return (
     <nav
@@ -72,28 +62,6 @@ export function MobileTabBar({ onOpenMenu }: MobileTabBarProps) {
             </li>
           );
         })}
-        <li className="min-w-0 flex-1">
-          <button
-            type="button"
-            onClick={onOpenMenu}
-            aria-label="Open all modules"
-            className={clsx(
-              'group relative flex h-full w-full flex-col items-center justify-center gap-0.5 px-1 text-[9px] font-semibold transition-colors min-[360px]:text-[10px]',
-              !coreActive ? 'text-white' : 'text-on-navy-muted hover:text-white',
-            )}
-          >
-            {!coreActive ? <span className="absolute top-0 h-0.5 w-7 rounded-b bg-kpi shadow-[0_1px_8px_rgba(214,0,113,0.65)]" aria-hidden /> : null}
-            <span
-              className={clsx(
-                'flex h-7 w-11 items-center justify-center rounded-full transition-colors',
-                !coreActive ? 'bg-white/10' : 'group-hover:bg-white/[0.06]',
-              )}
-            >
-              <Menu className="size-[19px]" aria-hidden />
-            </span>
-            <span>More</span>
-          </button>
-        </li>
       </ul>
     </nav>
   );

@@ -68,7 +68,8 @@ export const routeObjects: RouteObject[] = [
       {
         errorElement: <RouteError />,
         children: [
-          { index: true, element: el(pages.decisions) },
+          { index: true, element: <Navigate to="/explore" replace /> },
+          { path: 'overview', element: el(pages.decisions) },
           { path: 'explore', element: el(pages.explore) },
           { path: 'product/:hsn8', element: el(pages.product) },
           { path: 'ministries', element: el(pages.ministries) },

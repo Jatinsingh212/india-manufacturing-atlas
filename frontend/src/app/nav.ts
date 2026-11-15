@@ -29,12 +29,16 @@ export interface NavItem {
   roles?: readonly Role[];
   /** Extra path prefixes that keep this item highlighted (e.g. /ministry/:id under Ministries). */
   match?: readonly string[];
+  /** Left out of the sidebar; the route still works by URL. */
+  hidden?: boolean;
 }
 
 export interface NavGroup {
   id: 'atlas' | 'intelligence' | 'operations' | 'about';
   label: string;
   items: NavItem[];
+  /** Whole group left out of the sidebar; its routes still work by URL. */
+  hidden?: boolean;
 }
 
 export const NAV_GROUPS: NavGroup[] = [
@@ -42,19 +46,6 @@ export const NAV_GROUPS: NavGroup[] = [
     id: 'atlas',
     label: 'Atlas',
     items: [
-      {
-        to: '/',
-        label: 'Overview',
-        icon: Compass,
-        description: 'Decisions Studio: Strategic manufacturing opportunity assessment, location viability, and verified supplier matching.',
-      },
-      {
-        to: '/workflow/sports_goods',
-        label: 'Product workflow',
-        icon: Route,
-        description: 'One product end to end: who makes it and where, raw materials and their HSN codes, trade and duty, world competitors, standards, and export-market flags.',
-        match: ['/workflow/'],
-      },
       {
         to: '/explore',
         label: 'HSN Explorer',
@@ -64,20 +55,36 @@ export const NAV_GROUPS: NavGroup[] = [
       },
       {
         to: '/ministries',
-        label: 'Ministries',
+        label: 'Ministry Wise HSN',
         icon: Landmark,
         description: 'Ministry-specific dashboards: codes owned, trade performance, value-chain linkages.',
         match: ['/ministry/', '/sector/'],
       },
       {
+        to: '/workflow/sports_goods',
+        label: 'Product workflow',
+        icon: Route,
+        description: 'One product end to end: who makes it and where, raw materials and their HSN codes, trade and duty, world competitors, standards, and export-market flags.',
+        match: ['/workflow/'],
+      },
+      {
+        to: '/',
+        label: 'Overview',
+        hidden: true,
+        icon: Compass,
+        description: 'Decisions Studio: Strategic manufacturing opportunity assessment, location viability, and verified supplier matching.',
+      },
+      {
         to: '/value-chains',
         label: 'Value chains',
+        hidden: true,
         icon: Workflow,
         description: 'Sector deep-dives for the value chains with ministry-wise product mapping.',
       },
       {
         to: '/deep-dive/sports_equipment',
         label: 'Product deep-dive',
+        hidden: true,
         icon: Layers,
         description: 'Sports equipment (the study\'s 28 HS codes) or any HS heading, down to 8-digit lines: trade, tariffs, standards, clusters, land and export readiness by market.',
         match: ['/deep-dive/'],
@@ -85,6 +92,7 @@ export const NAV_GROUPS: NavGroup[] = [
       {
         to: '/network',
         label: 'Network',
+        hidden: true,
         icon: Network,
         description: 'HSN interlinkage graph: one HSN to many inputs and outputs across the ecosystem.',
       },
@@ -94,6 +102,7 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     id: 'intelligence',
     label: 'Intelligence',
+    hidden: true,
     items: [
       {
         to: '/analytics',
@@ -118,6 +127,7 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     id: 'operations',
     label: 'Operations',
+    hidden: true,
     items: [
       {
         to: '/data-hub',
@@ -129,6 +139,11 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
 ];
+
+/** Groups and items shown in the sidebar (hidden ones removed). */
+export const VISIBLE_NAV_GROUPS: NavGroup[] = NAV_GROUPS.filter((g) => !g.hidden)
+  .map((g) => ({ ...g, items: g.items.filter((i) => !i.hidden) }))
+  .filter((g) => g.items.length > 0);
 
 /** Flat list of all nav items. */
 export const NAV_ITEMS: NavItem[] = NAV_GROUPS.flatMap((g) => g.items);

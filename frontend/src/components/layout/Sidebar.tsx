@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Sidebar - grouped navigation (SPEC section 8: Atlas / Intelligence / Operations / About) on navy
  * chrome. Desktop (>= 1024 px): fixed rail that collapses to icons. Below 1024 px: an
  * off-canvas drawer opened from the top bar. Modules that need a government role show a lock for
@@ -9,7 +9,7 @@ import { Link, NavLink, useLocation } from 'react-router';
 import clsx from 'clsx';
 import { ChevronsLeft, ChevronsRight, Lock, X } from 'lucide-react';
 import { roleAllowed, useAuth } from '@/auth/AuthContext';
-import { isNavActive, NAV_GROUPS, type NavItem } from '@/app/nav';
+import { isNavActive, VISIBLE_NAV_GROUPS, type NavItem } from '@/app/nav';
 import { isTopOverlay, popOverlay, pushOverlay, trapTab } from '@/lib/focus';
 import { Tooltip } from '../Tooltip';
 import { BrandWordmark } from './BrandMark';
@@ -78,7 +78,7 @@ function SidebarBody({ collapsed, onToggleCollapsed, onCloseMobile, mobile }: { 
       </div>
 
       <nav className={clsx('flex-1 overflow-y-auto overscroll-contain px-3 py-4', mobile && 'pb-[max(1rem,env(safe-area-inset-bottom,0px))]')} aria-label="Main navigation">
-        {NAV_GROUPS.map((group) => (
+        {VISIBLE_NAV_GROUPS.map((group) => (
           <div key={group.id} className="mb-5 last:mb-0">
             {!collapsed ? (
               <div className="mb-2 px-3 text-[10px] font-bold tracking-[0.16em] text-on-navy-muted/60 uppercase">{group.label}</div>

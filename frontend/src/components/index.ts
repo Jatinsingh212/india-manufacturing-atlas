@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Component barrel for page builders: `import { Card, DataTable, KpiTile } from '@/components';`
  *
  * Heavy pieces (EChart -> echarts, NetworkGraph -> cytoscape, Markdown -> react-markdown) load their
@@ -60,4 +60,3 @@ export { ToastProvider, useToast, type ToastApi, type ToastInput, type ToastTone
 export { ReconciliationModal, ReconciliationHelpButton, type ReconciliationModalProps } from './ReconciliationModal';
 export { Tooltip, type TooltipProps } from './Tooltip';
 export { useAssistant, type AssistantContextValue } from './layout/AssistantContext';
-export { DATA_CREDITS } from './layout/Footer';

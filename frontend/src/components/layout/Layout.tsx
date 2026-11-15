@@ -1,5 +1,5 @@
 ﻿/**
- * Layout - the application shell: Sidebar + TopBar + routed page + Footer + the "Ask Atlas"
+ * Layout - the application shell: Sidebar + TopBar + routed page + the "Ask Atlas"
  * assistant drawer, plus scroll restoration and a background-fetch progress bar.
  *
  * Pages render inside a centred main column (max 1600 px). The window scrolls (not an inner div),
@@ -13,7 +13,6 @@ import clsx from 'clsx';
 import { useLocalStorage } from '@/lib/hooks';
 import { LoadingBlock, ProgressBar } from '../Loading';
 import { AssistantProvider, useAssistant } from './AssistantContext';
-import { Footer } from './Footer';
 import { MobileTabBar } from './MobileTabBar';
 import { SIDEBAR_COLLAPSED_WIDTH, SIDEBAR_WIDTH, Sidebar } from './Sidebar';
 import { TopBar } from './TopBar';
@@ -64,9 +63,8 @@ function Shell() {
             </Suspense>
           </div>
         </main>
-        <Footer />
       </div>
-      <MobileTabBar onOpenMenu={() => setMobileOpen(true)} />
+      <MobileTabBar />
       <AssistantSlot />
       {/* Keyed by URL: back/forward restores positions; fresh loads and new pages start at the top. */}
       <ScrollRestoration getKey={(loc) => `${loc.pathname}${loc.search}`} />
