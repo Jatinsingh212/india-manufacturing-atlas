@@ -10,6 +10,7 @@ import { FilterX, SlidersHorizontal, X } from 'lucide-react';
 import { useMinistryLookup, useMinistryOptions, useSections, useSectorLookup, useSectorOptions } from '@/api/hooks';
 import { Button, Drawer, SearchInput, Select, TextInput } from '@/components';
 import { fmtCode, fmtNum, truncate } from '@/lib/format';
+import { useMinistryDashboard } from '@/pages/ministries/api';
 import { MAPPING_SOURCE_LABELS, MAPPING_STATUS_LABELS } from '../shared';
 import { activeFilterCount, scopeFromTypedCode, type ExplorePatch, type ExploreState } from '../useExploreState';
 
@@ -88,7 +89,21 @@ export interface FilterPanelProps {
 
 export function FilterPanel({ state, update, reset, onSearch }: FilterPanelProps) {
   const ministryOptions = useMinistryOptions(true);
-  const sectorOptions = useSectorOptions();
+  const allSectorOptions = useSectorOptions();
+  // With a ministry selected, the Sector filter lists only the sectors that ministry's lines fall in.
+  const ministryDashboard = useMinistryDashboard(state.ministry_id);
+  const ministrySectorIds = useMemo(() => {
+    if (!state.ministry_id || !ministryDashboard.data) return null;
+    return new Set(ministryDashboard.data.sector_mix.map((s) => s.sector_id));
+  }, [state.ministry_id, ministryDashboard.data]);
+  const sectorOptions = useMemo(
+    () => (ministrySectorIds ? allSectorOptions.filter((o) => ministrySectorIds.has(o.value)) : allSectorOptions),
+    [allSectorOptions, ministrySectorIds],
+  );
+  // A sector the newly chosen ministry has no lines in is cleared, so the table never goes empty silently.
+  useEffect(() => {
+    if (ministrySectorIds && state.sector_id && !ministrySectorIds.has(state.sector_id)) update({ sector_id: null });
+  }, [ministrySectorIds, state.sector_id, update]);
   const ministries = useMinistryLookup();
   const sectorsById = useSectorLookup();
   const sections = useSections();
