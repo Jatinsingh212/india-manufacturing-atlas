@@ -1,0 +1,228 @@
+{
+  "source": "DGFT / DGCIS TRADESTAT (EIDB), country-wise all commodities, 8-digit",
+  "url": "https://tradestat.commerce.gov.in/eidb/country_wise_all_commodities_export",
+  "import_url": "https://tradestat.commerce.gov.in/eidb/country_wise_all_commodities_import",
+  "year": 2024,
+  "fy": "2024-2025",
+  "rows": 347855,
+  "country_reports": 466,
+  "totals_usd": {
+    "X": 437573800000.0,
+    "M": 721166970000.0
+  },
+  "official_totals_usd": {
+    "X": 437704580000.0,
+    "M": 721200220000.0
+  },
+  "coverage": {
+    "X": 0.99970121,
+    "M": 0.9999539
+  },
+  "skipped_reports": [
+    {
+      "flow": "export",
+      "ts_id": "135",
+      "name": "FR S ANT TR",
+      "reason": "no file"
+    },
+    {
+      "flow": "export",
+      "ts_id": "176",
+      "name": "HEARD MACDONALD",
+      "reason": "no file"
+    },
+    {
+      "flow": "export",
+      "ts_id": "279",
+      "name": "NEUTRAL ZONE",
+      "reason": "no file"
+    },
+    {
+      "flow": "export",
+      "ts_id": "293",
+      "name": "NIUE IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "export",
+      "ts_id": "307",
+      "name": "PACIFIC IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "export",
+      "ts_id": "313",
+      "name": "PANAMA C Z",
+      "reason": "no file"
+    },
+    {
+      "flow": "export",
+      "ts_id": "377",
+      "name": "ST PIERRE",
+      "reason": "no file"
+    },
+    {
+      "flow": "export",
+      "ts_id": "61",
+      "name": "CANARY IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "export",
+      "ts_id": "71",
+      "name": "CHANNEL IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "export",
+      "ts_id": "999",
+      "name": "Trade to Unspecified Countries",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "116",
+      "name": "ERITREA",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "121",
+      "name": "FAROE IS.",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "122",
+      "name": "JERSEY",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "123",
+      "name": "FALKLAND IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "135",
+      "name": "FR S ANT TR",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "157",
+      "name": "GREENLAND",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "2",
+      "name": "INSTALLATIONS IN INTERNATIONAL WATERS",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "215",
+      "name": "KOREA DP RP",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "263",
+      "name": "MONTSERRAT",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "276",
+      "name": "CURACAO",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "279",
+      "name": "NEUTRAL ZONE",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "293",
+      "name": "NIUE IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "307",
+      "name": "PACIFIC IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "313",
+      "name": "PANAMA C Z",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "347",
+      "name": "SAHARWI A.DM RP",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "354",
+      "name": "UNION OF SERBIA &amp; MONTENEGRO",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "377",
+      "name": "ST PIERRE",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "4",
+      "name": "BRITISH INDIAN",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "413",
+      "name": "TUVALU",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "6",
+      "name": "SVALLBARD AND J",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "61",
+      "name": "CANARY IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "71",
+      "name": "CHANNEL IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "89",
+      "name": "COOK IS",
+      "reason": "no file"
+    },
+    {
+      "flow": "import",
+      "ts_id": "999",
+      "name": "Trade to Unspecified Countries",
+      "reason": "no file"
+    }
+  ],
+  "note": "Country reports are US$ million; values are converted to US$. Reports with no published table are skipped rather than imputed. The small residual vs the official grand total is trade not allocated to a partner in the published country reports."
+}

@@ -1,0 +1,1803 @@
+{
+  "authentication": "none - public page, no login, OTP, CAPTCHA or access-control bypass",
+  "chapters": {
+    "01": {
+      "export": {
+        "bytes": 23331,
+        "cached": true,
+        "classifications": 59,
+        "records_8digit": 44,
+        "sha256": "8498a6216e31dc624c97203b42222843199a06a21597c4f35a52bb0475269d93",
+        "status": 200
+      },
+      "import": {
+        "bytes": 25859,
+        "cached": true,
+        "classifications": 59,
+        "records_8digit": 44,
+        "sha256": "f448aae5c45d3dc72039185ceb09d7e167ac3ec11fdccdc1ebb8a91e29520015",
+        "status": 200
+      }
+    },
+    "02": {
+      "export": {
+        "bytes": 45385,
+        "cached": true,
+        "classifications": 81,
+        "records_8digit": 69,
+        "sha256": "1768c12b329705d87f28d2556ab03f0d0b988d946842937365b0e5bd088eea3b",
+        "status": 200
+      },
+      "import": {
+        "bytes": 29954,
+        "cached": true,
+        "classifications": 81,
+        "records_8digit": 69,
+        "sha256": "23c59b2fd5e441742e8df6b9b666c73d898fd090a968fa690358001162b91f81",
+        "status": 200
+      }
+    },
+    "03": {
+      "export": {
+        "bytes": 144746,
+        "cached": true,
+        "classifications": 342,
+        "records_8digit": 308,
+        "sha256": "bf913829a4e9e109250b86eeafddef71343c541643ad7e02e778752188577b65",
+        "status": 200
+      },
+      "import": {
+        "bytes": 144582,
+        "cached": true,
+        "classifications": 342,
+        "records_8digit": 308,
+        "sha256": "af645536daa8974e4da4efe215f25081a140075576275f00497abe95977912ab",
+        "status": 200
+      }
+    },
+    "04": {
+      "export": {
+        "bytes": 31194,
+        "cached": true,
+        "classifications": 74,
+        "records_8digit": 53,
+        "sha256": "ca6b87ed200352b277296a4a5a9d0ff3a5edafde77410f452b11830c10a88d71",
+        "status": 200
+      },
+      "import": {
+        "bytes": 30496,
+        "cached": true,
+        "classifications": 71,
+        "records_8digit": 51,
+        "sha256": "4228a620aea34d4f828cf35d69081e364d7cf75f54ec779b93f5ec9012cc6528",
+        "status": 200
+      }
+    },
+    "05": {
+      "export": {
+        "bytes": 42405,
+        "cached": true,
+        "classifications": 92,
+        "records_8digit": 69,
+        "sha256": "57c1dc8abea63559ca463f4f648ac0f7a1accbf489fae47c1e93e1fc866d9627",
+        "status": 200
+      },
+      "import": {
+        "bytes": 37143,
+        "cached": true,
+        "classifications": 92,
+        "records_8digit": 69,
+        "sha256": "30df87faa83939aac39ccdd21bff88d8f439649e3be6275bdd95eb631ed684b9",
+        "status": 200
+      }
+    },
+    "06": {
+      "export": {
+        "bytes": 16075,
+        "cached": true,
+        "classifications": 31,
+        "records_8digit": 24,
+        "sha256": "d2f1e68459709593b450652b8e518d5521bd37a9ca9539c37613aa11307a8148",
+        "status": 200
+      },
+      "import": {
+        "bytes": 14663,
+        "cached": true,
+        "classifications": 31,
+        "records_8digit": 24,
+        "sha256": "c5c2ac56ecaddd30388924430fe8a5253439c895891b8af49a7d7ddd26c97004",
+        "status": 200
+      }
+    },
+    "07": {
+      "export": {
+        "bytes": 44019,
+        "cached": true,
+        "classifications": 130,
+        "records_8digit": 104,
+        "sha256": "528a99709e76f8dd304074323dc6eb59cdebe26e7894b6110cc29696fe92225b",
+        "status": 200
+      },
+      "import": {
+        "bytes": 47497,
+        "cached": true,
+        "classifications": 130,
+        "records_8digit": 104,
+        "sha256": "ac29a93c1eb33a9bdc7e06ab7582b483ca03fe84ad39bf17c8463fa14ba53284",
+        "status": 200
+      }
+    },
+    "08": {
+      "export": {
+        "bytes": 47713,
+        "cached": true,
+        "classifications": 157,
+        "records_8digit": 124,
+        "sha256": "18c4125064f88b4adbcbf028ced265a0371029700eeeddf91b399e58df6219fe",
+        "status": 200
+      },
+      "import": {
+        "bytes": 50827,
+        "cached": true,
+        "classifications": 156,
+        "records_8digit": 123,
+        "sha256": "6ac767ea602a8976381f3b6a542b6c3cf221c60977f1d0e66ed7bca867c3bac6",
+        "status": 200
+      }
+    },
+    "09": {
+      "export": {
+        "bytes": 61301,
+        "cached": true,
+        "classifications": 177,
+        "records_8digit": 142,
+        "sha256": "4bc73091a951f8f40717642c698e1a466e25dc3295abc5395af0aedb2144bc11",
+        "status": 200
+      },
+      "import": {
+        "bytes": 61644,
+        "cached": true,
+        "classifications": 177,
+        "records_8digit": 142,
+        "sha256": "f2d07df59d6be0a63349f80e6d471e01d3a77ade237dd8b62143ec030799b134",
+        "status": 200
+      }
+    },
+    "10": {
+      "export": {
+        "bytes": 35075,
+        "cached": true,
+        "classifications": 78,
+        "records_8digit": 61,
+        "sha256": "28e2bfce2bf2129b0c75cf8708b1ba77dcf8423819b52e2fecbd1cc6016a88fc",
+        "status": 200
+      },
+      "import": {
+        "bytes": 29722,
+        "cached": true,
+        "classifications": 76,
+        "records_8digit": 59,
+        "sha256": "bb4cb3f365c1315000e6ec64a37a3b8767dca833eb07052dbbe44463a686fa2d",
+        "status": 200
+      }
+    },
+    "11": {
+      "export": {
+        "bytes": 18433,
+        "cached": true,
+        "classifications": 51,
+        "records_8digit": 38,
+        "sha256": "8925a27b1e28d58e87a95f9a000e44b1caf30767bcbbbd0cb92c45f63108b090",
+        "status": 200
+      },
+      "import": {
+        "bytes": 18537,
+        "cached": true,
+        "classifications": 51,
+        "records_8digit": 38,
+        "sha256": "09932ecb824d73d80052f5b6c014f807654c608db787924ca380d77cf58fb95a",
+        "status": 200
+      }
+    },
+    "12": {
+      "export": {
+        "bytes": 65244,
+        "cached": true,
+        "classifications": 150,
+        "records_8digit": 119,
+        "sha256": "b94a368885971148d0b4e772052d80a8f6d481221c38292cd7137f7cb83d4b35",
+        "status": 200
+      },
+      "import": {
+        "bytes": 57972,
+        "cached": true,
+        "classifications": 149,
+        "records_8digit": 118,
+        "sha256": "2cbe1b4f7f6f2c111a14f01e0ecd54f3be26d8ce4b5229b41aa3862fbace4ce2",
+        "status": 200
+      }
+    },
+    "13": {
+      "export": {
+        "bytes": 30713,
+        "cached": true,
+        "classifications": 72,
+        "records_8digit": 66,
+        "sha256": "f8808862c0078e4cb88137cfe149a38b681d12f8154ed6e27a7145658285c9fa",
+        "status": 200
+      },
+      "import": {
+        "bytes": 25834,
+        "cached": true,
+        "classifications": 72,
+        "records_8digit": 66,
+        "sha256": "fccfc97c64295e00aa8caf3e1bd18e67020da8480fca8eadaef3c22e6ff6c040",
+        "status": 200
+      }
+    },
+    "14": {
+      "export": {
+        "bytes": 8791,
+        "cached": true,
+        "classifications": 18,
+        "records_8digit": 14,
+        "sha256": "72edd2a57606493971795f8df5b0b505c0dedca915329824ebfb6d6581860eb6",
+        "status": 200
+      },
+      "import": {
+        "bytes": 7613,
+        "cached": true,
+        "classifications": 18,
+        "records_8digit": 14,
+        "sha256": "df6bdfb81970a2f3c8652758032e1c8ca2ad4e5bbda0417070d4135fdd26dd4b",
+        "status": 200
+      }
+    },
+    "15": {
+      "export": {
+        "bytes": 63394,
+        "cached": true,
+        "classifications": 176,
+        "records_8digit": 126,
+        "sha256": "2a53d52e051c843f66d40426ef29736ec32ce0b6b5e40161e5a68ff6f50b6495",
+        "status": 200
+      },
+      "import": {
+        "bytes": 64365,
+        "cached": true,
+        "classifications": 176,
+        "records_8digit": 126,
+        "sha256": "5ae87e4c5edc983fe789885ca3625c67182bbf53ad2586434e18bc0dea948a7a",
+        "status": 200
+      }
+    },
+    "16": {
+      "export": {
+        "bytes": 23946,
+        "cached": true,
+        "classifications": 55,
+        "records_8digit": 47,
+        "sha256": "ba575c67cc19c337818743fd99a07a5dabc3d6243cf7a7c86a991a5acf7a7e6e",
+        "status": 200
+      },
+      "import": {
+        "bytes": 21029,
+        "cached": true,
+        "classifications": 55,
+        "records_8digit": 47,
+        "sha256": "d3326fd799f2b43f362b5db540c381bf19a4d9bd6b567d56cbc905b74094ea10",
+        "status": 200
+      }
+    },
+    "17": {
+      "export": {
+        "bytes": 25916,
+        "cached": true,
+        "classifications": 59,
+        "records_8digit": 43,
+        "sha256": "a19cfc7048fc86997fd6db53f951a50f5fce34c1ae9570a2224303a9d28d7874",
+        "status": 200
+      },
+      "import": {
+        "bytes": 20630,
+        "cached": true,
+        "classifications": 57,
+        "records_8digit": 41,
+        "sha256": "6b83de7bb17c6f7f30577cd19e67bd2bd3f8a4e71ba96fe10eb590fa9aa3493f",
+        "status": 200
+      }
+    },
+    "18": {
+      "export": {
+        "bytes": 7568,
+        "cached": true,
+        "classifications": 18,
+        "records_8digit": 15,
+        "sha256": "bad16d98a6b573d6da37f771bf8bcd2c9fde857dce0661ce0b2ca4a5a473a00b",
+        "status": 200
+      },
+      "import": {
+        "bytes": 8226,
+        "cached": true,
+        "classifications": 18,
+        "records_8digit": 15,
+        "sha256": "ba67d1d5ec1dbd2996553a23eeb86d9012e01ca7e94aefe63921120562d32860",
+        "status": 200
+      }
+    },
+    "19": {
+      "export": {
+        "bytes": 18527,
+        "cached": true,
+        "classifications": 48,
+        "records_8digit": 35,
+        "sha256": "c331e7da22502c53bef1d7899eea6f972ae7e2986e57fe2b837c98ada19071c5",
+        "status": 200
+      },
+      "import": {
+        "bytes": 19499,
+        "cached": true,
+        "classifications": 48,
+        "records_8digit": 35,
+        "sha256": "653008c3bd07cea8f9cdda58e4d5c6ac1889a7b44ee231351b09041237924cd3",
+        "status": 200
+      }
+    },
+    "20": {
+      "export": {
+        "bytes": 36302,
+        "cached": true,
+        "classifications": 95,
+        "records_8digit": 80,
+        "sha256": "bc86455909aa0af1c764ab8a16178c1234e2e558e1ac135cd82fed6888ad9d7e",
+        "status": 200
+      },
+      "import": {
+        "bytes": 36151,
+        "cached": true,
+        "classifications": 93,
+        "records_8digit": 78,
+        "sha256": "c746af9a9faedb2c715696bf11a0469c1aa557a67fa73e03e6d09ffc3a25907e",
+        "status": 200
+      }
+    },
+    "21": {
+      "export": {
+        "bytes": 26062,
+        "cached": true,
+        "classifications": 56,
+        "records_8digit": 44,
+        "sha256": "f8019765cca7bc4dac8a4b18a1843f510e7b9270ac7c06d57e76c276fbee58cc",
+        "status": 200
+      },
+      "import": {
+        "bytes": 25656,
+        "cached": true,
+        "classifications": 55,
+        "records_8digit": 43,
+        "sha256": "67f2d7309c49c010f4dee676abb55458a7edcd6c356a55ccb564f55e15ca4c34",
+        "status": 200
+      }
+    },
+    "22": {
+      "export": {
+        "bytes": 32669,
+        "cached": true,
+        "classifications": 90,
+        "records_8digit": 68,
+        "sha256": "a9385c064b8ce245a75f5af1e336128e1d041068e787f889750d60fd16869e0d",
+        "status": 200
+      },
+      "import": {
+        "bytes": 33201,
+        "cached": true,
+        "classifications": 90,
+        "records_8digit": 68,
+        "sha256": "357bd6be58588c9d36b6d358cfcb6c58d27c1f0f2b2fd846d09b3504ade3d71c",
+        "status": 200
+      }
+    },
+    "23": {
+      "export": {
+        "bytes": 35503,
+        "cached": true,
+        "classifications": 86,
+        "records_8digit": 68,
+        "sha256": "eb5e864ba797b1604cd0ed0d81ed695b834c5c267eb316d24d5b7625f68ebb9b",
+        "status": 200
+      },
+      "import": {
+        "bytes": 30693,
+        "cached": true,
+        "classifications": 84,
+        "records_8digit": 66,
+        "sha256": "371290e3498830021a17cb26722846768cb4c74c3a5392c5660641de86d2a3ad",
+        "status": 200
+      }
+    },
+    "24": {
+      "export": {
+        "bytes": 22105,
+        "cached": true,
+        "classifications": 63,
+        "records_8digit": 51,
+        "sha256": "21d96a1a963ed9df9486a070ec0cdeb075db8d0662269da3c37309caaf083bd3",
+        "status": 200
+      },
+      "import": {
+        "bytes": 25840,
+        "cached": true,
+        "classifications": 63,
+        "records_8digit": 51,
+        "sha256": "a2f9d1cb5bec528c4159ba52bde74feb0c65693450a7a5213da233c187cd845b",
+        "status": 200
+      }
+    },
+    "25": {
+      "export": {
+        "bytes": 78512,
+        "cached": true,
+        "classifications": 237,
+        "records_8digit": 174,
+        "sha256": "b943c18418a6ac5fd2b7cdf0f670aeb3f50def691045201bd9695c9fb6bdfee2",
+        "status": 200
+      },
+      "import": {
+        "bytes": 79128,
+        "cached": true,
+        "classifications": 237,
+        "records_8digit": 174,
+        "sha256": "b81148c86faf8f7192d5d83a341f38e5db80857733285897aae57ef93de54e85",
+        "status": 200
+      }
+    },
+    "26": {
+      "export": {
+        "bytes": 40382,
+        "cached": true,
+        "classifications": 103,
+        "records_8digit": 76,
+        "sha256": "e651ecc9caba2cd28333f8cd070be9c8ddab216ee8ceaf6fd9b3b2c159214e70",
+        "status": 200
+      },
+      "import": {
+        "bytes": 38584,
+        "cached": true,
+        "classifications": 103,
+        "records_8digit": 76,
+        "sha256": "be5915fcf3311ee74324475d023a8ccff12781272fb82317df0765f42f077447",
+        "status": 200
+      }
+    },
+    "27": {
+      "export": {
+        "bytes": 63625,
+        "cached": true,
+        "classifications": 150,
+        "records_8digit": 117,
+        "sha256": "eb03b5eec4bc7e83a6c0be7a3397ee763f919c6a77ce4bc277820231d0f89c4d",
+        "status": 200
+      },
+      "import": {
+        "bytes": 76693,
+        "cached": true,
+        "classifications": 149,
+        "records_8digit": 117,
+        "sha256": "d7b5bbc4b884510d7dcd46ca206f37cad0818145b6382b1b81788b08e7aea6c2",
+        "status": 200
+      }
+    },
+    "28": {
+      "export": {
+        "bytes": 145930,
+        "cached": true,
+        "classifications": 458,
+        "records_8digit": 335,
+        "sha256": "ad8f99721c30c2190c1e9ff4136662ce3bb26fc3dfc2ed9c3122c7693488e360",
+        "status": 200
+      },
+      "import": {
+        "bytes": 150562,
+        "cached": true,
+        "classifications": 458,
+        "records_8digit": 335,
+        "sha256": "5e844d34693c1cffdbf14589dd20ba8e40e24947e09e93b4e1660ca2f5753fda",
+        "status": 200
+      }
+    },
+    "29": {
+      "export": {
+        "bytes": 454530,
+        "cached": true,
+        "classifications": 1269,
+        "records_8digit": 1079,
+        "sha256": "ec66a2b603566957e88e77fb481c44444fa99d027ff487b6a933bda6dec0fb9d",
+        "status": 200
+      },
+      "import": {
+        "bytes": 483532,
+        "cached": true,
+        "classifications": 1261,
+        "records_8digit": 1071,
+        "sha256": "8a9f53056851ed6e0610d03fb7a4ccea4dbfc85693409862f59768df7d318e37",
+        "status": 200
+      }
+    },
+    "30": {
+      "export": {
+        "bytes": 111827,
+        "cached": true,
+        "classifications": 252,
+        "records_8digit": 227,
+        "sha256": "7dd4f1936ef66424ff384a2a0685e40c7404ec5216f09ad1834c0f7e4d175b17",
+        "status": 200
+      },
+      "import": {
+        "bytes": 140309,
+        "cached": true,
+        "classifications": 252,
+        "records_8digit": 227,
+        "sha256": "b653f5081aca1c6784f96be2e39512624b457d83872b576c64b3b0fd39cb113f",
+        "status": 200
+      }
+    },
+    "31": {
+      "export": {
+        "bytes": 37615,
+        "cached": true,
+        "classifications": 42,
+        "records_8digit": 32,
+        "sha256": "5338aee975ebf9b33fc37afc1aca0cd7e76313dc5e26e4dc388243e09f3e71b7",
+        "status": 200
+      },
+      "import": {
+        "bytes": 22802,
+        "cached": true,
+        "classifications": 42,
+        "records_8digit": 32,
+        "sha256": "376117f835c2ac53c8e0089f67f06e692eef7bbcc936a8dd2378800db3de5c1a",
+        "status": 200
+      }
+    },
+    "32": {
+      "export": {
+        "bytes": 124199,
+        "cached": true,
+        "classifications": 378,
+        "records_8digit": 338,
+        "sha256": "a05061c3b799102d628790b3928877d367bf55f7e32119199c7dcc3439cb55f2",
+        "status": 200
+      },
+      "import": {
+        "bytes": 123415,
+        "cached": true,
+        "classifications": 378,
+        "records_8digit": 338,
+        "sha256": "788630812efe90c18fecdf44cf879f1bdaf5189ee358abc20560ff454caa9bed",
+        "status": 200
+      }
+    },
+    "33": {
+      "export": {
+        "bytes": 57459,
+        "cached": true,
+        "classifications": 150,
+        "records_8digit": 126,
+        "sha256": "9a247f5a6472175f473aabbb7f15fdcac128057436884ff9c785a65ee94454fc",
+        "status": 200
+      },
+      "import": {
+        "bytes": 56543,
+        "cached": true,
+        "classifications": 150,
+        "records_8digit": 126,
+        "sha256": "7593730dc6ae21be02ca2ff4b43b6fa4fe2d6f5e44f795b0c3a4e239571b8819",
+        "status": 200
+      }
+    },
+    "34": {
+      "export": {
+        "bytes": 33033,
+        "cached": true,
+        "classifications": 72,
+        "records_8digit": 57,
+        "sha256": "8613e2fd191fead9d34750813d8dc635de09fcb55ed1d369dc7e1a7c2b5bc03d",
+        "status": 200
+      },
+      "import": {
+        "bytes": 33413,
+        "cached": true,
+        "classifications": 72,
+        "records_8digit": 57,
+        "sha256": "fdb2ec0ae0d28333bbcd7ca487de027ea8264db75668c630aafebee9376d0c34",
+        "status": 200
+      }
+    },
+    "35": {
+      "export": {
+        "bytes": 22957,
+        "cached": true,
+        "classifications": 52,
+        "records_8digit": 38,
+        "sha256": "f0af623c7c3bba707a3cb33c45aa9e35721d5757a502932aabf061b2f3ebcf32",
+        "status": 200
+      },
+      "import": {
+        "bytes": 20787,
+        "cached": true,
+        "classifications": 52,
+        "records_8digit": 38,
+        "sha256": "9a82fb683d239ee8a4d8bc61ac90a744e816b317a8c86cffeaeb7e3bbdb92dc0",
+        "status": 200
+      }
+    },
+    "36": {
+      "export": {
+        "bytes": 13355,
+        "cached": true,
+        "classifications": 33,
+        "records_8digit": 22,
+        "sha256": "2ce27072f6b9fa10baf6f3dd1a04ac7471b2985af7cd778ac9fa96c3a0bd125f",
+        "status": 200
+      },
+      "import": {
+        "bytes": 14406,
+        "cached": true,
+        "classifications": 33,
+        "records_8digit": 22,
+        "sha256": "aab0f38ad01a628395f986fd9781e668be36b9136a93d1fa9838e8f2279bf083",
+        "status": 200
+      }
+    },
+    "37": {
+      "export": {
+        "bytes": 44894,
+        "cached": true,
+        "classifications": 131,
+        "records_8digit": 100,
+        "sha256": "f62a01e81d4655044bcdb839e5effd00a081216de37354b59c052f7f6d680e2f",
+        "status": 200
+      },
+      "import": {
+        "bytes": 48279,
+        "cached": true,
+        "classifications": 131,
+        "records_8digit": 100,
+        "sha256": "b5d57ff702df8d46f4741b433ae4118405580f035aebf91c5efae32328dbe60f",
+        "status": 200
+      }
+    },
+    "38": {
+      "export": {
+        "bytes": 119096,
+        "cached": true,
+        "classifications": 264,
+        "records_8digit": 213,
+        "sha256": "f11490176ab9adc17cec52d2e270e6950f9e9abe2a938e593ecad5d9db0ecd0d",
+        "status": 200
+      },
+      "import": {
+        "bytes": 129002,
+        "cached": true,
+        "classifications": 264,
+        "records_8digit": 213,
+        "sha256": "937a9fe6a500e72fd76063b687aff98b4ab43c1e0641d7fdf30a92994ae41414",
+        "status": 200
+      }
+    },
+    "39": {
+      "export": {
+        "bytes": 175330,
+        "cached": true,
+        "classifications": 535,
+        "records_8digit": 432,
+        "sha256": "60085511f3ac770a671fa90fbd72bba62a964f3ee4d0eae56f467168ad3bcb66",
+        "status": 200
+      },
+      "import": {
+        "bytes": 182177,
+        "cached": true,
+        "classifications": 535,
+        "records_8digit": 432,
+        "sha256": "e4c88c700fcd75a625efedc1a4c8467cd0619055c400d0f2e93ae0e4e2e9475c",
+        "status": 200
+      }
+    },
+    "40": {
+      "export": {
+        "bytes": 78337,
+        "cached": true,
+        "classifications": 224,
+        "records_8digit": 169,
+        "sha256": "cbf36db622151e61226c9679b087f61c4ca4581dc115a1877e58545baf79f050",
+        "status": 200
+      },
+      "import": {
+        "bytes": 81734,
+        "cached": true,
+        "classifications": 224,
+        "records_8digit": 169,
+        "sha256": "390f387d13eda7718486641b019e5ddc03964d9ec28fe0f48e4484f9170aa159",
+        "status": 200
+      }
+    },
+    "41": {
+      "export": {
+        "bytes": 30100,
+        "cached": true,
+        "classifications": 80,
+        "records_8digit": 56,
+        "sha256": "9f78fcdd89224d665c6e323b21f92ca556e7b30d23f024a61f40af51d65ccee7",
+        "status": 200
+      },
+      "import": {
+        "bytes": 29867,
+        "cached": true,
+        "classifications": 80,
+        "records_8digit": 56,
+        "sha256": "71b56986e3c3bf6a80df8a2b3ff00eba1e6341587dee9dd9bdff0a9cc016213c",
+        "status": 200
+      }
+    },
+    "42": {
+      "export": {
+        "bytes": 29265,
+        "cached": true,
+        "classifications": 80,
+        "records_8digit": 62,
+        "sha256": "f908544138d208642c0db1de5c51620c9a46b1ba5b4fc20bb7fdfb623b79c847",
+        "status": 200
+      },
+      "import": {
+        "bytes": 29353,
+        "cached": true,
+        "classifications": 80,
+        "records_8digit": 62,
+        "sha256": "2bb01ee2016b8f282b79f541c4de3e0fbbeb7231be60267c9b38c6bd79dccce7",
+        "status": 200
+      }
+    },
+    "43": {
+      "export": {
+        "bytes": 13189,
+        "cached": true,
+        "classifications": 30,
+        "records_8digit": 22,
+        "sha256": "2ed083715c40b38ae5541f366a4a8afe0322526fa0d3bc92fd4c189b4e4e3819",
+        "status": 200
+      },
+      "import": {
+        "bytes": 15290,
+        "cached": true,
+        "classifications": 30,
+        "records_8digit": 22,
+        "sha256": "e42e4bbeeaa62b16af3a235dd74e5d4b60ec6602557abcf6890cfc0453670c32",
+        "status": 200
+      }
+    },
+    "44": {
+      "export": {
+        "bytes": 120843,
+        "cached": true,
+        "classifications": 316,
+        "records_8digit": 259,
+        "sha256": "97c58afacd993b9d1a4b78d30b28118c390e64bebebce0b69b80b6a25f0edb08",
+        "status": 200
+      },
+      "import": {
+        "bytes": 113355,
+        "cached": true,
+        "classifications": 316,
+        "records_8digit": 259,
+        "sha256": "5f8c64576d57bd373349360bfde6d1e61b0f05c5ed372f7165ca40464e17fb9a",
+        "status": 200
+      }
+    },
+    "45": {
+      "export": {
+        "bytes": 5600,
+        "cached": true,
+        "classifications": 15,
+        "records_8digit": 10,
+        "sha256": "3325a77046253c0df9411460a10678dfb3f0e9d760cd6d1fd2c2ce4250f02151",
+        "status": 200
+      },
+      "import": {
+        "bytes": 5638,
+        "cached": true,
+        "classifications": 15,
+        "records_8digit": 10,
+        "sha256": "801a148e57c3908d0e3aafb4e28d3d1a7dd1ab79d783c7755d020e728fc370e2",
+        "status": 200
+      }
+    },
+    "46": {
+      "export": {
+        "bytes": 8038,
+        "cached": true,
+        "classifications": 16,
+        "records_8digit": 13,
+        "sha256": "a32e2c9a82c938f6096b81c72f91e5382aac191fdcc33844ff02c305ff860786",
+        "status": 200
+      },
+      "import": {
+        "bytes": 8127,
+        "cached": true,
+        "classifications": 16,
+        "records_8digit": 13,
+        "sha256": "e0b2030f22566088e4306b04fa1a74e0446beb2af873d90f660a581257a5f7fb",
+        "status": 200
+      }
+    },
+    "47": {
+      "export": {
+        "bytes": 10784,
+        "cached": true,
+        "classifications": 30,
+        "records_8digit": 25,
+        "sha256": "d83b495fbe838ecc81f372ce6869ab2729268b2cb111e4e28c7f466d9c860eeb",
+        "status": 200
+      },
+      "import": {
+        "bytes": 10684,
+        "cached": true,
+        "classifications": 30,
+        "records_8digit": 25,
+        "sha256": "428e51762c70d5a20580c090f78d9a71db37955609e50dfb42c236a6f4f5f615",
+        "status": 200
+      }
+    },
+    "48": {
+      "export": {
+        "bytes": 103067,
+        "cached": true,
+        "classifications": 274,
+        "records_8digit": 218,
+        "sha256": "7d966e5d3db1f05b7da94952faf94a021a3c01087435419affc6461f2f60f0f9",
+        "status": 200
+      },
+      "import": {
+        "bytes": 145667,
+        "cached": true,
+        "classifications": 273,
+        "records_8digit": 217,
+        "sha256": "326273fe8a318e003e8c69e9b5d61d7375ded441bd4c882a4bc274f56db4a156",
+        "status": 200
+      }
+    },
+    "49": {
+      "export": {
+        "bytes": 21123,
+        "cached": true,
+        "classifications": 53,
+        "records_8digit": 34,
+        "sha256": "e81e9a4f82aa1322660299fc1ecb45fdf49e4b6379db601ae260690adbfbcf6e",
+        "status": 200
+      },
+      "import": {
+        "bytes": 21793,
+        "cached": true,
+        "classifications": 53,
+        "records_8digit": 34,
+        "sha256": "a8186efeda0ef379a36080800233b3d7c0f6947bb59024656933b433b15ee0ad",
+        "status": 200
+      }
+    },
+    "50": {
+      "export": {
+        "bytes": 14022,
+        "cached": true,
+        "classifications": 43,
+        "records_8digit": 30,
+        "sha256": "80e0c5715cf95111430ee42cada1972924729078b670b18546cd4a327ca0d6eb",
+        "status": 200
+      },
+      "import": {
+        "bytes": 13381,
+        "cached": true,
+        "classifications": 43,
+        "records_8digit": 30,
+        "sha256": "c5b1d86cdc7af09e1a260ed2ea9a053fc283e1eafcc680cb2efe031a0055a3b4",
+        "status": 200
+      }
+    },
+    "51": {
+      "export": {
+        "bytes": 54961,
+        "cached": true,
+        "classifications": 142,
+        "records_8digit": 105,
+        "sha256": "c4df8323f8c71342bf4c328f20a7a5114c3ca3b85abf264cfbe381bd57e7aa2c",
+        "status": 200
+      },
+      "import": {
+        "bytes": 54888,
+        "cached": true,
+        "classifications": 142,
+        "records_8digit": 105,
+        "sha256": "8f3ff37f24383f6e75d30fce0f9ad537e215b4e052f2916a879804c29c5932b9",
+        "status": 200
+      }
+    },
+    "52": {
+      "export": {
+        "bytes": 159639,
+        "cached": true,
+        "classifications": 523,
+        "records_8digit": 429,
+        "sha256": "512482f1382e5c9cc6d8f380fbf399ce7e486358080293185e610392629b9eda",
+        "status": 200
+      },
+      "import": {
+        "bytes": 161077,
+        "cached": true,
+        "classifications": 523,
+        "records_8digit": 429,
+        "sha256": "917c89630b8e9466ab022cf3e5892bb7f8fd59a3995d1aeaabacc3c2712e8caa",
+        "status": 200
+      }
+    },
+    "53": {
+      "export": {
+        "bytes": 26975,
+        "cached": true,
+        "classifications": 89,
+        "records_8digit": 64,
+        "sha256": "85687eb190b696cd85bf3658c11d57ac9b45a671e5ba213ce057027114058a08",
+        "status": 200
+      },
+      "import": {
+        "bytes": 26989,
+        "cached": true,
+        "classifications": 89,
+        "records_8digit": 64,
+        "sha256": "00bd0e3415d6ea0cb3f02e6041816352a9320a772028451906689df28de06162",
+        "status": 200
+      }
+    },
+    "54": {
+      "export": {
+        "bytes": 102212,
+        "cached": true,
+        "classifications": 288,
+        "records_8digit": 247,
+        "sha256": "5281261e2c2542c62cadd8e600d3cd5bbed8fcefa96098c9f7b0caf9ae4dc283",
+        "status": 200
+      },
+      "import": {
+        "bytes": 102359,
+        "cached": true,
+        "classifications": 288,
+        "records_8digit": 247,
+        "sha256": "7f4558af61b77928b4ebce83fe9a56370a3ed0b85868f89c0fcc667f24a6c079",
+        "status": 200
+      }
+    },
+    "55": {
+      "export": {
+        "bytes": 98603,
+        "cached": true,
+        "classifications": 282,
+        "records_8digit": 216,
+        "sha256": "86ce09fbdf17be605959761cce18a30b6d2b62b174abea4f868d8efd4c81815e",
+        "status": 200
+      },
+      "import": {
+        "bytes": 99097,
+        "cached": true,
+        "classifications": 282,
+        "records_8digit": 216,
+        "sha256": "c6e4115622d51f4b9c21c7cb24963f72b00797d0573e446046759fea9ab19fcb",
+        "status": 200
+      }
+    },
+    "56": {
+      "export": {
+        "bytes": 41948,
+        "cached": true,
+        "classifications": 81,
+        "records_8digit": 54,
+        "sha256": "ebf6c8fbc17f175b72b63cc497ef0623a6d1a6adc660ae508da645e3c9cfc3f7",
+        "status": 200
+      },
+      "import": {
+        "bytes": 42667,
+        "cached": true,
+        "classifications": 81,
+        "records_8digit": 54,
+        "sha256": "7fe57e4e13894e1cdb4bb703ab9f21ebd2f98565eb44f6e2fc3acc9ab422023b",
+        "status": 200
+      }
+    },
+    "57": {
+      "export": {
+        "bytes": 55265,
+        "cached": true,
+        "classifications": 116,
+        "records_8digit": 91,
+        "sha256": "696fdd6fc9b2f5d9c062edd9ab763a9cadb9f3f411625e361529d42633d9bf4b",
+        "status": 200
+      },
+      "import": {
+        "bytes": 51451,
+        "cached": true,
+        "classifications": 116,
+        "records_8digit": 91,
+        "sha256": "424091afca1237ee500aad125bf64d85be3ca1f9b514c1ab037340a2159e1d8d",
+        "status": 200
+      }
+    },
+    "58": {
+      "export": {
+        "bytes": 51641,
+        "cached": true,
+        "classifications": 115,
+        "records_8digit": 84,
+        "sha256": "f19d297d05d3d91df5e4547e0a67ba2657b574ae32f22ec752dd09e642e21d26",
+        "status": 200
+      },
+      "import": {
+        "bytes": 52433,
+        "cached": true,
+        "classifications": 115,
+        "records_8digit": 84,
+        "sha256": "e7fc8f511a652e197cd519b24ef8dc0d81ff9435d4b857ebe5fbcbea29958251",
+        "status": 200
+      }
+    },
+    "59": {
+      "export": {
+        "bytes": 53094,
+        "cached": true,
+        "classifications": 102,
+        "records_8digit": 72,
+        "sha256": "9a5d7bc141a824f94318f75a56ade0e526a6f4f0ee3ce9bf91ed6fd7db74eeb1",
+        "status": 200
+      },
+      "import": {
+        "bytes": 54278,
+        "cached": true,
+        "classifications": 102,
+        "records_8digit": 72,
+        "sha256": "0511b885b79a1d0884f7c96c8de71c14ac44e9ae743910d9a30e3b6ffa6a5cbf",
+        "status": 200
+      }
+    },
+    "60": {
+      "export": {
+        "bytes": 33658,
+        "cached": true,
+        "classifications": 57,
+        "records_8digit": 48,
+        "sha256": "e3d6e6f7a31353e3a0ae155608d4bdb6ebc5aee113c2a4cf877d62c1c6ace137",
+        "status": 200
+      },
+      "import": {
+        "bytes": 43936,
+        "cached": true,
+        "classifications": 57,
+        "records_8digit": 48,
+        "sha256": "0993ae33db56375884e4d544f03a1ccbae1ef64f69b2278b1d3523ba5d237f11",
+        "status": 200
+      }
+    },
+    "61": {
+      "export": {
+        "bytes": 96058,
+        "cached": true,
+        "classifications": 255,
+        "records_8digit": 190,
+        "sha256": "946ecb3d1b7ad796a528dd0eca4caa5a4ed5000c5a0ecfb90cceb027b3701657",
+        "status": 200
+      },
+      "import": {
+        "bytes": 99313,
+        "cached": true,
+        "classifications": 255,
+        "records_8digit": 190,
+        "sha256": "7f291f02723c13f6b3640677a75e6b612fb49d4c743a8db15b237e579913e8d0",
+        "status": 200
+      }
+    },
+    "62": {
+      "export": {
+        "bytes": 122003,
+        "cached": true,
+        "classifications": 336,
+        "records_8digit": 257,
+        "sha256": "4ab102f36ba286106af2f25b276ee246bdb443ad0e0b869c8e3fa46723ba5ad3",
+        "status": 200
+      },
+      "import": {
+        "bytes": 133740,
+        "cached": true,
+        "classifications": 336,
+        "records_8digit": 257,
+        "sha256": "d9384f78f824a4e29ab687ddb00d9629f8b93b5716853e049ecf0c7281c0b206",
+        "status": 200
+      }
+    },
+    "63": {
+      "export": {
+        "bytes": 58163,
+        "cached": true,
+        "classifications": 145,
+        "records_8digit": 115,
+        "sha256": "5a8a030653807f29d2aa1a939c3f40c66fc4f87d9f335c374ceefac6dfcda143",
+        "status": 200
+      },
+      "import": {
+        "bytes": 64912,
+        "cached": true,
+        "classifications": 145,
+        "records_8digit": 115,
+        "sha256": "5531f816b40a7e19e6a2d37887275b5f3b775e5a6ad937311981b7b85f90e007",
+        "status": 200
+      }
+    },
+    "64": {
+      "export": {
+        "bytes": 28218,
+        "cached": true,
+        "classifications": 92,
+        "records_8digit": 69,
+        "sha256": "e3b8ac9403b0efa10c5f9c05a1d7c5550b749bd98fe48a3208e94865157d4166",
+        "status": 200
+      },
+      "import": {
+        "bytes": 32135,
+        "cached": true,
+        "classifications": 92,
+        "records_8digit": 69,
+        "sha256": "466b5c978ec06d23aee870d284eee2bdd13b335abbec7f5af0586487799eb720",
+        "status": 200
+      }
+    },
+    "65": {
+      "export": {
+        "bytes": 8358,
+        "cached": true,
+        "classifications": 21,
+        "records_8digit": 14,
+        "sha256": "ffe849365173fd8e14f011344ea1457f8ee468c5b6b6e9a30563ea169e97edf8",
+        "status": 200
+      },
+      "import": {
+        "bytes": 8443,
+        "cached": true,
+        "classifications": 21,
+        "records_8digit": 14,
+        "sha256": "a364c5036d52af94ab8b1031e7adfaccc0355a282500579e69ba3ae12bc2e0dd",
+        "status": 200
+      }
+    },
+    "66": {
+      "export": {
+        "bytes": 4890,
+        "cached": true,
+        "classifications": 10,
+        "records_8digit": 7,
+        "sha256": "7cfed533d88c2a948ec520345578ee2f13f523a87a286c5cad840365237e39d1",
+        "status": 200
+      },
+      "import": {
+        "bytes": 5283,
+        "cached": true,
+        "classifications": 10,
+        "records_8digit": 7,
+        "sha256": "67ed9956c3da183e4a9800ea80e52a9244d6a4ca106c2d55b4461f7f48205bd7",
+        "status": 200
+      }
+    },
+    "67": {
+      "export": {
+        "bytes": 10385,
+        "cached": true,
+        "classifications": 25,
+        "records_8digit": 15,
+        "sha256": "2b8a8a6038280476c52fe73d19ba562f246cc3e4d618fac0d5b49d31ba97fa15",
+        "status": 200
+      },
+      "import": {
+        "bytes": 10703,
+        "cached": true,
+        "classifications": 25,
+        "records_8digit": 15,
+        "sha256": "51c64b4e02264bf36e15471516998afe4bbc2776cad51736299bff48d17a1571",
+        "status": 200
+      }
+    },
+    "68": {
+      "export": {
+        "bytes": 40435,
+        "cached": true,
+        "classifications": 119,
+        "records_8digit": 88,
+        "sha256": "082f7a7649cb49689bc9dacd7fb4cd5546b575b47af7cf895654c9a36f978593",
+        "status": 200
+      },
+      "import": {
+        "bytes": 43505,
+        "cached": true,
+        "classifications": 119,
+        "records_8digit": 88,
+        "sha256": "62eacfbfd32035060ea0d576e6c2a75e932a28a90ff21e75e06f82b2e5b196a1",
+        "status": 200
+      }
+    },
+    "69": {
+      "export": {
+        "bytes": 28770,
+        "cached": true,
+        "classifications": 85,
+        "records_8digit": 63,
+        "sha256": "356d34ab198a321f553cc91d2d5c4c236a8e41b77b282e74205e96cc246d85be",
+        "status": 200
+      },
+      "import": {
+        "bytes": 29579,
+        "cached": true,
+        "classifications": 86,
+        "records_8digit": 64,
+        "sha256": "7851452a8e6bddfb7513a8727c3702f5311ad343c58416487f6c23a4bb07f9b7",
+        "status": 200
+      }
+    },
+    "70": {
+      "export": {
+        "bytes": 52019,
+        "cached": true,
+        "classifications": 152,
+        "records_8digit": 110,
+        "sha256": "10c60ba941f64ed39633b1a5bb786d0383d0565443022748f3e1b2003bc88ef1",
+        "status": 200
+      },
+      "import": {
+        "bytes": 54671,
+        "cached": true,
+        "classifications": 152,
+        "records_8digit": 110,
+        "sha256": "5cbe5a0a068fd7a0ada2b60023b5420c7a39ff2dd8150d701df66e0f18254359",
+        "status": 200
+      }
+    },
+    "71": {
+      "export": {
+        "bytes": 69206,
+        "cached": true,
+        "classifications": 181,
+        "records_8digit": 144,
+        "sha256": "b20240ce9d174d418ee40f33469bdf28d006c2aa4363517e1230e21cffd106c1",
+        "status": 200
+      },
+      "import": {
+        "bytes": 83432,
+        "cached": true,
+        "classifications": 181,
+        "records_8digit": 144,
+        "sha256": "0a2eed8c8b70aea6f843fa159f70b7418ca9741f8dfc63e977c9142e3f1c1dfa",
+        "status": 200
+      }
+    },
+    "72": {
+      "export": {
+        "bytes": 219119,
+        "cached": true,
+        "classifications": 663,
+        "records_8digit": 529,
+        "sha256": "0cef427a86c57117f3b0b537533170b60924f713e640b8a25a80a378d7eaf77a",
+        "status": 200
+      },
+      "import": {
+        "bytes": 253251,
+        "cached": true,
+        "classifications": 663,
+        "records_8digit": 529,
+        "sha256": "0f0fb6299d083ddeea4f475e01ea2f9fc928e1b909467a942c92b5bc645c0aad",
+        "status": 200
+      }
+    },
+    "73": {
+      "export": {
+        "bytes": 123954,
+        "cached": true,
+        "classifications": 372,
+        "records_8digit": 281,
+        "sha256": "33fa82b44ca68875656eb00375df8d6ecbd009718729d62f2e2cad137e57f8df",
+        "status": 200
+      },
+      "import": {
+        "bytes": 133157,
+        "cached": true,
+        "classifications": 372,
+        "records_8digit": 281,
+        "sha256": "c982b7a80f2d86b2dac19b625864badc40544d324d733954af54a0568a255f67",
+        "status": 200
+      }
+    },
+    "74": {
+      "export": {
+        "bytes": 55095,
+        "cached": true,
+        "classifications": 128,
+        "records_8digit": 96,
+        "sha256": "a1057909f4f145ca03f425c3d630e25e491964a7f3eb2dbcfa1ad0daa3fcae96",
+        "status": 200
+      },
+      "import": {
+        "bytes": 63270,
+        "cached": true,
+        "classifications": 128,
+        "records_8digit": 96,
+        "sha256": "16d1464a6f8514220a12d51ee71f9cfb63f69e9ab3694cb15dfd24e5e0d17798",
+        "status": 200
+      }
+    },
+    "75": {
+      "export": {
+        "bytes": 14430,
+        "cached": true,
+        "classifications": 39,
+        "records_8digit": 27,
+        "sha256": "da877a6c0d3706a84944e84e9ab5d1cf964d3c12bd7128a607cf38366e1d2838",
+        "status": 200
+      },
+      "import": {
+        "bytes": 14496,
+        "cached": true,
+        "classifications": 39,
+        "records_8digit": 27,
+        "sha256": "380725fa0bd8587b2b3b93e1a585e4ef62ba4b6a7810ae2c2fa7e6a950d7a34e",
+        "status": 200
+      }
+    },
+    "76": {
+      "export": {
+        "bytes": 44258,
+        "cached": true,
+        "classifications": 132,
+        "records_8digit": 97,
+        "sha256": "51246ddc820f77d91f7b8557d3c1926d6c5a1633a773228a95034a7205c58fc5",
+        "status": 200
+      },
+      "import": {
+        "bytes": 46297,
+        "cached": true,
+        "classifications": 132,
+        "records_8digit": 97,
+        "sha256": "f86e002a9253f200c46f45122f679afbb7d20ce5c6f0bcc0d8f7f7c41908d3d8",
+        "status": 200
+      }
+    },
+    "77": {
+      "export": {
+        "bytes": 326,
+        "cached": true,
+        "classifications": 0,
+        "records_8digit": 0,
+        "sha256": "1a2a3d5e8c3a53dcc3e8c26fb27e2086640e0866b75f2cbfe92b307e5fe21d13",
+        "status": 200
+      },
+      "import": {
+        "bytes": 326,
+        "cached": true,
+        "classifications": 0,
+        "records_8digit": 0,
+        "sha256": "1a2a3d5e8c3a53dcc3e8c26fb27e2086640e0866b75f2cbfe92b307e5fe21d13",
+        "status": 200
+      }
+    },
+    "78": {
+      "export": {
+        "bytes": 9478,
+        "cached": true,
+        "classifications": 26,
+        "records_8digit": 17,
+        "sha256": "5499b9420a172f9b21e99a8fd58ffb5073943de3e7927f0ca762ca09f79dd3b0",
+        "status": 200
+      },
+      "import": {
+        "bytes": 9472,
+        "cached": true,
+        "classifications": 26,
+        "records_8digit": 17,
+        "sha256": "76972b1fb52fb7bf9c4159166351ca7972ff8469bdea7ea80306dbccc466d7e6",
+        "status": 200
+      }
+    },
+    "79": {
+      "export": {
+        "bytes": 11212,
+        "cached": true,
+        "classifications": 32,
+        "records_8digit": 21,
+        "sha256": "bbc598ec938a9e031669c665f1fb240865e29ce94eb54167d323943b55da4b8e",
+        "status": 200
+      },
+      "import": {
+        "bytes": 12093,
+        "cached": true,
+        "classifications": 32,
+        "records_8digit": 21,
+        "sha256": "69b80bb8593f4bf7799d80d745c0db730c9edc883e8ffc0bb0433da73d130767",
+        "status": 200
+      }
+    },
+    "80": {
+      "export": {
+        "bytes": 6965,
+        "cached": true,
+        "classifications": 19,
+        "records_8digit": 11,
+        "sha256": "5b162be7e5b1f0d7731fa76b3ca2105d94effbe7eec72f88152f172b91a74323",
+        "status": 200
+      },
+      "import": {
+        "bytes": 7168,
+        "cached": true,
+        "classifications": 19,
+        "records_8digit": 11,
+        "sha256": "d661c582d0daf59156a26a53fff8a60bc9f0b223e7a6176751bc2e6de8e34532",
+        "status": 200
+      }
+    },
+    "81": {
+      "export": {
+        "bytes": 33277,
+        "cached": true,
+        "classifications": 109,
+        "records_8digit": 84,
+        "sha256": "b254c882c8b5ee630ea1d94bbf46ad61aecfa1de56fd53df454719a95c988719",
+        "status": 200
+      },
+      "import": {
+        "bytes": 33630,
+        "cached": true,
+        "classifications": 108,
+        "records_8digit": 83,
+        "sha256": "1dc7b8dbeb059201d71ba89bb8d5147a84839a04d50e4970a01e2088786058e8",
+        "status": 200
+      }
+    },
+    "82": {
+      "export": {
+        "bytes": 53539,
+        "cached": true,
+        "classifications": 133,
+        "records_8digit": 98,
+        "sha256": "2ec534cdb79d6d6e1fc8267d193bfc8bee498b2d1bb18bd0fafe77ceab13a6f3",
+        "status": 200
+      },
+      "import": {
+        "bytes": 54050,
+        "cached": true,
+        "classifications": 133,
+        "records_8digit": 98,
+        "sha256": "9a7cbc88106950b191f1ca5c976a9f2f2536ed6a38fe501d38e24c45f4bc5c22",
+        "status": 200
+      }
+    },
+    "83": {
+      "export": {
+        "bytes": 38309,
+        "cached": true,
+        "classifications": 83,
+        "records_8digit": 62,
+        "sha256": "c582c2ac62812eb6caf16de9aff99004dd2e199be842e9148861a2c23c193d9f",
+        "status": 200
+      },
+      "import": {
+        "bytes": 39186,
+        "cached": true,
+        "classifications": 83,
+        "records_8digit": 62,
+        "sha256": "38c5cd3e805f2cebc5f7c5d461828a87c2e93c36e628a354527e9f33310f2630",
+        "status": 200
+      }
+    },
+    "84": {
+      "export": {
+        "bytes": 448376,
+        "cached": true,
+        "classifications": 1383,
+        "records_8digit": 1090,
+        "sha256": "e2c61c6202e2a00bd5e6a19e1dc3a4e89bb5777ca5a763534cf91d6a4391fd46",
+        "status": 200
+      },
+      "import": {
+        "bytes": 462084,
+        "cached": true,
+        "classifications": 1386,
+        "records_8digit": 1093,
+        "sha256": "67943df326a7253fcd9cb6df0dd3bcbf3868271075eb3024ebebc7341e733540",
+        "status": 200
+      }
+    },
+    "85": {
+      "export": {
+        "bytes": 272536,
+        "cached": true,
+        "classifications": 795,
+        "records_8digit": 641,
+        "sha256": "4058e1d6bdb492f26a800f21e8970111cec10c4dfb7d42c2fe528be723666a8b",
+        "status": 200
+      },
+      "import": {
+        "bytes": 290675,
+        "cached": true,
+        "classifications": 800,
+        "records_8digit": 646,
+        "sha256": "a1701e059d8a545f286b4c46dde65ff66e0cc1a6173ac9f29354bcc3a27f21ba",
+        "status": 200
+      }
+    },
+    "86": {
+      "export": {
+        "bytes": 24609,
+        "cached": true,
+        "classifications": 57,
+        "records_8digit": 43,
+        "sha256": "d7d7c9911e01176f6b6a53fa7e769639372ae5d03307cdf353de471cdf1fd136",
+        "status": 200
+      },
+      "import": {
+        "bytes": 27606,
+        "cached": true,
+        "classifications": 58,
+        "records_8digit": 44,
+        "sha256": "b11dfe4cbb3f95d4f79f3e641a51abae673c45c3dc946579c05ba48f6f1e882c",
+        "status": 200
+      }
+    },
+    "87": {
+      "export": {
+        "bytes": 102745,
+        "cached": true,
+        "classifications": 294,
+        "records_8digit": 236,
+        "sha256": "6daa92c64a9ca3c3c188a271cb9ba6604e5427da03274204a624845aafb3b87b",
+        "status": 200
+      },
+      "import": {
+        "bytes": 128341,
+        "cached": true,
+        "classifications": 294,
+        "records_8digit": 236,
+        "sha256": "c5e359b8ea6176a0dcbd732883ac8417381591377ae42b1c0189e320debb18a4",
+        "status": 200
+      }
+    },
+    "88": {
+      "export": {
+        "bytes": 19493,
+        "cached": true,
+        "classifications": 42,
+        "records_8digit": 32,
+        "sha256": "bfb04033b4f7d47ce13fcdcb4c599270e53599090eb88f856e4da27321fbcddc",
+        "status": 200
+      },
+      "import": {
+        "bytes": 24307,
+        "cached": true,
+        "classifications": 42,
+        "records_8digit": 32,
+        "sha256": "38a30aca3766843147199dbdd772a5550f681aa71d29d2db68b47956eab0d98d",
+        "status": 200
+      }
+    },
+    "89": {
+      "export": {
+        "bytes": 18534,
+        "cached": true,
+        "classifications": 43,
+        "records_8digit": 32,
+        "sha256": "a803a31c05694f0ab90c4e363294d5961e3d694b39b65a872c6a4af77cf90a31",
+        "status": 200
+      },
+      "import": {
+        "bytes": 21613,
+        "cached": true,
+        "classifications": 43,
+        "records_8digit": 32,
+        "sha256": "de8753578d0630c7768f2d6bc0cf531d66c103bf7b71e405d329928cca3c6e37",
+        "status": 200
+      }
+    },
+    "90": {
+      "export": {
+        "bytes": 116344,
+        "cached": true,
+        "classifications": 344,
+        "records_8digit": 262,
+        "sha256": "460ae77a844928b96754e0e9de6f9d0df1598f1e99969a99a8958572609b6e0c",
+        "status": 200
+      },
+      "import": {
+        "bytes": 118813,
+        "cached": true,
+        "classifications": 344,
+        "records_8digit": 262,
+        "sha256": "f09134592e2accf9e359649a484c463f4ee1f294113403ddd5bc92a51555c277",
+        "status": 200
+      }
+    },
+    "91": {
+      "export": {
+        "bytes": 29383,
+        "cached": true,
+        "classifications": 87,
+        "records_8digit": 64,
+        "sha256": "19e691a3b0270c452e069e2ebf4c2192b6e3897083b72cea5dfb60b045474298",
+        "status": 200
+      },
+      "import": {
+        "bytes": 29765,
+        "cached": true,
+        "classifications": 87,
+        "records_8digit": 64,
+        "sha256": "3520f04657baea1beca551a0b7e3bf1e0586ff19262411d59f61aa779f05de22",
+        "status": 200
+      }
+    },
+    "92": {
+      "export": {
+        "bytes": 12527,
+        "cached": true,
+        "classifications": 26,
+        "records_8digit": 19,
+        "sha256": "bd4295e30190f64ca805aff370f52a85b833b88d82f62620d18635809435aa1b",
+        "status": 200
+      },
+      "import": {
+        "bytes": 10724,
+        "cached": true,
+        "classifications": 26,
+        "records_8digit": 19,
+        "sha256": "dec377ecb44785ece316b703a039a2a8356fcccf526462b381ac292504fe94be",
+        "status": 200
+      }
+    },
+    "93": {
+      "export": {
+        "bytes": 13101,
+        "cached": true,
+        "classifications": 30,
+        "records_8digit": 21,
+        "sha256": "c2f5eb6c8b2e0c4813ca5f1aa58d175cfb6f2c43f2bb1dfe1e048c81ab8135c8",
+        "status": 200
+      },
+      "import": {
+        "bytes": 15614,
+        "cached": true,
+        "classifications": 30,
+        "records_8digit": 21,
+        "sha256": "49db4a8e336b85c178f6a0d22218fc26c7fd926f9b44cf64b05ba7f0edfaa83c",
+        "status": 200
+      }
+    },
+    "94": {
+      "export": {
+        "bytes": 34330,
+        "cached": true,
+        "classifications": 92,
+        "records_8digit": 74,
+        "sha256": "ae16d7fdfe815e1ed629b79f02ca886f52c6efbb7b9b558ca0619c15b014fa24",
+        "status": 200
+      },
+      "import": {
+        "bytes": 35469,
+        "cached": true,
+        "classifications": 92,
+        "records_8digit": 74,
+        "sha256": "1bba277808de4cfc9c35f6bbe8a47183313581d2bb3d59045d6a0753deb0f809",
+        "status": 200
+      }
+    },
+    "95": {
+      "export": {
+        "bytes": 31811,
+        "cached": true,
+        "classifications": 78,
+        "records_8digit": 63,
+        "sha256": "6cc7798990607ecf5d89b5f7fc60195baaf5e06a3e50d33a002afc048ae907fd",
+        "status": 200
+      },
+      "import": {
+        "bytes": 42328,
+        "cached": true,
+        "classifications": 78,
+        "records_8digit": 63,
+        "sha256": "2d633099e882b76dcf10290e15240cdcc6270f2eae0f414ef779c4f9a454b8aa",
+        "status": 200
+      }
+    },
+    "96": {
+      "export": {
+        "bytes": 48802,
+        "cached": true,
+        "classifications": 136,
+        "records_8digit": 101,
+        "sha256": "970150223a1662245db65780945d6294e6629941dc4e05f9df6b023cb54083f3",
+        "status": 200
+      },
+      "import": {
+        "bytes": 50000,
+        "cached": true,
+        "classifications": 136,
+        "records_8digit": 101,
+        "sha256": "42947350ab261abf8dec2e90cdd5cdec725d1da1bcf4cc1a5d1c324f9d11fb2e",
+        "status": 200
+      }
+    },
+    "97": {
+      "export": {
+        "bytes": 14688,
+        "cached": true,
+        "classifications": 35,
+        "records_8digit": 26,
+        "sha256": "ea5de89f19ab3d8b746697fc7d17eb0c9f61e1bf2de9d4eb54ad12849bba5a22",
+        "status": 200
+      },
+      "import": {
+        "bytes": 15690,
+        "cached": true,
+        "classifications": 35,
+        "records_8digit": 26,
+        "sha256": "70472663c9f1c119f3cee06862691c85433f7a9f526e303a8f8f0eedf7352de5",
+        "status": 200
+      }
+    },
+    "98": {
+      "export": {
+        "bytes": 13377,
+        "cached": true,
+        "classifications": 19,
+        "records_8digit": 15,
+        "sha256": "49156071344e3af6092ddf59a71833cb89b8fa7e1f82c2bcb96d4db3c0caf08a",
+        "status": 200
+      },
+      "import": {
+        "bytes": 16335,
+        "cached": true,
+        "classifications": 19,
+        "records_8digit": 15,
+        "sha256": "bb01902b4eea0813e12c1dee15118d88486ba0836f0ec952708275981db67e34",
+        "status": 200
+      }
+    }
+  },
+  "content_sha256": "93c893d2da17051d98e30f89b6439280a49ecf6dbd5e2a6b4ae7251bc9328a42",
+  "current_record_rule": "last record in portal (API) order for each itc_code + direction",
+  "direction_quirk": "expType=1 -> import policy; expType=2 -> export policy (both in the imp* fields)",
+  "endpoint": "https://www.dgft.gov.in/CP/webHP",
+  "fetched_at": "2026-10-26T04:11:50Z",
+  "file": "dgft_itc_policy.jsonl.gz",
+  "file_sha256": "2f68b2034ede4b0b4f2f972c2f6c05197d6d02ddd18ee4dabdcb9deb66322072",
+  "method": "GET public home page for _csrf; POST webHP actionVal=getChapterDetails per chapter and expType",
+  "portal_url": "https://www.dgft.gov.in/CP/",
+  "source": "DGFT ITC-HS import / export policy (public Discover portal)",
+  "source_id": "dgft_itc_hs",
+  "source_url": "https://www.dgft.gov.in/CP/?opt=itchs-import-export",
+  "totals": {
+    "chapters": 98,
+    "codes": 12571,
+    "current_records": 25142,
+    "duplicate_records": 45,
+    "export": {
+      "codes": 12571,
+      "codes_with_policy": 12510,
+      "current_without_policy": 61,
+      "duplicate_records": 29,
+      "records": 12600
+    },
+    "fetched_at": "2026-10-26T04:11:50Z",
+    "import": {
+      "codes": 12571,
+      "codes_with_policy": 12512,
+      "current_without_policy": 59,
+      "duplicate_records": 16,
+      "records": 12587
+    },
+    "records": 25187
+  }
+}

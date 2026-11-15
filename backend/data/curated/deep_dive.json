@@ -1,0 +1,654 @@
+{
+  "_note": "Curated inputs for the product deep-dive (heading -> 6-digit -> 8-digit, clusters, standards and market readiness). Markets: what Indian-origin goods pay in each destination. Each market's own MFN tariff is fetched live from WITS (market_tariffs connector); this file holds only what WITS does not publish: trade agreements with India and additional duties on Indian goods. Entries with verified=false or extra_duty_status='user_input' must be confirmed against the cited authority before they are relied on. Admins can edit market duties through PATCH /api/deep-dive/markets/{id}.",
+  "as_of": "2026-11-04",
+  "markets": [
+    {
+      "id": "us",
+      "name": "United States",
+      "wits_code": "840",
+      "country_ids": [
+        "nausa"
+      ],
+      "agreement": null,
+      "pref_rate_pct": null,
+      "extra_duty_pct": 15,
+      "extra_duty_status": "user_input",
+      "extra_duty_basis": "Additional ad-valorem duty on Indian-origin goods on top of the US MFN rate, as supplied by the project team.",
+      "source": "Project team input; confirm against the current CBP CSMS notice / USTR Federal Register entry",
+      "note": "US additional duties on India have changed several times since 2025. Update this figure from the latest CBP notice."
+    },
+    {
+      "id": "eu",
+      "name": "European Union",
+      "wits_code": "918",
+      "country_ids": [
+        "euaut",
+        "eubel",
+        "eubgr",
+        "euhrv",
+        "eucyp",
+        "eucze",
+        "eudnk",
+        "euest",
+        "eufin",
+        "eufra",
+        "eudeu",
+        "eugrc",
+        "euhun",
+        "euirl",
+        "euita",
+        "eulva",
+        "eultu",
+        "eulux",
+        "eumlt",
+        "eunld",
+        "eupol",
+        "euprt",
+        "eurou",
+        "eusvk",
+        "eusvn",
+        "euesp",
+        "euswe"
+      ],
+      "agreement": null,
+      "pref_rate_pct": null,
+      "extra_duty_pct": 0,
+      "extra_duty_status": "none",
+      "source": "WITS / TRAINS EU MFN",
+      "note": "India-EU FTA negotiations: apply preferential rates only once the agreement is in force."
+    },
+    {
+      "id": "uk",
+      "name": "United Kingdom",
+      "wits_code": "826",
+      "country_ids": [
+        "eugbr"
+      ],
+      "agreement": null,
+      "pref_rate_pct": null,
+      "extra_duty_pct": 0,
+      "extra_duty_status": "none",
+      "source": "WITS / TRAINS UK MFN",
+      "note": "India-UK CETA was signed in July 2025; set the preferential rate here once it is in force."
+    },
+    {
+      "id": "uae",
+      "name": "United Arab Emirates",
+      "wits_code": "784",
+      "country_ids": [
+        "asare"
+      ],
+      "agreement": "India-UAE CEPA (in force 1 May 2022)",
+      "pref_rate_pct": 0,
+      "extra_duty_pct": 0,
+      "extra_duty_status": "none",
+      "source": "India-UAE CEPA tariff schedule (Department of Commerce)",
+      "note": "Most UAE tariff lines are duty-free for Indian goods under CEPA; check the line-level schedule for exceptions."
+    },
+    {
+      "id": "aus",
+      "name": "Australia",
+      "wits_code": "036",
+      "country_ids": [
+        "ocaus"
+      ],
+      "agreement": "India-Australia ECTA (in force 29 Dec 2022)",
+      "pref_rate_pct": 0,
+      "extra_duty_pct": 0,
+      "extra_duty_status": "none",
+      "source": "India-Australia ECTA tariff schedule (Department of Commerce)",
+      "note": "Australia committed to eliminate duties on all tariff lines for Indian goods under ECTA."
+    },
+    {
+      "id": "jpn",
+      "name": "Japan",
+      "wits_code": "392",
+      "country_ids": [
+        "asjpn"
+      ],
+      "agreement": "India-Japan CEPA (in force Aug 2011)",
+      "pref_rate_pct": null,
+      "extra_duty_pct": 0,
+      "extra_duty_status": "none",
+      "source": "WITS / TRAINS Japan MFN",
+      "note": "Japan's MFN on most sports goods is already low; CEPA preferences not applied line by line here."
+    },
+    {
+      "id": "can",
+      "name": "Canada",
+      "wits_code": "124",
+      "country_ids": [
+        "nacan"
+      ],
+      "agreement": null,
+      "pref_rate_pct": null,
+      "extra_duty_pct": 0,
+      "extra_duty_status": "none",
+      "source": "WITS / TRAINS Canada MFN",
+      "note": null
+    }
+  ],
+  "standards": [
+    {
+      "hs_prefix": "9506",
+      "market_id": "in",
+      "scheme": "QCO",
+      "name": "No BIS Quality Control Order covers heading 9506",
+      "status": "none_found",
+      "body": "BIS / DPIIT",
+      "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+      "note": "The Toys (Quality Control) Order, 2020 covers 9503 only. Re-check the BIS compulsory-certification list when new QCOs are notified.",
+      "verified": false
+    },
+    {
+      "hs_prefix": "9506",
+      "market_id": "in",
+      "scheme": "ISI",
+      "name": "BIS ISI mark - voluntary for sports goods",
+      "status": "voluntary",
+      "body": "Bureau of Indian Standards",
+      "url": "https://www.bis.gov.in",
+      "note": "With no QCO in force, ISI certification is voluntary. Look up the applicable Indian Standard for each product on the BIS standards portal.",
+      "verified": false
+    },
+    {
+      "hs_prefix": "9506",
+      "market_id": "in",
+      "scheme": "Hallmark",
+      "name": "BIS hallmarking - not applicable",
+      "status": "not_applicable",
+      "body": "Bureau of Indian Standards",
+      "url": "https://www.bis.gov.in",
+      "note": "Hallmarking applies to gold and silver jewellery and artefacts (chapter 71), not to sports goods.",
+      "verified": true
+    },
+    {
+      "hs_prefix": "95069980",
+      "market_id": "eu",
+      "scheme": "CE (PPE)",
+      "name": "CE marking under the PPE Regulation (EU) 2016/425",
+      "status": "mandatory",
+      "body": "European Commission / notified bodies",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/425/oj",
+      "note": "Shin-guards and body protectors are personal protective equipment.",
+      "verified": true
+    },
+    {
+      "hs_prefix": "95069110",
+      "market_id": "eu",
+      "scheme": "CE (PPE)",
+      "name": "CE marking under the PPE Regulation (EU) 2016/425",
+      "status": "mandatory",
+      "body": "European Commission / notified bodies",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/425/oj",
+      "note": "Applies to protective items such as boxing headguards and gloves.",
+      "verified": true
+    },
+    {
+      "hs_prefix": "95069920",
+      "market_id": "eu",
+      "scheme": "CE (PPE)",
+      "name": "CE marking under the PPE Regulation (EU) 2016/425 (cricket leg pads)",
+      "status": "mandatory",
+      "body": "European Commission / notified bodies",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/425/oj",
+      "note": "Leg pads are protective equipment; bats are not.",
+      "verified": true
+    },
+    {
+      "hs_prefix": "95069980",
+      "market_id": "uk",
+      "scheme": "UKCA / CE (PPE)",
+      "name": "UKCA or CE marking under the PPE Regulation 2016/425 as it applies in Great Britain",
+      "status": "mandatory",
+      "body": "Office for Product Safety and Standards",
+      "url": "https://www.gov.uk/guidance/personal-protective-equipment-and-the-ppe-regulation",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "95069110",
+      "market_id": "uk",
+      "scheme": "UKCA / CE (PPE)",
+      "name": "UKCA or CE marking under the PPE Regulation 2016/425 as it applies in Great Britain",
+      "status": "mandatory",
+      "body": "Office for Product Safety and Standards",
+      "url": "https://www.gov.uk/guidance/personal-protective-equipment-and-the-ppe-regulation",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "9506",
+      "market_id": "us",
+      "scheme": "CPSIA",
+      "name": "Children's Product Certificate (CPSIA) for sports goods designed for children 12 and under",
+      "status": "mandatory",
+      "body": "US Consumer Product Safety Commission",
+      "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/childrens-products",
+      "note": "Applies only to children's products: third-party testing for lead and phthalates, tracking labels.",
+      "verified": true
+    },
+    {
+      "hs_prefix": "95066210",
+      "market_id": "global",
+      "scheme": "Federation approval",
+      "name": "FIFA Quality Programme (footballs)",
+      "status": "voluntary",
+      "body": "FIFA",
+      "url": "https://inside.fifa.com/innovation/standards",
+      "note": "Required for balls used in sanctioned competitions; a strong buyer requirement.",
+      "verified": true
+    },
+    {
+      "hs_prefix": "95069910",
+      "market_id": "global",
+      "scheme": "Federation approval",
+      "name": "BWF approved shuttlecocks",
+      "status": "voluntary",
+      "body": "Badminton World Federation",
+      "url": "https://corporate.bwfbadminton.com",
+      "note": "Needed for tournament use.",
+      "verified": true
+    },
+    {
+      "hs_prefix": "950640",
+      "market_id": "global",
+      "scheme": "Federation approval",
+      "name": "ITTF authorised equipment (balls, rubbers, tables)",
+      "status": "voluntary",
+      "body": "International Table Tennis Federation",
+      "url": "https://equipment.ittf.com",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "95069920",
+      "market_id": "global",
+      "scheme": "Laws of the game",
+      "name": "MCC Laws of Cricket - Law 5 (bat dimensions)",
+      "status": "voluntary",
+      "body": "Marylebone Cricket Club",
+      "url": "https://www.lords.org/mcc/the-laws-of-cricket",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "95066920",
+      "market_id": "global",
+      "scheme": "Laws of the game",
+      "name": "MCC Laws of Cricket - Law 4 (ball specification)",
+      "status": "voluntary",
+      "body": "Marylebone Cricket Club",
+      "url": "https://www.lords.org/mcc/the-laws-of-cricket",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "95069940",
+      "market_id": "global",
+      "scheme": "Federation approval",
+      "name": "FIH stick regulations (hockey sticks)",
+      "status": "voluntary",
+      "body": "International Hockey Federation",
+      "url": "https://www.fih.hockey",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "95066220",
+      "market_id": "global",
+      "scheme": "Federation approval",
+      "name": "FIVB approved volleyballs",
+      "status": "voluntary",
+      "body": "FIVB",
+      "url": "https://www.fivb.com",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "95066230",
+      "market_id": "global",
+      "scheme": "Federation approval",
+      "name": "FIBA approved basketballs",
+      "status": "voluntary",
+      "body": "FIBA",
+      "url": "https://www.fiba.basketball",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "9303",
+      "market_id": "in",
+      "scheme": "Licence",
+      "name": "Arms Act, 1959 and Arms Rules, 2016 - licence to manufacture, sell, import or export firearms",
+      "status": "mandatory",
+      "body": "Ministry of Home Affairs",
+      "url": "https://www.mha.gov.in",
+      "note": "Sporting shotguns and rifles need an arms licence at every step of the chain.",
+      "verified": true
+    },
+    {
+      "hs_prefix": "9303",
+      "market_id": "us",
+      "scheme": "ATF permit",
+      "name": "ATF import permit (ATF Form 6) for firearms",
+      "status": "mandatory",
+      "body": "US Bureau of Alcohol, Tobacco, Firearms and Explosives",
+      "url": "https://www.atf.gov/firearms/firearms-and-ammunition-imports",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "871200",
+      "market_id": "us",
+      "scheme": "CPSC",
+      "name": "CPSC bicycle safety standard, 16 CFR Part 1512",
+      "status": "mandatory",
+      "body": "US Consumer Product Safety Commission",
+      "url": "https://www.ecfr.gov/current/title-16/chapter-II/subchapter-C/part-1512",
+      "note": null,
+      "verified": true
+    },
+    {
+      "hs_prefix": "871200",
+      "market_id": "in",
+      "scheme": "QCO",
+      "name": "No BIS Quality Control Order found for complete bicycles",
+      "status": "none_found",
+      "body": "BIS / DPIIT",
+      "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+      "note": "Re-check the BIS compulsory-certification list.",
+      "verified": false
+    },
+    {
+      "hs_prefix": "871200",
+      "market_id": "eu",
+      "scheme": "EN ISO 4210",
+      "name": "EN ISO 4210 bicycle safety standard (presumption of conformity under EU product-safety law)",
+      "status": "voluntary",
+      "body": "CEN / European Commission",
+      "url": "https://www.iso.org/standard/70277.html",
+      "note": "Not a CE-marking requirement; buyers and market surveillance use it as the reference.",
+      "verified": false
+    }
+  ],
+  "cluster_products": {
+    "_note": "Cluster Observatory product label -> HS prefixes. Name keywords refine a cluster to 8-digit lines.",
+    "labels": {
+      "Sports Goods": [
+        "9506"
+      ],
+      "Toys": [
+        "9503"
+      ],
+      "Leather Toys": [
+        "9503"
+      ],
+      "Leather Footwear": [
+        "6403"
+      ],
+      "Leather Foowear": [
+        "6403"
+      ],
+      "Footwear": [
+        "64"
+      ],
+      "Leather": [
+        "41"
+      ],
+      "Leather Products": [
+        "42"
+      ],
+      "Rubber Products": [
+        "40"
+      ],
+      "Bicycle Parts": [
+        "8714"
+      ],
+      "Auto Components": [
+        "8708"
+      ],
+      "Agarbatti": [
+        "3307"
+      ],
+      "Gun": [
+        "9303"
+      ],
+      "Plastics": [
+        "39"
+      ],
+      "Plastic Products": [
+        "39"
+      ],
+      "Industrial Fastners": [
+        "7318"
+      ],
+      "Ball Bearing": [
+        "8482"
+      ],
+      "Bearing": [
+        "8482"
+      ],
+      "Fibre Glass": [
+        "7019"
+      ],
+      "Steel Re-rolling": [
+        "72"
+      ],
+      "Re-rolling": [
+        "72"
+      ],
+      "Metal Products": [
+        "73"
+      ]
+    },
+    "name_keywords": {
+      "cricket bat": [
+        "95069920"
+      ],
+      "shuttlecock": [
+        "95069910"
+      ],
+      "football": [
+        "95066210"
+      ],
+      "hockey": [
+        "95069940"
+      ],
+      "bicycle": [
+        "871200",
+        "8714"
+      ],
+      "fishing hook": [
+        "950720"
+      ]
+    }
+  },
+  "cluster_coordinates": {
+    "_note": "Approximate district-centre coordinates for map placement (the Observatory publishes none).",
+    "Jalandhar Sports Goods": [
+      31.33,
+      75.58
+    ],
+    "Meerut Sports Goods": [
+      28.98,
+      77.71
+    ],
+    "Agra Sports Goods": [
+      27.18,
+      78.01
+    ],
+    "Anantnag Cricket Bats": [
+      33.73,
+      75.15
+    ],
+    "Uluberia Shuttlecock": [
+      22.47,
+      88.11
+    ],
+    "Ludhiana Bicycle": [
+      30.9,
+      75.85
+    ],
+    "Barjora Fishing Hooks": [
+      23.43,
+      87.29
+    ],
+    "Munger Gun": [
+      25.37,
+      86.47
+    ]
+  },
+  "baskets": [
+    {
+      "id": "sports_equipment",
+      "name": "Sports Equipment",
+      "description": "HSN codes included as sports equipment in the study (table A2): sports goods (9506), bicycles (8712), sporting and air guns (9303, 9304), billiards (9504), fishing gear (9507) and circus / fairground equipment (9508).",
+      "source": "Study table A2 - List of HSN codes included as sports equipment (world exports 2024, US$ bn; total US$ 52 bn)",
+      "study_year": 2024,
+      "codes": [
+        {
+          "hs6": "950691",
+          "category": "Fitness & athletics equipment",
+          "study_world_exports_bn": 14.1
+        },
+        {
+          "hs6": "871200",
+          "category": "Bicycles (non-motorised)",
+          "study_world_exports_bn": 8.8
+        },
+        {
+          "hs6": "950699",
+          "category": "Sports & outdoor equipment (NES)",
+          "study_world_exports_bn": 7.4
+        },
+        {
+          "hs6": "950639",
+          "category": "Golf equipment (excl. balls/clubs)",
+          "study_world_exports_bn": 2.7
+        },
+        {
+          "hs6": "950629",
+          "category": "Water sports equipment",
+          "study_world_exports_bn": 2.0
+        },
+        {
+          "hs6": "950631",
+          "category": "Golf clubs",
+          "study_world_exports_bn": 2.0
+        },
+        {
+          "hs6": "950662",
+          "category": "Inflatable balls",
+          "study_world_exports_bn": 1.8
+        },
+        {
+          "hs6": "930400",
+          "category": "Air guns & non-firearms",
+          "study_world_exports_bn": 1.6
+        },
+        {
+          "hs6": "950790",
+          "category": "Fishing tackle & nets",
+          "study_world_exports_bn": 1.5
+        },
+        {
+          "hs6": "950710",
+          "category": "Fishing rods",
+          "study_world_exports_bn": 1.1
+        },
+        {
+          "hs6": "950730",
+          "category": "Fishing reels",
+          "study_world_exports_bn": 1.0
+        },
+        {
+          "hs6": "950611",
+          "category": "Skis (winter sports)",
+          "study_world_exports_bn": 1.0
+        },
+        {
+          "hs6": "950632",
+          "category": "Golf balls",
+          "study_world_exports_bn": 0.9
+        },
+        {
+          "hs6": "950659",
+          "category": "Badminton & similar rackets",
+          "study_world_exports_bn": 0.85
+        },
+        {
+          "hs6": "930330",
+          "category": "Sporting shotguns (rifled)",
+          "study_world_exports_bn": 0.84
+        },
+        {
+          "hs6": "950670",
+          "category": "Ice & roller skates",
+          "study_world_exports_bn": 0.71
+        },
+        {
+          "hs6": "930320",
+          "category": "Sporting shotguns",
+          "study_world_exports_bn": 0.7
+        },
+        {
+          "hs6": "950669",
+          "category": "Hard balls (non-inflatable)",
+          "study_world_exports_bn": 0.66
+        },
+        {
+          "hs6": "950420",
+          "category": "Billiards & accessories",
+          "study_world_exports_bn": 0.47
+        },
+        {
+          "hs6": "950612",
+          "category": "Ski bindings",
+          "study_world_exports_bn": 0.42
+        },
+        {
+          "hs6": "950619",
+          "category": "Other ski equipment",
+          "study_world_exports_bn": 0.38
+        },
+        {
+          "hs6": "950640",
+          "category": "Table-tennis equipment",
+          "study_world_exports_bn": 0.36
+        },
+        {
+          "hs6": "950661",
+          "category": "Tennis balls",
+          "study_world_exports_bn": 0.33
+        },
+        {
+          "hs6": "950720",
+          "category": "Fish-hooks",
+          "study_world_exports_bn": 0.32
+        },
+        {
+          "hs6": "950651",
+          "category": "Tennis rackets",
+          "study_world_exports_bn": 0.22
+        },
+        {
+          "hs6": "950810",
+          "category": "Circuses & travelling shows",
+          "study_world_exports_bn": 0.11
+        },
+        {
+          "hs6": "950621",
+          "category": "Sailboards",
+          "study_world_exports_bn": 0.07
+        },
+        {
+          "hs6": "950890",
+          "category": "Fairground Amusements",
+          "study_world_exports_bn": 0.001,
+          "note": "HS 2017 code. HS 2022 (used by the Atlas) split it into 950821-950829, 950830 and 950840, so it has no data here; the study's US$ 0.001 bn reflects the same gap."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,622 @@
+/*
+ * India Manufacturing Atlas - design system (Tailwind CSS v4).
+ *
+ * Raw tokens live in CSS custom properties (`--atlas-*`) for the light and dark themes.
+ * They are exposed to Tailwind through `@theme inline`, so page code writes semantic
+ * classes that follow the theme automatically:
+ *
+ *   bg-bg (page plane)  bg-surface (cards)  bg-surface-2 (insets, table heads)  bg-surface-3 (hover)
+ *   text-ink  text-ink-2  text-muted        border-line  border-line-strong
+ *   bg-brand  text-brand-ink  bg-brand-soft  bg-navy  text-on-navy   text-kpi (magenta KPI numerals)
+ *   text-ok / bg-ok-soft / text-ok-ink   text-bad ...   text-na ...   text-warn ...
+ *   shadow-card  shadow-pop   font-sans  font-mono
+ *
+ * Theme switching: <html data-theme="light|dark"> (set before paint by index.html and kept in sync by
+ * ThemeProvider). The `dark:` variant is bound to that attribute, not to the media query.
+ * Chart colours (validated categorical palette, see src/lib/theme.ts) are `--atlas-series-1..8`.
+ */
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* ------------------------------------------------------------------ light theme (default) */
+:root {
+  color-scheme: light;
+
+  /* shell chrome */
+  --atlas-topbar-h: 56px;
+  --atlas-bottomnav-h: 0px;
+
+  /* planes */
+  --atlas-bg: #f2f5fa;
+  --atlas-surface: #ffffff;
+  --atlas-surface-2: #f6f8fc;
+  --atlas-surface-3: #ebf0f8;
+  --atlas-overlay: rgba(7, 15, 29, 0.52);
+
+  /* ink */
+  --atlas-ink: #0a1c35;
+  --atlas-ink-2: #40516a;
+  --atlas-muted: #66788f;
+
+  /* hairlines */
+  --atlas-line: #e1e7f0;
+  --atlas-line-strong: #c8d2e1;
+
+  /* brand palette (royal blue and navy frame, magenta KPI numerals) */
+  --atlas-brand: #0b3aa1;
+  --atlas-brand-hover: #082d82;
+  --atlas-brand-soft: #e9effc;
+  --atlas-brand-ink: #0b3aa1;
+  --atlas-on-brand: #ffffff;
+  --atlas-navy: #07182f;
+  --atlas-navy-2: #0d2342;
+  --atlas-navy-3: #16345c;
+  --atlas-on-navy: #eaf0f9;
+  --atlas-on-navy-muted: #a2b3cb;
+  --atlas-kpi: #d60071;
+  --atlas-kpi-soft: #fce7f2;
+
+  /* status / provenance (Verified green, Not verified red, Not available orange) */
+  --atlas-ok: #0ca30c;
+  --atlas-ok-soft: #e7f6e7;
+  --atlas-ok-ink: #006300;
+  --atlas-bad: #d03b3b;
+  --atlas-bad-soft: #fbeaea;
+  --atlas-bad-ink: #a32222;
+  --atlas-na: #ec835a;
+  --atlas-na-soft: #fdf0ea;
+  --atlas-na-ink: #9a3f12;
+  --atlas-warn: #fab219;
+  --atlas-warn-soft: #fff6de;
+  --atlas-warn-ink: #7a5000;
+  --atlas-info: #2a78d6;
+  --atlas-info-soft: #e8f1fc;
+  --atlas-info-ink: #1c5cab;
+
+  /* charts */
+  --atlas-chart-grid: #e9edf4;
+  --atlas-chart-axis: #c2ccda;
+  --atlas-chart-label: #66788f;
+  --atlas-series-1: #2a78d6;
+  --atlas-series-2: #eb6834;
+  --atlas-series-3: #1baf7a;
+  --atlas-series-4: #eda100;
+  --atlas-series-5: #e87ba4;
+  --atlas-series-6: #008300;
+  --atlas-series-7: #6250d6;
+  --atlas-series-8: #e34948;
+  --atlas-india: #d60071;
+
+  /* elevation & focus */
+  --atlas-shadow-card: 0 1px 2px rgba(10, 28, 53, 0.04), 0 12px 30px -22px rgba(10, 28, 53, 0.26);
+  --atlas-shadow-pop: 0 18px 48px rgba(10, 28, 53, 0.18), 0 2px 8px rgba(10, 28, 53, 0.08);
+  --atlas-focus: #2a78d6;
+
+  /* ownership tree */
+  --atlas-bark: #8a5a33;
+  --atlas-bark-dark: #68401f;
+  --atlas-bark-selected: #5f3818;
+  --atlas-bark-light: #c59a68;
+  --atlas-bark-pale: #e8d3b4;
+  --atlas-seed: #cbe39e;
+  --atlas-seed-ink: #6d8d48;
+  --atlas-ground: rgba(151, 126, 90, 0.16);
+  --atlas-canopy-a: rgba(219, 226, 173, 0.6);
+  --atlas-canopy-b: rgba(198, 220, 177, 0.55);
+  --atlas-canopy-c: rgba(199, 217, 235, 0.6);
+  --atlas-tree-root-bg: #fdf8ee;
+  --atlas-tree-node-selected: #fbf3e5;
+  --atlas-tree-node-selected-line: #b8894f;
+}
+
+/* The bottom tab bar is part of the phone / tablet shell only. */
+@media (max-width: 1023px) {
+  :root {
+    --atlas-bottomnav-h: 60px;
+  }
+}
+
+/* ------------------------------------------------------------------ dark theme */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --atlas-bg: #08111f;
+  --atlas-surface: #0f1b2d;
+  --atlas-surface-2: #142238;
+  --atlas-surface-3: #1a2b46;
+  --atlas-overlay: rgba(0, 0, 0, 0.62);
+
+  --atlas-ink: #e9eef6;
+  --atlas-ink-2: #b6c2d4;
+  --atlas-muted: #8d9bb1;
+
+  --atlas-line: #22324c;
+  --atlas-line-strong: #304666;
+
+  --atlas-brand: #3b72ef;
+  --atlas-brand-hover: #4d82f5;
+  --atlas-brand-soft: #16294a;
+  --atlas-brand-ink: #9ab8ff;
+  --atlas-on-brand: #ffffff;
+  --atlas-navy: #050d19;
+  --atlas-navy-2: #0b1830;
+  --atlas-navy-3: #13264a;
+  --atlas-on-navy: #e8eef7;
+  --atlas-on-navy-muted: #8fa1bd;
+  --atlas-kpi: #ff5aa8;
+  --atlas-kpi-soft: #3a1631;
+
+  --atlas-ok: #0ca30c;
+  --atlas-ok-soft: #10301b;
+  --atlas-ok-ink: #5fd65f;
+  --atlas-bad: #e05252;
+  --atlas-bad-soft: #3a1b1f;
+  --atlas-bad-ink: #ff9292;
+  --atlas-na: #ec835a;
+  --atlas-na-soft: #3a2519;
+  --atlas-na-ink: #ffb38f;
+  --atlas-warn: #fab219;
+  --atlas-warn-soft: #3a2f12;
+  --atlas-warn-ink: #ffd36b;
+  --atlas-info: #3987e5;
+  --atlas-info-soft: #14284a;
+  --atlas-info-ink: #8fbcf5;
+
+  --atlas-chart-grid: #1f2e49;
+  --atlas-chart-axis: #33476b;
+  --atlas-chart-label: #8d9bb1;
+  --atlas-series-1: #3987e5;
+  --atlas-series-2: #d95926;
+  --atlas-series-3: #199e70;
+  --atlas-series-4: #c98500;
+  --atlas-series-5: #d55181;
+  --atlas-series-6: #008300;
+  --atlas-series-7: #9085e9;
+  --atlas-series-8: #e66767;
+  --atlas-india: #ff4da6;
+
+  --atlas-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 36px -28px rgba(0, 0, 0, 0.85);
+  --atlas-shadow-pop: 0 20px 52px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.4);
+  --atlas-focus: #5b9cf0;
+
+  /* ownership tree */
+  --atlas-bark: #b07c4b;
+  --atlas-bark-dark: #7f5833;
+  --atlas-bark-selected: #d8ad78;
+  --atlas-bark-light: #d8ad78;
+  --atlas-bark-pale: #5b442c;
+  --atlas-seed: #b9d98d;
+  --atlas-seed-ink: #8fb562;
+  --atlas-ground: rgba(201, 177, 135, 0.12);
+  --atlas-canopy-a: rgba(137, 156, 91, 0.16);
+  --atlas-canopy-b: rgba(96, 128, 88, 0.18);
+  --atlas-canopy-c: rgba(74, 104, 133, 0.2);
+  --atlas-tree-root-bg: #1d1710;
+  --atlas-tree-node-selected: #2a2117;
+  --atlas-tree-node-selected-line: #b8894f;
+}
+
+/* ------------------------------------------------------------------ Tailwind bindings */
+@theme inline {
+  --font-sans: 'Manrope Variable', Manrope, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  --color-bg: var(--atlas-bg);
+  --color-surface: var(--atlas-surface);
+  --color-surface-2: var(--atlas-surface-2);
+  --color-surface-3: var(--atlas-surface-3);
+  --color-overlay: var(--atlas-overlay);
+
+  --color-ink: var(--atlas-ink);
+  --color-ink-2: var(--atlas-ink-2);
+  --color-muted: var(--atlas-muted);
+
+  --color-line: var(--atlas-line);
+  --color-line-strong: var(--atlas-line-strong);
+
+  --color-brand: var(--atlas-brand);
+  --color-brand-hover: var(--atlas-brand-hover);
+  --color-brand-soft: var(--atlas-brand-soft);
+  --color-brand-ink: var(--atlas-brand-ink);
+  --color-on-brand: var(--atlas-on-brand);
+  --color-navy: var(--atlas-navy);
+  --color-navy-2: var(--atlas-navy-2);
+  --color-navy-3: var(--atlas-navy-3);
+  --color-on-navy: var(--atlas-on-navy);
+  --color-on-navy-muted: var(--atlas-on-navy-muted);
+  --color-kpi: var(--atlas-kpi);
+  --color-kpi-soft: var(--atlas-kpi-soft);
+
+  --color-ok: var(--atlas-ok);
+  --color-ok-soft: var(--atlas-ok-soft);
+  --color-ok-ink: var(--atlas-ok-ink);
+  --color-bad: var(--atlas-bad);
+  --color-bad-soft: var(--atlas-bad-soft);
+  --color-bad-ink: var(--atlas-bad-ink);
+  --color-na: var(--atlas-na);
+  --color-na-soft: var(--atlas-na-soft);
+  --color-na-ink: var(--atlas-na-ink);
+  --color-warn: var(--atlas-warn);
+  --color-warn-soft: var(--atlas-warn-soft);
+  --color-warn-ink: var(--atlas-warn-ink);
+  --color-info: var(--atlas-info);
+  --color-info-soft: var(--atlas-info-soft);
+  --color-info-ink: var(--atlas-info-ink);
+  --color-india: var(--atlas-india);
+
+  --color-series-1: var(--atlas-series-1);
+  --color-series-2: var(--atlas-series-2);
+  --color-series-3: var(--atlas-series-3);
+  --color-series-4: var(--atlas-series-4);
+  --color-series-5: var(--atlas-series-5);
+  --color-series-6: var(--atlas-series-6);
+  --color-series-7: var(--atlas-series-7);
+  --color-series-8: var(--atlas-series-8);
+
+  --shadow-card: var(--atlas-shadow-card);
+  --shadow-pop: var(--atlas-shadow-pop);
+
+  --animate-fade-in: atlas-fade-in 160ms ease-out;
+  --animate-slide-in-right: atlas-slide-in-right 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-slide-in-left: atlas-slide-in-left 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-slide-in-up: atlas-slide-in-up 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-pop-in: atlas-pop-in 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-page-in: atlas-page-in 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-progress: atlas-progress 1.1s ease-in-out infinite;
+}
+
+@keyframes atlas-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes atlas-slide-in-right {
+  from { transform: translateX(24px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes atlas-slide-in-left {
+  from { transform: translateX(-24px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes atlas-slide-in-up {
+  from { transform: translateY(28px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes atlas-pop-in {
+  from { transform: translateY(4px) scale(0.98); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes atlas-page-in {
+  from { transform: translateY(6px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes atlas-progress {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+
+/* ------------------------------------------------------------------ base */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    /* Keep focused inputs and anchor targets clear of the sticky top bar and fixed phone tab bar. */
+    scroll-padding-top: calc(var(--atlas-topbar-h) + 12px);
+    scroll-padding-bottom: calc(var(--atlas-bottomnav-h) + env(safe-area-inset-bottom, 0px) + 12px);
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--atlas-bg);
+    background-image:
+      radial-gradient(1100px 640px at 92% -12%, color-mix(in srgb, var(--atlas-brand) 8%, transparent), transparent 66%),
+      radial-gradient(780px 520px at -4% 2%, color-mix(in srgb, var(--atlas-kpi) 4%, transparent), transparent 62%);
+    background-attachment: fixed;
+    color: var(--atlas-ink);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  :root[data-theme='dark'] body {
+    background-image:
+      radial-gradient(1100px 640px at 92% -12%, color-mix(in srgb, var(--atlas-brand) 18%, transparent), transparent 66%),
+      radial-gradient(780px 520px at -4% 2%, color-mix(in srgb, var(--atlas-kpi) 8%, transparent), transparent 62%);
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--atlas-brand) 22%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--atlas-focus);
+    outline-offset: 2px;
+  }
+  button,
+  [role='button'],
+  a {
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  h1, h2, h3, h4 {
+    letter-spacing: -0.022em;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--atlas-line-strong) transparent;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ small shared utilities */
+@utility atlas-link {
+  color: var(--atlas-brand-ink);
+  text-decoration: none;
+  text-underline-offset: 2px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@utility atlas-num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+}
+
+@utility atlas-scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide the scrollbar on horizontal tab strips while keeping the area scrollable. */
+@utility atlas-scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Fade the right edge of a horizontally scrolling strip to hint at more tabs. */
+@utility atlas-scroll-fade {
+  mask-image: linear-gradient(to right, black 0, black calc(100% - 24px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 0, black calc(100% - 24px), transparent 100%);
+}
+
+/* Fine dot field for the Overview hero; fades out toward the lower-left. */
+@utility atlas-hero-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.17) 1px, transparent 0);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(ellipse 78% 85% at 78% 12%, black 0%, transparent 72%);
+  -webkit-mask-image: radial-gradient(ellipse 78% 85% at 78% 12%, black 0%, transparent 72%);
+}
+
+/* Reserve room for the fixed mobile tab bar (0 on desktop). */
+@utility atlas-pb-nav {
+  padding-bottom: calc(var(--atlas-bottomnav-h) + env(safe-area-inset-bottom, 0px));
+}
+
+@utility atlas-safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Markdown rendered with <Markdown> (info cards, assistant replies, methodology). */
+@utility atlas-prose {
+  color: var(--atlas-ink);
+  line-height: 1.6;
+  & > * + * { margin-top: 0.65em; }
+  & h1, & h2, & h3, & h4 { font-weight: 650; line-height: 1.3; margin-top: 1.1em; }
+  & h1 { font-size: 1.35em; }
+  & h2 { font-size: 1.2em; }
+  & h3 { font-size: 1.05em; }
+  & a { color: var(--atlas-brand-ink); text-decoration: underline; text-underline-offset: 2px; }
+  & ul { list-style: disc; padding-left: 1.25em; }
+  & ol { list-style: decimal; padding-left: 1.25em; }
+  & li + li { margin-top: 0.25em; }
+  & strong { font-weight: 650; }
+  & code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background: var(--atlas-surface-3);
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+  }
+  & pre {
+    background: var(--atlas-surface-2);
+    border: 1px solid var(--atlas-line);
+    border-radius: 8px;
+    padding: 0.75em 1em;
+    overflow-x: auto;
+  }
+  & pre code { background: transparent; padding: 0; }
+  & blockquote {
+    border-left: 3px solid var(--atlas-line-strong);
+    padding-left: 0.85em;
+    color: var(--atlas-ink-2);
+  }
+  & table { width: 100%; font-size: 0.92em; border: 1px solid var(--atlas-line); border-radius: 8px; overflow: hidden; }
+  & th { text-align: left; background: var(--atlas-surface-2); font-weight: 600; }
+  & th, & td { padding: 0.4em 0.65em; border-bottom: 1px solid var(--atlas-line); }
+  & tr:last-child td { border-bottom: 0; }
+  & hr { border: 0; border-top: 1px solid var(--atlas-line); }
+}
+
+/* ------------------------------------------------------------------ print */
+@media print {
+  .atlas-no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff;
+  }
+  .atlas-main {
+    margin-left: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------------------------------------------------------------- flow connectors (value chains)
+   A stream of dots moving from one stage to the next; disabled by the reduced-motion rule above. */
+.atlas-flow-x,
+.atlas-flow-y {
+  --flow-color: var(--color-kpi);
+  display: block;
+  border-radius: 9999px;
+}
+.atlas-flow-x {
+  width: 2.25rem;
+  height: 3px;
+  background-image: radial-gradient(circle, var(--flow-color) 0 1.4px, transparent 1.6px);
+  background-size: 9px 3px;
+  animation: atlas-flow-x 0.8s linear infinite;
+}
+.atlas-flow-y {
+  width: 3px;
+  height: 1.5rem;
+  background-image: radial-gradient(circle, var(--flow-color) 0 1.4px, transparent 1.6px);
+  background-size: 3px 9px;
+  animation: atlas-flow-y 0.8s linear infinite;
+}
+@keyframes atlas-flow-x { to { background-position: 9px 0; } }
+@keyframes atlas-flow-y { to { background-position: 0 9px; } }
+@media (prefers-reduced-motion: reduce) {
+  .atlas-flow-x, .atlas-flow-y { animation: none; }
+}
+
+/* ---------------------------------------------------------------- ownership tree
+   A measured, organic tree: tapered bark branches, a trunk and ground, floating node cards
+   and seed markers. Connectors are desktop-only; the stacked layouts keep plain node rows. */
+.atlas-tree-node {
+  background: var(--atlas-surface);
+  border-color: color-mix(in srgb, var(--atlas-line-strong) 88%, transparent);
+  box-shadow: 0 1px 2px rgba(10, 28, 53, 0.04);
+}
+.atlas-tree-node:hover:not(:disabled) {
+  background: var(--atlas-surface-2);
+  border-color: var(--atlas-line-strong);
+}
+.atlas-tree-node[aria-pressed='true'] {
+  background: var(--atlas-tree-node-selected);
+  border-color: var(--atlas-tree-node-selected-line);
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--atlas-tree-node-selected-line) 18%, transparent),
+    0 1px 2px rgba(10, 28, 53, 0.05);
+}
+[data-theme='dark'] .atlas-tree-node {
+  box-shadow: none;
+}
+
+.atlas-tree-register {
+  border-color: color-mix(in srgb, var(--atlas-bark) 32%, var(--atlas-line));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--atlas-bark-pale) 28%, var(--atlas-surface)),
+    var(--atlas-surface) 62%
+  );
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, #ffffff 55%, transparent),
+    0 18px 38px -32px rgba(84, 58, 30, 0.55);
+}
+[data-theme='dark'] .atlas-tree-register {
+  box-shadow: 0 18px 38px -32px rgba(0, 0, 0, 0.8);
+}
+.atlas-tree-register::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 18px,
+    color-mix(in srgb, var(--atlas-bark) 7%, transparent) 18px 19px
+  );
+  opacity: 0.55;
+}
+.atlas-tree-register > * {
+  position: relative;
+  z-index: 1;
+}
+
+.atlas-tree-root {
+  background: var(--atlas-tree-root-bg);
+  border-color: color-mix(in srgb, var(--atlas-bark) 38%, transparent);
+  box-shadow:
+    0 12px 26px -20px rgba(74, 50, 24, 0.65),
+    inset 0 1px 0 color-mix(in srgb, #ffffff 50%, transparent);
+}
+[data-theme='dark'] .atlas-tree-root {
+  box-shadow:
+    0 14px 28px -18px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.atlas-tree-canopy {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(36px);
+}
+.atlas-tree-canopy-a { background: radial-gradient(circle, var(--atlas-canopy-a), transparent 68%); }
+.atlas-tree-canopy-b { background: radial-gradient(circle, var(--atlas-canopy-b), transparent 68%); }
+.atlas-tree-canopy-c { background: radial-gradient(circle, var(--atlas-canopy-c), transparent 68%); }
+
+.atlas-tree-branch {
+  transition: opacity 220ms ease;
+}
+.atlas-tree-halo {
+  filter: blur(7px);
+}
+.atlas-tree-motes {
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--atlas-seed) 75%, transparent));
+}
+.atlas-tree-tag {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid color-mix(in srgb, var(--atlas-bark) 36%, transparent);
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--atlas-surface) 90%, transparent);
+  padding: 1.5px 6px;
+  color: var(--atlas-bark-dark);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(10, 28, 53, 0.08);
+  backdrop-filter: blur(4px);
+}
+[data-theme='dark'] .atlas-tree-tag {
+  color: var(--atlas-bark-light);
+}
+@media (prefers-reduced-motion: reduce) {
+  .atlas-tree-motes { display: none; }
+}

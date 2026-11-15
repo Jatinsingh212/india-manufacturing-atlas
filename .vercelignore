@@ -1,0 +1,25 @@
+# Keep the upload small: Vercel builds the dashboard itself and the function only needs the slim, gzipped DB.
+node_modules
+frontend/node_modules
+frontend/dist
+**/__pycache__
+**/.pytest_cache
+backend/tests
+backend/data/atlas.db
+backend/data/atlas.db.bak
+backend/data/atlas.db-*
+backend/data/atlas.db.tmp
+backend/data/deploy/atlas.db
+backend/data/deploy/*.tmp
+backend/data/uploads
+backend/data/.jwt_secret
+backend/data/raw/*
+!backend/data/raw/manifest.json
+!backend/data/raw/cluster_observatory.json
+start.ps1
+start.sh
+
+.env.local
+.vercel
+.claude
+setup_cloud_sync.ps1

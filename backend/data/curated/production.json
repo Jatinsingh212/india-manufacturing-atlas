@@ -1,0 +1,148 @@
+{
+  "_note": "Real, sourced production figures for the Atlas value chains. Every row carries its source and the year of the figure. UNIDO INDSTAT 2026 reports gross output at basic prices for India (country code 356) in US dollars; the ISIC Rev.4 code is recorded in the source label. Rubber Board is the Government of India statutory body for natural rubber. ATMA is the automotive tyre manufacturers' industry association.",
+  "_sources": {
+    "unido_indstat": {
+      "name": "UNIDO INDSTAT 2026, ISIC Revision 4",
+      "url": "https://stat.unido.org",
+      "dataset": "INDSTAT 2026, ISIC Revision 4 (dataset 148)",
+      "country": "India (356)",
+      "variable": "Output (14), US dollars",
+      "licence": "UNIDO statistics portal terms of use"
+    },
+    "rubber_board": {
+      "name": "Rubber Board, Government of India",
+      "url": "https://rubberboard.gov.in",
+      "table": "Annual trends in area, production, consumption, import, export and average prices of natural rubber in India",
+      "year": "2023-24",
+      "licence": "Government of India public information"
+    },
+    "atma": {
+      "name": "Automotive Tyre Manufacturers Association (ATMA), Production Trend",
+      "url": "https://www.atmaindia.org.in/production-trend/",
+      "note": "Total tyre production in India, FY2022-23",
+      "licence": "ATMA India public information"
+    }
+  },
+  "rows": [
+    {
+      "scope": "chain",
+      "key": "tyre",
+      "label": "india_production",
+      "year": 2023,
+      "value": 217000000,
+      "unit": "units",
+      "source": "atma",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "tyre",
+      "label": "india_output",
+      "year": 2022,
+      "value": 12915508082,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "natural_rubber",
+      "label": "india_production",
+      "year": 2024,
+      "value": 857000,
+      "unit": "tonnes",
+      "source": "rubber_board",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "cotton_apparel",
+      "label": "india_production",
+      "year": 2022,
+      "value": 19245687346,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "auto_components",
+      "label": "india_production",
+      "year": 2022,
+      "value": 62206594362,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "pharma_api",
+      "label": "india_production",
+      "year": 2022,
+      "value": 60518862486,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "mobile_electronics",
+      "label": "india_production",
+      "year": 2022,
+      "value": 31316374709,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "solar_pv",
+      "label": "india_production",
+      "year": 2022,
+      "value": 8463336089,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "steel",
+      "label": "india_production",
+      "year": 2022,
+      "value": 195434260701,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "ev_battery",
+      "label": "india_production",
+      "year": 2022,
+      "value": 8296031392,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "leather_footwear",
+      "label": "india_production",
+      "year": 2022,
+      "value": 7004349421,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    },
+    {
+      "scope": "chain",
+      "key": "toys",
+      "label": "india_production",
+      "year": 2022,
+      "value": 386999532,
+      "unit": "USD",
+      "source": "unido_indstat",
+      "status": "verified"
+    }
+  ]
+}

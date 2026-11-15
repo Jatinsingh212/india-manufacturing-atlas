@@ -1,0 +1,21 @@
+# Local-only: secrets, Vercel link, caches and build output
+.vercel
+.env*
+.claude
+node_modules
+frontend/node_modules
+frontend/dist
+frontend/out
+frontend/out-public
+**/__pycache__
+**/.pytest_cache
+
+# Full local databases (the deploy uses backend/data/deploy/atlas.db.gz, which IS committed)
+backend/data/atlas.db
+backend/data/atlas.db.bak
+backend/data/atlas.db-*
+backend/data/atlas.db.tmp
+backend/data/deploy/atlas.db
+backend/data/deploy/*.tmp
+backend/data/uploads
+backend/data/.jwt_secret

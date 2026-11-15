@@ -1,0 +1,413 @@
+{
+  "_note": "Operational seed data for the India Manufacturing Atlas, loaded by scripts/etl/seed_ops.py. DEMO ONLY: demo_password is stored here in plain text solely so the seeder can hash it (pbkdf2_sha256, 200000 iterations, 16-byte salt) and so README can list it; change or disable demo accounts (ATLAS_DEMO_MODE=0) before any real deployment. data_sources: last_refreshed / records are computed at seed time from data/raw/manifest.json (keys or key prefix), falling back to the source file's modification time and a COUNT(*) over the table the ETL loaded from it. tickets: routed_ministry_id is resolved at seed time from products.ministry_id (residual -> dpiit); a ticket whose hsn8 is not in products is skipped; message author 'submitter' | 'routed_ministry' (the demo ministry user of the routed ministry, else the admin) | 'admin'; {ministry_name}, {ministry_short}, {hsn8} and {description} in message bodies are filled in at seed time. residual_claims: pending claims are generated at seed time on actual residual products (see the 'residual_claims' block). production: real, sourced production figures loaded from data/curated/production.json (UNIDO INDSTAT 2026, Rubber Board, ATMA); every row carries its source and reference year.",
+  "demo_password": "Atlas@2026",
+  "users": [
+    {
+      "email": "admin@atlas.gov.in",
+      "name": "Atlas Administrator (demo)",
+      "role": "admin",
+      "ministry_id": null,
+      "organisation": "DPIIT - Atlas Programme Office",
+      "is_demo": 1
+    },
+    {
+      "email": "textiles@atlas.gov.in",
+      "name": "Textiles Desk Officer (demo)",
+      "role": "ministry",
+      "ministry_id": "mot",
+      "organisation": "Ministry of Textiles",
+      "is_demo": 1
+    },
+    {
+      "email": "dpiit@atlas.gov.in",
+      "name": "DPIIT Desk Officer (demo)",
+      "role": "ministry",
+      "ministry_id": "dpiit",
+      "organisation": "Department for Promotion of Industry and Internal Trade",
+      "is_demo": 1
+    },
+    {
+      "email": "analyst@atlas.gov.in",
+      "name": "Policy Analyst (demo)",
+      "role": "analyst",
+      "ministry_id": null,
+      "organisation": "DPIIT - Policy Analytics Unit",
+      "is_demo": 1
+    },
+    {
+      "email": "industry@example.com",
+      "name": "Industry User (demo)",
+      "role": "industry",
+      "ministry_id": null,
+      "organisation": "Example Manufacturing Pvt Ltd",
+      "is_demo": 1
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "oec_baci",
+      "name": "CEPII BACI world trade (via OEC API)",
+      "owner": "CEPII; served by the Observatory of Economic Complexity (OEC)",
+      "kind": "api",
+      "status": "connected",
+      "url": "https://oec.world",
+      "licence": "BACI: Etalab Open Licence 2.0",
+      "description": "HS6 bilateral trade (US$) reconciled from UN Comtrade by CEPII: India's exports and imports 2018-2024, world trade per product, India's partners and every exporter / importer per product for 2024. Fetched from the OEC tesseract API (cubes trade_i_baci_a_17 and trade_i_baci_a_22).",
+      "refresh_cron": "0 2 1 * *",
+      "manifest_prefix": "oec_",
+      "file": null,
+      "records_table": "trade_hs6"
+    },
+    {
+      "id": "wits_trains",
+      "name": "World Bank WITS - UNCTAD TRAINS tariffs",
+      "owner": "World Bank (WITS) / UNCTAD (TRAINS)",
+      "kind": "api",
+      "status": "connected",
+      "url": "https://wits.worldbank.org",
+      "licence": "WITS terms of use (TRAINS data by UNCTAD)",
+      "description": "India's MFN applied tariffs (reported, 2022) as HS6 simple averages of national tariff lines, with minimum, maximum and the number of non-ad-valorem lines. Used for the BCD / MFN column.",
+      "refresh_cron": "0 3 1 */3 *",
+      "manifest_prefix": "wits_",
+      "file": null,
+      "records_table": "tariffs"
+    },
+    {
+      "id": "gst_hsn",
+      "name": "GST HSN master (India 8-digit codes)",
+      "owner": "GST portal (GSTN / CBIC)",
+      "kind": "file",
+      "status": "connected",
+      "url": "https://www.gst.gov.in",
+      "licence": "Government of India public information",
+      "description": "HSN_MSTR sheet of the GST portal's HSN/SAC master: India's 8-digit lines and descriptions, the backbone of the Atlas's product list (lines whose HS6 is valid in HS 2022).",
+      "refresh_cron": null,
+      "manifest_keys": [
+        "gst_hsn_master"
+      ],
+      "file": "data/raw/gst_hsn_master.xlsx",
+      "records_table": "products"
+    },
+    {
+      "id": "hs_nomenclature",
+      "name": "WCO HS 2022 nomenclature",
+      "owner": "World Customs Organization (via UN Comtrade / datahub.io)",
+      "kind": "file",
+      "status": "connected",
+      "url": "https://datahub.io/core/harmonized-system",
+      "licence": null,
+      "description": "Sections, chapters, headings and subheadings of HS 2022 with descriptions; used for the code hierarchy, display labels and validation of curated codes.",
+      "refresh_cron": null,
+      "manifest_keys": [
+        "hs_nomenclature"
+      ],
+      "file": "data/raw/hs_nomenclature.csv",
+      "records_table": "hs_nodes"
+    },
+    {
+      "id": "un_comtrade",
+      "name": "UN Comtrade (public preview API)",
+      "owner": "United Nations Statistics Division",
+      "kind": "api",
+      "status": "not_refreshed",
+      "url": "https://comtradeplus.un.org",
+      "licence": "UN Comtrade terms of use",
+      "description": "India's reported exports and imports (2023) for the HS6 codes in the curated value chains, used to cross-validate BACI values. Public preview endpoint, no key required (rate-limited).",
+      "refresh_cron": "0 4 1 * *",
+      "manifest_keys": [],
+      "file": null,
+      "records_sql": "SELECT COUNT(*) FROM comtrade_checks",
+      "refreshed_sql": "SELECT MAX(checked_at) FROM comtrade_checks"
+    },
+    {
+      "id": "cbic",
+      "name": "CBIC Customs Tariff / ICEGATE",
+      "owner": "Central Board of Indirect Taxes and Customs (Department of Revenue)",
+      "kind": "api",
+      "status": "not_configured",
+      "url": "https://www.icegate.gov.in",
+      "licence": null,
+      "description": "Live Basic Customs Duty, AIDC / SWS and duty notifications at 8-digit tariff-line level. Needs an API access arrangement with CBIC / ICEGATE and credentials: set ATLAS_CBIC_API_KEY (and the endpoint in ATLAS_CBIC_API_URL) to enable the connector.",
+      "refresh_cron": null,
+      "manifest_keys": [],
+      "file": null
+    },
+    {
+      "id": "gstn",
+      "name": "GSTN HSN-wise supply data",
+      "owner": "Goods and Services Tax Network",
+      "kind": "api",
+      "status": "not_configured",
+      "url": "https://www.gstn.org.in",
+      "licence": null,
+      "description": "Aggregated HSN-wise domestic outward supplies (from GST returns) as a domestic production / consumption signal. Needs a data-sharing arrangement with GSTN that provides only aggregated, non-taxpayer-identifiable data, plus API credentials: set ATLAS_GSTN_API_KEY to enable the connector.",
+      "refresh_cron": null,
+      "manifest_keys": [],
+      "file": null
+    },
+    {
+      "id": "dgft",
+      "name": "DGFT credentialed trade API (connector)",
+      "owner": "Directorate General of Foreign Trade",
+      "kind": "api",
+      "status": "not_configured",
+      "url": "https://www.dgft.gov.in",
+      "licence": null,
+      "description": "Credentialed DGFT API connector for official trade data and authenticated feeds. Needs DGFT onboarding and credentials: set ATLAS_DGFT_API_KEY to enable the connector. The public ITC-HS policy tables are ingested separately as dgft_itc_hs, not through this connector.",
+      "refresh_cron": null,
+      "manifest_keys": [],
+      "file": null
+    },
+    {
+      "id": "dgft_itc_hs",
+      "name": "DGFT public ITC-HS import / export policy",
+      "owner": "Directorate General of Foreign Trade",
+      "kind": "api",
+      "status": "connected",
+      "url": "https://www.dgft.gov.in/CP/?opt=itchs-import-export",
+      "licence": "Government of India public information",
+      "description": "8-digit ITC-HS Schedule I (import) and Schedule II (export) policy, conditions and notifications, fetched from the public DGFT Discover page's getChapterDetails endpoint. The public page needs only its own CSRF token: no login, OTP, CAPTCHA or access-control bypass. All 25,187 published records are kept, including duplicates; the last portal record of each code and direction is treated as current.",
+      "refresh_cron": "0 5 * * 1",
+      "manifest_keys": [
+        "dgft_itc_hs"
+      ],
+      "file": "data/raw/dgft_itc/dgft_itc_policy.jsonl.gz",
+      "records_table": "dgft_itc_policy"
+    },
+    {
+      "id": "unido_indstat",
+      "name": "UNIDO INDSTAT 2026, ISIC Revision 4",
+      "owner": "United Nations Industrial Development Organization (UNIDO)",
+      "kind": "file",
+      "status": "connected",
+      "url": "https://stat.unido.org",
+      "licence": "UNIDO statistics portal terms of use",
+      "description": "India's gross manufacturing output at basic prices by ISIC Rev.4 activity, in US dollars. The Atlas uses 4-digit output for 2022 for the value chains: 1410 apparel, 1520 footwear, 2100 pharmaceuticals, 2211 tyres, 2410 iron and steel, 2630 communication equipment, 2720 batteries, 2790 other electrical equipment, 2930 motor-vehicle parts and 3240 games and toys.",
+      "refresh_cron": null,
+      "manifest_keys": [],
+      "file": "data/curated/production.json",
+      "records_sql": "SELECT COUNT(*) FROM production WHERE source = 'unido_indstat'"
+    },
+    {
+      "id": "rubber_board",
+      "name": "Rubber Board, Government of India - natural rubber statistics",
+      "owner": "Rubber Board, Government of India (Department of Commerce)",
+      "kind": "file",
+      "status": "connected",
+      "url": "https://rubberboard.gov.in",
+      "licence": "Government of India public information",
+      "description": "Annual natural rubber area, production, consumption, imports, exports and prices. The Atlas uses India's natural rubber production of 857,000 tonnes in 2023-24.",
+      "refresh_cron": null,
+      "manifest_keys": [],
+      "file": "data/curated/production.json",
+      "records_sql": "SELECT COUNT(*) FROM production WHERE source = 'rubber_board'"
+    },
+    {
+      "id": "atma",
+      "name": "ATMA India - tyre production trend",
+      "owner": "Automotive Tyre Manufacturers Association (ATMA)",
+      "kind": "file",
+      "status": "connected",
+      "url": "https://www.atmaindia.org.in/production-trend/",
+      "licence": "ATMA India public information",
+      "description": "Total tyre production in India by category. The Atlas uses 217 million units for FY2022-23, the latest complete year on ATMA's production trend.",
+      "refresh_cron": null,
+      "manifest_keys": [],
+      "file": "data/curated/production.json",
+      "records_sql": "SELECT COUNT(*) FROM production WHERE source = 'atma'"
+    },
+    {
+      "id": "icai_patna",
+      "name": "ICAI Patna - Institute of Chartered Accountants of India",
+      "owner": "Institute of Chartered Accountants of India (ICAI), Patna Branch",
+      "kind": "manual",
+      "status": "not_refreshed",
+      "url": "https://icaipatna.org/",
+      "licence": null,
+      "description": "ICAI Patna branch - professional body for Chartered Accountants in Bihar. Reference resource for accounting, tax and trade-related guidance used by industry and practitioners.",
+      "refresh_cron": null,
+      "manifest_keys": [],
+      "file": null
+    },
+    {
+      "id": "icegate_trade_guide",
+      "name": "ICEGATE Trade Guide on Imports",
+      "owner": "Central Board of Indirect Taxes and Customs (CBIC / ICEGATE)",
+      "kind": "manual",
+      "status": "not_refreshed",
+      "url": "https://www.icegate.gov.in/Webappl/Trade-Guide-on-Imports",
+      "licence": null,
+      "description": "ICEGATE Trade Guide on Imports - India's customs portal guidance on import procedures, documentation, classification and trade compliance.",
+      "refresh_cron": null,
+      "manifest_keys": [],
+      "file": null
+    },
+    {
+      "id": "cluster_observatory",
+      "name": "Cluster Observatory - MSME cluster register",
+      "owner": "Foundation for MSME Clusters (supported by DST)",
+      "kind": "api",
+      "status": "connected",
+      "url": "https://www.clusterobservatory.in/clustermap.php",
+      "licence": "Public website; cite the Foundation for MSME Clusters",
+      "description": "Industrial, handloom and handicraft clusters of India (name, state, product, diagnostic-study PDF), scraped daily from the Observatory's cluster register. HS codes are the Atlas' curated mapping of the Observatory's product labels.",
+      "refresh_cron": "0 4 * * *",
+      "refreshed_sql": "SELECT MAX(fetched_at) FROM co_clusters",
+      "records_table": "co_clusters",
+      "file": null
+    },
+    {
+      "id": "wits_markets",
+      "name": "WITS - destination-market MFN tariffs",
+      "owner": "World Bank (WITS) / UNCTAD (TRAINS)",
+      "kind": "api",
+      "status": "connected",
+      "url": "https://wits.worldbank.org",
+      "licence": "WITS terms of use (TRAINS data by UNCTAD)",
+      "description": "MFN applied tariffs at HS6 of India's main export markets (US, EU, UK, UAE, Australia, Japan, Canada). Combined with trade agreements and additional duties on Indian goods to give the duty an Indian exporter pays.",
+      "refresh_cron": "0 5 * * 1",
+      "records_table": "market_tariffs",
+      "file": "data/raw/market_tariffs.json"
+    },
+    {
+      "id": "iilb",
+      "name": "India Industrial Land Bank - park report",
+      "owner": "DPIIT; built by BISAG-N",
+      "kind": "api",
+      "status": "connected",
+      "url": "https://indiaindustriallandbank.gov.in/exploreParkReport",
+      "licence": "Public portal (Government of India)",
+      "description": "Every industrial park on the public IILB Park Report (no login): state, district, park type, sector, total and available land (ha), plug-and-play, land category and last update. Read daily with a headless browser that shows all entries; the IIS 2.0 API (ATLAS_IILB_ACCESS_TOKEN + ATLAS_IILB_STATE_LGCS) can replace it and adds coordinates and vacant plots.",
+      "refresh_cron": "0 4 * * *",
+      "file": null,
+      "refreshed_sql": "SELECT MAX(fetched_at) FROM iilb_parks",
+      "records_table": "iilb_parks"
+    }
+  ],
+  "tickets": [
+    {
+      "hsn8": "59021010",
+      "subject": "Classification and nodal ministry for rubber-impregnated nylon tyre cord fabric",
+      "body": "We manufacture nylon tyre cord fabric that is dipped and impregnated with a rubber-latex compound and supplied to tyre makers. Please confirm whether 59021010 (tyre cord fabric of nylon or other polyamides, impregnated with rubber) is the correct 8-digit line, and which Ministry handles industry representations on this product.",
+      "category": "classification",
+      "submitter": "industry@example.com",
+      "submitter_name": "Industry User (demo)",
+      "submitter_org": "Example Manufacturing Pvt Ltd",
+      "submitter_email": "industry@example.com",
+      "status": "resolved",
+      "created_at": "2026-09-08T05:30:00+00:00",
+      "updated_at": "2026-09-11T10:15:00+00:00",
+      "messages": [
+        {
+          "author": "routed_ministry",
+          "ts": "2026-09-10T06:45:00+00:00",
+          "body": "Tyre cord fabric of high-tenacity nylon yarn falls under heading 5902, and line {hsn8} covers such fabric when impregnated with rubber. The Atlas maps this line to {ministry_name}; the Atlas value-chain mapping lists the Ministry of Textiles for tyre cord fabric (heading 5902). This reply is informational; a binding classification can be obtained through a CBIC advance ruling."
+        },
+        {
+          "author": "submitter",
+          "ts": "2026-09-11T10:15:00+00:00",
+          "body": "Thank you, this answers our query. Please close the ticket."
+        }
+      ]
+    },
+    {
+      "hsn8": "61091000",
+      "subject": "Applicable BCD on cotton knitted T-shirts and monitoring of FTA imports",
+      "body": "We export cotton knitted T-shirts. Could the Ministry confirm the Basic Customs Duty currently applicable to 61091000, and say whether imports of cotton T-shirts from FTA partner countries are being monitored? The Atlas shows the WITS / UNCTAD TRAINS MFN applied average for this subheading.",
+      "category": "tariff",
+      "submitter": null,
+      "submitter_name": "Export Compliance Cell",
+      "submitter_org": "Knitwear exporter (guest submission)",
+      "submitter_email": null,
+      "status": "in_progress",
+      "created_at": "2026-09-29T08:20:00+00:00",
+      "updated_at": "2026-10-01T11:05:00+00:00",
+      "messages": [
+        {
+          "author": "routed_ministry",
+          "ts": "2026-10-01T11:05:00+00:00",
+          "body": "Thank you. {ministry_name} has taken up the query on FTA imports with its trade policy division. For the legally applicable duty please refer to the CBIC Customs Tariff on ICEGATE; the rate shown in the Atlas is India's 2022 WITS / UNCTAD TRAINS MFN applied average."
+        }
+      ]
+    },
+    {
+      "hsn8": "85414300",
+      "subject": "Incentives for a new high-efficiency solar module line",
+      "body": "We are planning a new high-efficiency solar PV module line. Which central incentives apply to 85414300 (photovoltaic cells assembled in modules or made up into panels), and do they require domestically manufactured cells?",
+      "category": "policy_support",
+      "submitter": "industry@example.com",
+      "submitter_name": "Industry User (demo)",
+      "submitter_org": "Example Manufacturing Pvt Ltd",
+      "submitter_email": "industry@example.com",
+      "status": "open",
+      "created_at": "2026-10-14T04:40:00+00:00",
+      "updated_at": "2026-10-15T07:10:00+00:00",
+      "messages": [
+        {
+          "author": "submitter",
+          "ts": "2026-10-15T07:10:00+00:00",
+          "body": "Additional detail: we would also like to know whether wafers (3818) and polysilicon (280461) imported for an integrated line are covered by any scheme."
+        }
+      ]
+    },
+    {
+      "hsn8": "85076000",
+      "subject": "Nodal ministry for lithium-ion cells used in EV battery packs",
+      "body": "We assemble EV battery packs from imported lithium-ion cells classified under 85076000. Which Ministry should we approach on cell-level duties, and how does this line relate to the PLI scheme for Advanced Chemistry Cell battery storage?",
+      "category": "classification",
+      "submitter": "industry@example.com",
+      "submitter_name": "Industry User (demo)",
+      "submitter_org": "Example Manufacturing Pvt Ltd",
+      "submitter_email": "industry@example.com",
+      "status": "in_progress",
+      "created_at": "2026-10-06T09:00:00+00:00",
+      "updated_at": "2026-10-08T05:25:00+00:00",
+      "messages": [
+        {
+          "author": "routed_ministry",
+          "ts": "2026-10-08T05:25:00+00:00",
+          "body": "The Atlas maps {hsn8} ({description}) to {ministry_name}. Advanced Chemistry Cell manufacturing is promoted under the PLI scheme for ACC battery storage administered by the Ministry of Heavy Industries; the query has been shared with the concerned division for a reply on duties."
+        }
+      ]
+    },
+    {
+      "hsn8": "95030090",
+      "subject": "BIS certification for imported toys",
+      "body": "We import educational toys classified under heading 9503. Do these toys need BIS certification before they can be sold in India?",
+      "category": "policy_support",
+      "submitter": null,
+      "submitter_name": "Import Desk",
+      "submitter_org": "Toy importer (guest submission)",
+      "submitter_email": null,
+      "status": "resolved",
+      "created_at": "2026-09-16T06:00:00+00:00",
+      "updated_at": "2026-09-18T09:30:00+00:00",
+      "messages": [
+        {
+          "author": "routed_ministry",
+          "ts": "2026-09-18T09:30:00+00:00",
+          "body": "Yes. Under the Toys (Quality Control) Order, 2020, toys must conform to IS 9873 (and IS 15644 for electric toys) and carry the BIS Standard Mark; this applies to domestic and imported toys alike, and foreign manufacturers need a BIS licence. The covered codes are listed in the QCO tab of the Policy Workbench."
+        }
+      ]
+    }
+  ],
+  "residual_claims": {
+    "_note": "Generated at seed time: residual products (mapping_status='residual', chapters 98/99 excluded) are scanned in hsn8 order; the plausible owner is the most common primary ministry among accepted lines of the same HS4 heading (else HS2 chapter). One claim is created for each ministry in prefer_ministries (in that order) where such a product exists, topped up with other ministries until 'count' claims exist. claimed_by = the demo ministry user of that ministry, else the admin.",
+    "count": 3,
+    "status": "pending",
+    "prefer_ministries": [
+      "mot",
+      "dpiit"
+    ],
+    "exclude_chapters": [
+      "98",
+      "99"
+    ],
+    "created_at": [
+      "2026-10-12T06:30:00+00:00",
+      "2026-10-13T08:10:00+00:00",
+      "2026-10-16T05:45:00+00:00"
+    ],
+    "justification_template": "In the Atlas mapping, {ministry_name} already owns {n_siblings} accepted line(s) under heading {hs4} ({hs4_description}). This residual line ({description}) belongs to the same product domain, so we request that it be assigned to {ministry_short}."
+  }
+}

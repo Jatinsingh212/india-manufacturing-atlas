@@ -1,0 +1,251 @@
+ts_id,ts_name,atlas_id,iso3,name,continent,create
+1,AFGHANISTAN,asafg,AFG,,,0
+101,DENMARK,eudnk,DNK,,,0
+102,DJIBOUTI,afdji,DJI,,,0
+103,DOMINIC REP,nadom,DOM,,,0
+105,DOMINICA,nadma,DMA,,,0
+109,ECUADOR,saecu,ECU,,,0
+11,ANGOLA,afago,AGO,,,0
+111,EGYPT A RP,afegy,EGY,,,0
+113,EL SALVADOR,naslv,SLV,,,0
+114,ESTONIA,euest,EST,,,0
+115,ETHIOPIA,afeth,ETH,,,0
+116,ERITREA,aferi,ERI,,,0
+117,EQUTL GUINEA,afgnq,GNQ,,,0
+12,ANGUILLA,naaia,AIA,,,0
+121,FAROE IS.,xxfro,FRO,Faroe Islands,Europe,1
+122,JERSEY,xxjey,JEY,Jersey,Europe,1
+123,FALKLAND IS,saflk,FLK,,,0
+124,GUERNSEY,xxggy,GGY,Guernsey,Europe,1
+125,FINLAND,eufin,FIN,,,0
+127,FIJI IS,ocfji,FJI,Fiji,Oceania,1
+129,FRANCE,eufra,FRA,,,0
+13,ANTIGUA,naatg,ATG,,,0
+131,FR GUIANA,xxguf,GUF,French Guiana,South America,1
+133,FR POLYNESIA,ocpyf,PYF,,,0
+135,FR S ANT TR,xxatf,ATF,,,0
+14,ANTARTICA,xxata,ATA,Antarctica,Other,1
+141,GABON,afgab,GAB,,,0
+143,GAMBIA,afgmb,GMB,,,0
+145,GEORGIA,asgeo,GEO,,,0
+147,GERMANY,eudeu,DEU,,,0
+149,GHANA,afgha,GHA,,,0
+15,ARGENTINA,saarg,ARG,,,0
+151,GIBRALTAR,eugib,GIB,,,0
+155,GREECE,eugrc,GRC,,,0
+157,GREENLAND,nagrl,GRL,,,0
+159,GRENADA,nagrd,GRD,,,0
+16,ARMENIA,asarm,ARM,,,0
+161,GUADELOUPE,xxglp,GLP,Guadeloupe,North America,1
+163,GUAM,ocgum,GUM,,,0
+165,GUATEMALA,nagtm,GTM,,,0
+167,GUINEA,afgin,GIN,,,0
+169,GUINEA BISSAU,afgnb,GNB,,,0
+17,AUSTRALIA,ocaus,AUS,,,0
+171,GUYANA,saguy,GUY,,,0
+175,HAITI,nahti,HTI,,,0
+176,HEARD MACDONALD,xxhmd,HMD,Heard and McDonald Islands,Other,1
+177,HONDURAS,nahnd,HND,,,0
+179,HONG KONG,ashkg,HKG,,,0
+181,HUNGARY,euhun,HUN,,,0
+185,ICELAND,euisl,ISL,,,0
+187,INDONESIA,asidn,IDN,,,0
+189,IRAN,asirn,IRN,,,0
+19,AUSTRIA,euaut,AUT,,,0
+191,IRAQ,asirq,IRQ,,,0
+193,IRELAND,euirl,IRL,,,0
+195,ISRAEL,asisr,ISR,,,0
+196,STATE OF PALEST,aspse,PSE,,,0
+197,ITALY,euita,ITA,,,0
+198,VATICAN CITY,xxvat,VAT,Vatican City,Europe,1
+199,COTE D&#039; IVOIRE,afciv,CIV,,,0
+2,INSTALLATIONS IN INTERNATIONAL WATERS,xxuns,XXX,Unspecified / other,Other,1
+20,ARUBA,naabw,ABW,,,0
+203,JAMAICA,najam,JAM,,,0
+205,JAPAN,asjpn,JPN,,,0
+207,JORDAN,asjor,JOR,,,0
+21,AZERBAIJAN,asaze,AZE,,,0
+212,KAZAKHSTAN,askaz,KAZ,,,0
+213,KENYA,afken,KEN,,,0
+214,KIRIBATI REP,ockir,KIR,Kiribati,Oceania,1
+215,KOREA DP RP,asprk,PRK,,,0
+216,KYRGHYZSTAN,askgz,KGZ,,,0
+217,KOREA RP,askor,KOR,,,0
+219,KUWAIT,askwt,KWT,,,0
+223,LAO PD RP,aslao,LAO,,,0
+224,LATVIA,eulva,LVA,,,0
+225,LEBANON,aslbn,LBN,,,0
+227,LESOTHO,aflso,LSO,,,0
+229,LIBERIA,aflbr,LBR,,,0
+23,BAHAMAS,nabhs,BHS,,,0
+231,LIBYA,aflby,LBY,,,0
+233,LIECHTENSTEIN,xxlie,LIE,Liechtenstein,Europe,1
+234,LITHUANIA,eultu,LTU,,,0
+235,LUXEMBOURG,eulux,LUX,,,0
+239,MACAO,asmac,MAC,,,0
+240,MACEDONIA,eumkd,MKD,,,0
+241,MADAGASCAR,afmdg,MDG,,,0
+243,MALAWI,afmwi,MWI,,,0
+245,MALAYSIA,asmys,MYS,,,0
+247,MALDIVES,asmdv,MDV,,,0
+249,MALI,afmli,MLI,,,0
+25,BAHARAIN IS,asbhr,BHR,,,0
+251,MALTA,eumlt,MLT,,,0
+252,MARSHALL ISLAND,ocmhl,MHL,,,0
+253,MARTINIQUE,xxmtq,MTQ,Martinique,North America,1
+255,MAURITANIA,afmrt,MRT,,,0
+256,MICRONESIA,ocfsm,FSM,,,0
+257,MAURITIUS,afmus,MUS,,,0
+258,MYANMAR,asmmr,MMR,,,0
+259,MEXICO,namex,MEX,,,0
+260,MOLDOVA,eumda,MDA,,,0
+261,MONGOLIA,asmng,MNG,,,0
+262,MONACO,xxmco,MCO,Monaco,Europe,1
+263,MONTSERRAT,namsr,MSR,,,0
+265,MOROCCO,afmar,MAR,,,0
+267,MOZAMBIQUE,afmoz,MOZ,,,0
+269,NAMIBIA,afnam,NAM,,,0
+27,BANGLADESH PR,asbgd,BGD,Bangladesh,Asia,1
+271,NAURU RP,ocnru,NRU,Nauru,Oceania,1
+273,NEPAL,asnpl,NPL,,,0
+275,NETHERLAND,eunld,NLD,,,0
+276,CURACAO,nacuw,CUW,,,0
+277,NETHERLANDANTIL,nacuw,CUW,,,0
+278,SINT MAARTEN (DUTCH PART),xxsxm,SXM,Sint Maarten,North America,1
+279,NEUTRAL ZONE,assau,SAU,,,0
+281,NEW CALEDONIA,ocncl,NCL,,,0
+285,NEW ZEALAND,ocnzl,NZL,,,0
+287,NICARAGUA,nanic,NIC,,,0
+289,NIGER,afner,NER,,,0
+29,BARBADOS,nabrb,BRB,,,0
+291,NIGERIA,afnga,NGA,,,0
+293,NIUE IS,xxniu,NIU,Niue,Oceania,1
+294,N. MARIANA IS.,ocmnp,MNP,,,0
+295,NORFOLK IS,ocnfk,NFK,,,0
+297,NORWAY,eunor,NOR,,,0
+3,ALBANIA,eualb,ALB,,,0
+301,OMAN,asomn,OMN,,,0
+307,PACIFIC IS,ocfsm,FSM,,,0
+309,PAKISTAN IR,aspak,PAK,Pakistan,Asia,1
+31,BELIZE,nablz,BLZ,,,0
+310,PALAU,ocplw,PLW,,,0
+311,PANAMA REPUBLIC,napan,PAN,Panama,North America,1
+313,PANAMA C Z,napan,PAN,Panama,North America,1
+315,PAPUA N GNA,ocpng,PNG,,,0
+317,PARAGUAY,sapry,PRY,,,0
+319,PERU,saper,PER,,,0
+321,PITCAIRN IS.,ocpcn,PCN,,,0
+323,PHILIPPINES,asphl,PHL,,,0
+325,POLAND,eupol,POL,,,0
+327,PORTUGAL,euprt,PRT,,,0
+329,TIMOR LESTE,astls,TLS,,,0
+33,BELGIUM,eubel,BEL,,,0
+331,PUERTO RICO,xxpri,PRI,Puerto Rico,North America,1
+335,QATAR,asqat,QAT,,,0
+339,REUNION,xxreu,REU,Reunion,Africa,1
+34,MAYOTTE,xxmyt,MYT,Mayotte,Africa,1
+343,ROMANIA,eurou,ROU,,,0
+344,RUSSIA,eurus,RUS,,,0
+345,RWANDA,afrwa,RWA,,,0
+346,SAN MARINO,eusmr,SMR,,,0
+347,SAHARWI A.DM RP,xxesh,ESH,Western Sahara,Africa,1
+349,SAO TOME,afstp,STP,,,0
+35,BENIN,afben,BEN,,,0
+351,SAUDI ARAB,assau,SAU,,,0
+352,SERBIA,eusrb,SRB,,,0
+353,SENEGAL,afsen,SEN,,,0
+354,UNION OF SERBIA &amp; MONTENEGRO,eusrb,SRB,,,0
+355,SEYCHELLES,afsyc,SYC,,,0
+356,MONTENEGRO,eumne,MNE,,,0
+357,SIERRA LEONE,afsle,SLE,,,0
+358,SLOVAK REP,eusvk,SVK,,,0
+359,SINGAPORE,assgp,SGP,,,0
+360,SLOVENIA,eusvn,SVN,,,0
+361,SOLOMON IS,ocslb,SLB,,,0
+363,SOMALIA,afsom,SOM,,,0
+365,SOUTH AFRICA,afzaf,ZAF,,,0
+367,SPAIN,euesp,ESP,,,0
+369,SRI LANKA DSR,aslka,LKA,Sri Lanka,Asia,1
+37,BERMUDA,nabmu,BMU,,,0
+371,ST HELENA,afshn,SHN,,,0
+373,ST KITT N A,nakna,KNA,,,0
+375,ST LUCIA,nalca,LCA,,,0
+377,ST PIERRE,naspm,SPM,,,0
+379,ST VINCENT,navct,VCT,,,0
+38,BHUTAN,asbtn,BTN,,,0
+381,SUDAN,afsdn,SDN,,,0
+382,SOUTH SUDAN,afssd,SSD,,,0
+383,SURINAME,sasur,SUR,,,0
+385,SWAZILAND,afswz,SWZ,,,0
+387,SWEDEN,euswe,SWE,,,0
+389,SWITZERLAND,euche,CHE,,,0
+39,BOLIVIA,sabol,BOL,,,0
+391,SYRIA,assyr,SYR,,,0
+393,TAJIKISTAN,astjk,TJK,,,0
+395,TANZANIA REP,aftza,TZA,,,0
+397,THAILAND,astha,THA,,,0
+399,TOGO,aftgo,TGO,,,0
+4,BRITISH INDIAN,asiot,IOT,,,0
+40,BOSNIA-HRZGOVIN,eubih,BIH,,,0
+401,TOKELAU IS,octkl,TKL,,,0
+403,TONGA,octon,TON,,,0
+405,TRINIDAD,natto,TTO,,,0
+407,TUNISIA,aftun,TUN,,,0
+409,TURKEY,astur,TUR,Turkey,Asia,1
+41,BOTSWANA,afbwa,BWA,,,0
+410,TURKMENISTAN,astkm,TKM,,,0
+411,TURKS C IS,natca,TCA,,,0
+413,TUVALU,octuv,TUV,,,0
+417,UGANDA,afuga,UGA,,,0
+419,U ARAB EMTS,asare,ARE,,,0
+421,U K,eugbr,GBR,,,0
+422,UKRAINE,euukr,UKR,,,0
+423,U S A,nausa,USA,,,0
+424,US MINOR OUTLYING ISLANDS,xxumi,UMI,US Minor Outlying Islands,Oceania,1
+427,URUGUAY,saury,URY,,,0
+43,BRAZIL,sabra,BRA,,,0
+430,UZBEKISTAN,asuzb,UZB,,,0
+431,VANUATU REP,ocvut,VUT,,,0
+433,VENEZUELA,saven,VEN,,,0
+437,VIETNAM SOC REP,asvnm,VNM,,,0
+439,VIRGIN IS US,xxvir,VIR,Virgin Islands (US),North America,1
+447,SAMOA,ocwsm,WSM,,,0
+45,BR VIRGN IS,navgb,VGB,,,0
+453,YEMEN REPUBLC,asyem,YEM,,,0
+459,CONGO D. REP.,afcod,COD,,,0
+461,ZAMBIA,afzmb,ZMB,,,0
+463,ZIMBABWE,afzwe,ZWE,,,0
+47,BRUNEI,asbrn,BRN,,,0
+49,BULGARIA,eubgr,BGR,,,0
+5,ALGERIA,afdza,DZA,,,0
+50,BURKINA FASO,afbfa,BFA,,,0
+53,BURUNDI,afbdi,BDI,,,0
+55,BELARUS,eublr,BLR,,,0
+56,CAMBODIA,askhm,KHM,,,0
+57,CAMEROON,afcmr,CMR,,,0
+59,CANADA,nacan,CAN,,,0
+599,UNSPECIFIED,xxuns,XXX,Unspecified / other,Other,1
+6,SVALLBARD AND J,xxsjm,SJM,Svalbard and Jan Mayen,Europe,1
+61,CANARY IS,euesp,ESP,,,0
+63,CAPE VERDE IS,afcpv,CPV,,,0
+65,CAYMAN IS,nacym,CYM,,,0
+67,C AFRI REP,afcaf,CAF,,,0
+69,CHAD,aftcd,TCD,,,0
+7,AMERI SAMOA,ocasm,ASM,,,0
+71,CHANNEL IS,eugbr,GBR,,,0
+73,CHILE,sachl,CHL,,,0
+75,TAIWAN,astwn,TWN,,,0
+77,CHINA P RP,aschn,CHN,,,0
+79,CHRISTMAS IS.,ascxr,CXR,,,0
+81,COCOS IS,ascck,CCK,,,0
+83,COLOMBIA,sacol,COL,,,0
+85,COMOROS,afcom,COM,,,0
+87,CONGO P REP,afcog,COG,,,0
+89,COOK IS,occok,COK,,,0
+9,ANDORRA,euand,AND,,,0
+91,COSTA RICA,nacri,CRI,,,0
+92,CROATIA,euhrv,HRV,,,0
+93,CUBA,nacub,CUB,,,0
+95,CYPRUS,ascyp,CYP,,,0
+98,CZECH REPUBLIC,eucze,CZE,,,0
+999,Trade to Unspecified Countries,xxuns,XXX,Unspecified / other,Other,1

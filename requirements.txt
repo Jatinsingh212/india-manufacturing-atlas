@@ -1,0 +1,11 @@
+# Runtime dependencies of the Vercel Python function (api/index.py).
+# Deliberately slim: no scipy / scikit-learn (about 140 MB) - residual-code suggestions are precomputed into the
+# deploy database by scripts/build_deploy_db.py. The full development set is backend/requirements.txt.
+fastapi==0.142.2
+starlette==1.7.0
+pydantic==2.13.5
+python-multipart==0.0.32
+numpy==2.4.6
+openpyxl==3.1.5
+reportlab==5.0.1
+requests==2.34.2

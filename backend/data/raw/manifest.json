@@ -1,0 +1,167 @@
+{
+  "dgft_itc_hs": {
+    "fetched_at": "2026-10-26T04:11:50Z",
+    "source": "DGFT public ITC-HS import/export policy",
+    "url": "https://www.dgft.gov.in/CP/?opt=itchs-import-export",
+    "method": "public webHP getChapterDetails (no authentication or CAPTCHA)",
+    "rows": 25187,
+    "records_by_direction": {
+      "import": 12587,
+      "export": 12600
+    },
+    "licence": "Government of India public information"
+  },
+  "oec_country_exp_totals_hs17": {
+    "cube": "trade_i_baci_a_17",
+    "fetched_at": "2026-10-19T08:12:08+00:00",
+    "rows": 1582,
+    "side": "Exporter",
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords"
+  },
+  "oec_country_exp_totals_hs22": {
+    "cube": "trade_i_baci_a_22",
+    "fetched_at": "2026-10-19T08:11:45+00:00",
+    "rows": 678,
+    "side": "Exporter",
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords"
+  },
+  "oec_country_imp_totals_hs22": {
+    "cube": "trade_i_baci_a_22",
+    "fetched_at": "2026-10-19T08:12:07+00:00",
+    "rows": 678,
+    "side": "Importer",
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords"
+  },
+  "oec_india_exp_hs6_hs17": {
+    "cube": "trade_i_baci_a_17",
+    "cuts": {
+      "Exporter Country": "asind"
+    },
+    "fetched_at": "2026-10-19T08:12:05+00:00",
+    "licence": "BACI: Etalab Open Licence 2.0",
+    "rows": 36576,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords",
+    "years": "2018-2024"
+  },
+  "oec_india_exp_hs6_hs22": {
+    "cube": "trade_i_baci_a_22",
+    "cuts": {
+      "Exporter Country": "asind"
+    },
+    "fetched_at": "2026-10-19T08:11:43+00:00",
+    "licence": "BACI: Etalab Open Licence 2.0",
+    "rows": 16270,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords",
+    "years": "2022-2024"
+  },
+  "oec_india_exp_partners_2024": {
+    "cube": "trade_i_baci_a_22",
+    "cuts": {
+      "Exporter Country": "asind",
+      "Year": "2024"
+    },
+    "fetched_at": "2026-10-19T08:12:19+00:00",
+    "rows": 339212,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords"
+  },
+  "oec_india_imp_hs6_hs17": {
+    "cube": "trade_i_baci_a_17",
+    "cuts": {
+      "Importer Country": "asind"
+    },
+    "fetched_at": "2026-10-19T08:12:06+00:00",
+    "licence": "BACI: Etalab Open Licence 2.0",
+    "rows": 35801,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords",
+    "years": "2018-2024"
+  },
+  "oec_india_imp_hs6_hs22": {
+    "cube": "trade_i_baci_a_22",
+    "cuts": {
+      "Importer Country": "asind"
+    },
+    "fetched_at": "2026-10-19T08:11:44+00:00",
+    "licence": "BACI: Etalab Open Licence 2.0",
+    "rows": 15939,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords",
+    "years": "2022-2024"
+  },
+  "oec_india_imp_partners_2024": {
+    "cube": "trade_i_baci_a_22",
+    "cuts": {
+      "Importer Country": "asind",
+      "Year": "2024"
+    },
+    "fetched_at": "2026-10-19T08:12:24+00:00",
+    "rows": 117006,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords"
+  },
+  "oec_world_exporters_2024": {
+    "cube": "trade_i_baci_a_22",
+    "cuts": {
+      "Year": "2024"
+    },
+    "fetched_at": "2026-10-19T08:12:45+00:00",
+    "rows": 565074,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords"
+  },
+  "oec_world_hs6_hs17": {
+    "cube": "trade_i_baci_a_17",
+    "cuts": {},
+    "fetched_at": "2026-10-19T08:11:42+00:00",
+    "licence": "BACI: Etalab Open Licence 2.0",
+    "rows": 37664,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords",
+    "years": "2018-2024"
+  },
+  "oec_world_hs6_hs22": {
+    "cube": "trade_i_baci_a_22",
+    "cuts": {},
+    "fetched_at": "2026-10-19T08:11:41+00:00",
+    "licence": "BACI: Etalab Open Licence 2.0",
+    "rows": 16818,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords",
+    "years": "2022-2024"
+  },
+  "oec_world_importers_2024": {
+    "cube": "trade_i_baci_a_22",
+    "cuts": {
+      "Year": "2024"
+    },
+    "fetched_at": "2026-10-19T08:13:23+00:00",
+    "rows": 892580,
+    "source": "CEPII BACI via OEC API",
+    "url": "https://api-v2.oec.world/tesseract/data.jsonrecords"
+  },
+  "wits_india_mfn_2022": {
+    "attributes": [
+      "NOMENCODE",
+      "EXCLUDEDFROM",
+      "TARIFFTYPE",
+      "SUM_OF_RATES",
+      "MIN_RATE",
+      "MAX_RATE",
+      "TOTALNOOFLINES",
+      "NBR_PREF_LINES",
+      "NBR_MFN_LINES",
+      "NBR_NA_LINES",
+      "OBS_VALUE_MEASURE"
+    ],
+    "fetched_at": "2026-10-19T08:19:21+00:00",
+    "rows": 5613,
+    "source": "World Bank WITS - UNCTAD TRAINS (India MFN applied, reported)",
+    "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/356/partner/000/product/all/year/2022/datatype/reported?format=JSON"
+  }
+}

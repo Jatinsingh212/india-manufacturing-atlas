@@ -1,0 +1,14 @@
+{
+  "name": "india-manufacturing-atlas-functions",
+  "private": true,
+  "description": "Node.js serverless functions of the Atlas on Vercel (api/*.mjs): Blob storage gateway and the headless-Chromium India Industrial Land Bank reader used by the daily cloud sync. The dashboard has its own package.json in frontend/.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "153.0.0",
+    "@vercel/blob": "^2.8.2",
+    "puppeteer-core": "25.11.0"
+  }
+}

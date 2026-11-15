@@ -1,0 +1,64 @@
+{
+  "_note": "The four left-panel cards of the Guidebook dashboard, served by GET /api/meta/info and loaded into info_pages by scripts/etl/load_policy.py. body_md is Markdown (links to platform routes are relative); icon is a lucide-react icon name.",
+  "pages": [
+    {
+      "id": "about_hsn",
+      "title": "A brief about HSN Code",
+      "icon": "Info",
+      "sort_order": 1,
+      "body_md": "The **Harmonized Commodity Description and Coding System (HS)** is the international product nomenclature maintained by the **World Customs Organization (WCO)**. It came into force in 1988, is used by more than 200 countries and economies, and is revised about every five years (the current edition is **HS 2022**).\n\n**The 6-digit international structure**\n\n| Level | Digits | Example |\n|---|---|---|\n| Section | Roman numeral (21 sections) | XI - Textiles and textile articles |\n| Chapter | 2 | 61 - Apparel, knitted or crocheted |\n| Heading | 4 | 6109 - T-shirts, singlets and other vests |\n| Subheading | 6 | 6109.10 - of cotton |\n\n**India's 8-digit lines.** India extends the 6-digit code by two national digits (e.g. **6109.10.00**). The same 8-digit lines are used in the **Customs Tariff** (First Schedule to the Customs Tariff Act, 1975, administered by CBIC) and in **ITC-HS**, DGFT's import and export policy schedules; India uses over 12,000 such lines.\n\n**Where the code is used**\n- **Customs:** duty rates (BCD), import and export policy conditions and clearance.\n- **GST:** rate schedules are organised by HSN, and taxpayers report HSN on invoices and returns (4 or 6 digits depending on turnover).\n- **Trade statistics:** India's exports and imports are compiled by HS code, so every trade figure in this Atlas can be traced to a code.",
+      "links": [
+        {
+          "label": "World Customs Organization - Harmonized System",
+          "url": "https://www.wcoomd.org"
+        }
+      ]
+    },
+    {
+      "id": "guidebook",
+      "title": "What is the Guidebook",
+      "icon": "BookOpen",
+      "sort_order": 2,
+      "body_md": "The **Department for Promotion of Industry and Internal Trade (DPIIT)** has prepared a **Guidebook on HSN Code Mapping** that assigns HSN codes to the Government of India's Ministries and Departments.\n\n**Why it matters**\n- Before the Guidebook there was no central repository of which Ministry owns which product.\n- That gap slowed trade negotiations, import-substitution efforts and responses to industry concerns.\n- Codes that no Ministry owned were classified as **Residual Products**, which shows the need for clear product ownership.\n\n**From document to platform.** The Guidebook is a static document: lookup is manual, data are fragmented across ministries, and there are no analytics. This Atlas turns it into a live platform with search, trade data, value chains and analytics.\n\n> The official Guidebook mapping is not public. The ministry mapping shown here is **indicative**: rule-based by HS chapter and heading. DPIIT can upload the official mapping through the [Data Hub](/data-hub).",
+      "links": [
+        {
+          "label": "DPIIT",
+          "url": "https://dpiit.gov.in"
+        }
+      ]
+    },
+    {
+      "id": "how_to_use",
+      "title": "How to use the Guidebook",
+      "icon": "Compass",
+      "sort_order": 3,
+      "body_md": "1. **Find a code.** Type an HSN code (2 to 8 digits; dots and spaces are ignored) or a product name in the search bar, or use **Enter HSN Code** on this page.\n2. **Read the product page.** It shows the assigned Ministry, sector, India's exports and imports, BCD, RCA, world suppliers and markets, value-chain links and applicable schemes.\n3. **Browse by owner.** [Ministries](/ministries) opens each Ministry's codes, trade and value chains; the **Ministry-wise HS Code** card gives the same table here.\n4. **Follow the value chain.** [Value chains](/value-chains) opens the sector deep-dives; the [Network](/network) shows inputs and outputs of any code.\n5. **Analyse (government users).** The [Opportunity Lab](/analytics), [Policy Workbench](/policy) and [Supply-chain Risk](/risk) pages cover export potential, import dependence, PLI and QCO targeting, trade negotiations and tariff scenarios.\n\n**Reading the numbers.** Trade values are US$ (CEPII BACI, latest year 2024) at HS6 level and are shared by all 8-digit lines under that subheading. Badges mark each figure **Verified**, **Not verified** or **Not available**; scores and forecasts are model estimates.",
+      "links": []
+    },
+    {
+      "id": "cbic_tariff",
+      "title": "CBIC Tariff Manual",
+      "icon": "FileText",
+      "sort_order": 4,
+      "body_md": "**CBIC Customs Tariff.** The Central Board of Indirect Taxes and Customs (CBIC) publishes the Customs Tariff of India: the First Schedule to the Customs Tariff Act, 1975 (import tariff) at 8-digit level with the Basic Customs Duty (BCD) rate for each line, together with the duty notifications that amend or exempt those rates. Tariff lookups and electronic customs filing are available on **ICEGATE**.\n\n**DGFT ITC-HS.** The Directorate General of Foreign Trade (DGFT) publishes ITC-HS, the import (Schedule I) and export (Schedule II) policy for each 8-digit line: whether a product is free, restricted, prohibited or subject to specific conditions.\n\n**How this Atlas shows tariffs**\n- **BCD / MFN** is the WITS-TRAINS MFN applied rate for 2022, a simple average over the national lines in each HS6. Where WITS reports a specific or compound rate, the Atlas shows **Not available** rather than an estimated percentage.\n- These figures exclude AIDC, the Social Welfare Surcharge, IGST and exemption notifications. **Always confirm the legally applicable duty on the CBIC Customs Tariff or ICEGATE.**",
+      "links": [
+        {
+          "label": "CBIC - Customs Tariff",
+          "url": "https://www.cbic.gov.in"
+        },
+        {
+          "label": "ICEGATE",
+          "url": "https://www.icegate.gov.in"
+        },
+        {
+          "label": "ICEGATE Trade Guide on Imports",
+          "url": "https://www.icegate.gov.in/Webappl/Trade-Guide-on-Imports"
+        },
+        {
+          "label": "DGFT - ITC-HS",
+          "url": "https://www.dgft.gov.in"
+        }
+      ]
+    }
+  ]
+}

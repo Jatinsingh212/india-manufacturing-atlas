@@ -1,0 +1,1912 @@
+{
+  "_note": "Policy knowledge base of the India Manufacturing Atlas (loaded by scripts/etl/load_policy.py). schemes = the 14 Production Linked Incentive (PLI) schemes and indicative BIS Quality Control Orders (QCOs); hs_prefixes are INDICATIVE 2-8 digit HS prefixes used to tag products and are not the legal product lists. agreements = India's trade agreements; partners are OEC country ids (countries.id); 'year' is the year of entry into force for in_force, of signature for signed and of launch/relaunch for negotiating. skill_councils = NSDC Sector Skill Councils mapped to Atlas sector ids and pilot value-chain ids. roadmap = the programme's Phase 0/I/II plan across the 8 workstreams, with status reflecting what THIS platform delivers. risks = the 6 programme risks with the platform control that implements each mitigation. Facts were compiled from public Government of India / PIB sources; unknown values are null and anything needing verification is flagged in 'source' or 'notes'.",
+  "schemes": [
+    {
+      "id": "pli_mobile",
+      "name": "PLI Scheme for Large Scale Electronics Manufacturing (Mobile phones and specified electronic components)",
+      "kind": "PLI",
+      "ministry_id": "meity",
+      "outlay_crore": 40951,
+      "launched": "2020",
+      "description": "Incentive of 4-6% on incremental sales (over base year FY 2019-20) of mobile phones and specified electronic components manufactured in India, for five years.",
+      "url": "https://www.meity.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "851713",
+          "note": "Smartphones"
+        },
+        {
+          "prefix": "851714",
+          "note": "Other telephones for cellular / wireless networks"
+        },
+        {
+          "prefix": "851779",
+          "note": "Parts of telephone sets and communication apparatus"
+        },
+        {
+          "prefix": "8542",
+          "note": "Electronic integrated circuits (specified components)"
+        },
+        {
+          "prefix": "8534",
+          "note": "Printed circuits (bare PCBs)"
+        },
+        {
+          "prefix": "8532",
+          "note": "Capacitors (passive components)"
+        },
+        {
+          "prefix": "8533",
+          "note": "Resistors (passive components)"
+        }
+      ]
+    },
+    {
+      "id": "pli_ksm_api",
+      "name": "PLI Scheme for critical Key Starting Materials (KSMs) / Drug Intermediates and Active Pharmaceutical Ingredients (APIs)",
+      "kind": "PLI",
+      "ministry_id": "dop",
+      "outlay_crore": 6940,
+      "launched": "2020",
+      "description": "Financial incentive on sales of eligible fermentation- and chemical-synthesis-based KSMs, drug intermediates and APIs (e.g. Penicillin G, 7-ACA, Clavulanic acid, Vitamin B1) to reduce import dependence on critical bulk drugs.",
+      "url": "https://pharmaceuticals.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "2941",
+          "note": "Antibiotics (e.g. Penicillin G, 7-ACA, erythromycin, clavulanic acid)"
+        },
+        {
+          "prefix": "2936",
+          "note": "Vitamins (e.g. Vitamin B1, B6)"
+        },
+        {
+          "prefix": "2933",
+          "note": "Heterocyclic compounds with nitrogen hetero-atoms (several eligible APIs) - indicative"
+        }
+      ]
+    },
+    {
+      "id": "pli_medical_devices",
+      "name": "PLI Scheme for promoting domestic manufacturing of Medical Devices",
+      "kind": "PLI",
+      "ministry_id": "dop",
+      "outlay_crore": 3420,
+      "launched": "2020",
+      "description": "Incentive of 5% on incremental sales of medical devices in four target segments: cancer care / radiotherapy, radiology and imaging, anaesthetics and cardio-respiratory devices (incl. catheters), and implants.",
+      "url": "https://pharmaceuticals.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "9018",
+          "note": "Medical, surgical and dental instruments and appliances (incl. catheters)"
+        },
+        {
+          "prefix": "9019",
+          "note": "Respiratory and therapy apparatus"
+        },
+        {
+          "prefix": "9021",
+          "note": "Orthopaedic appliances and implants"
+        },
+        {
+          "prefix": "9022",
+          "note": "X-ray, radiotherapy and imaging apparatus"
+        }
+      ]
+    },
+    {
+      "id": "pli_auto",
+      "name": "PLI Scheme for Automobile and Auto Component Industry",
+      "kind": "PLI",
+      "ministry_id": "mhi",
+      "outlay_crore": 25938,
+      "launched": "2021",
+      "description": "Incentive of 8-18% on the determined sales value of Advanced Automotive Technology (AAT) vehicles and components, including battery-electric and hydrogen fuel-cell vehicles.",
+      "url": "https://heavyindustries.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "870380",
+          "note": "Battery-electric passenger vehicles"
+        },
+        {
+          "prefix": "871160",
+          "note": "Electric two-wheelers"
+        },
+        {
+          "prefix": "8702",
+          "note": "Buses (AAT / electric variants only)"
+        },
+        {
+          "prefix": "8704",
+          "note": "Goods vehicles (AAT / electric variants only)"
+        },
+        {
+          "prefix": "8708",
+          "note": "Parts and accessories (AAT components only)"
+        }
+      ]
+    },
+    {
+      "id": "pli_pharma",
+      "name": "PLI Scheme for Pharmaceuticals",
+      "kind": "PLI",
+      "ministry_id": "dop",
+      "outlay_crore": 15000,
+      "launched": "2021",
+      "description": "Incentive for selected manufacturers of high-value pharmaceuticals - biopharmaceuticals, complex generics, patented or near-patent-expiry drugs, specialty APIs and in-vitro diagnostics - over six years.",
+      "url": "https://pharmaceuticals.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "3004",
+          "note": "Formulations in measured doses"
+        },
+        {
+          "prefix": "3002",
+          "note": "Biopharmaceuticals, vaccines, blood products"
+        },
+        {
+          "prefix": "3822",
+          "note": "In-vitro diagnostic reagents"
+        }
+      ]
+    },
+    {
+      "id": "pli_specialty_steel",
+      "name": "PLI Scheme for Specialty Steel",
+      "kind": "PLI",
+      "ministry_id": "mos",
+      "outlay_crore": 6322,
+      "launched": "2021",
+      "description": "Incentive on incremental production of specialty steel grades: coated / plated steel, high-strength and wear-resistant steel, specialty rails, alloy steel products and steel wires, and electrical steel.",
+      "url": "https://steel.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "7210",
+          "note": "Coated / plated flat-rolled steel, width >= 600 mm"
+        },
+        {
+          "prefix": "7212",
+          "note": "Coated / plated flat-rolled steel, width < 600 mm"
+        },
+        {
+          "prefix": "7225",
+          "note": "Alloy steel flat-rolled products (incl. electrical steel), width >= 600 mm"
+        },
+        {
+          "prefix": "7226",
+          "note": "Alloy steel flat-rolled products, width < 600 mm"
+        },
+        {
+          "prefix": "7228",
+          "note": "Alloy steel bars, rods and sections"
+        },
+        {
+          "prefix": "7229",
+          "note": "Alloy steel wire"
+        },
+        {
+          "prefix": "730210",
+          "note": "Rails (specialty rails)"
+        }
+      ]
+    },
+    {
+      "id": "pli_telecom",
+      "name": "PLI Scheme for Telecom and Networking Products",
+      "kind": "PLI",
+      "ministry_id": "dot",
+      "outlay_crore": 12195,
+      "launched": "2021",
+      "description": "Incentive of 4-7% on incremental sales of telecom and networking products (transmission equipment, 4G/5G radio access, routers, switches, IoT access devices) manufactured in India, with a higher rate for MSMEs.",
+      "url": "https://dot.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "851761",
+          "note": "Base stations"
+        },
+        {
+          "prefix": "851762",
+          "note": "Routers, switches and other transmission / reception apparatus"
+        },
+        {
+          "prefix": "851769",
+          "note": "Other communication apparatus"
+        },
+        {
+          "prefix": "851779",
+          "note": "Parts of communication apparatus"
+        }
+      ]
+    },
+    {
+      "id": "pli_it_hardware",
+      "name": "PLI Scheme 2.0 for IT Hardware",
+      "kind": "PLI",
+      "ministry_id": "meity",
+      "outlay_crore": 17000,
+      "launched": "2023",
+      "description": "Incentive on net incremental sales of laptops, tablets, all-in-one PCs, servers and ultra-small form factor devices made in India; PLI 2.0 (approved May 2023) succeeded the 2021 IT hardware scheme of Rs 7,350 crore.",
+      "url": "https://www.meity.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "847130",
+          "note": "Laptops and tablets"
+        },
+        {
+          "prefix": "847141",
+          "note": "All-in-one PCs and other complete systems"
+        },
+        {
+          "prefix": "847149",
+          "note": "Systems presented as sets"
+        },
+        {
+          "prefix": "847150",
+          "note": "Processing units (incl. servers)"
+        }
+      ]
+    },
+    {
+      "id": "pli_white_goods",
+      "name": "PLI Scheme for White Goods (Air Conditioners and LED Lights)",
+      "kind": "PLI",
+      "ministry_id": "dpiit",
+      "outlay_crore": 6238,
+      "launched": "2021",
+      "description": "Incentive of 4-6% on incremental sales of components of air conditioners and LED lights manufactured in India (component manufacturing, not finished-goods assembly), for five years.",
+      "url": "https://dpiit.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "841430",
+          "note": "Compressors for refrigerating / AC equipment"
+        },
+        {
+          "prefix": "841590",
+          "note": "Parts of air conditioners (coils, heat exchangers, etc.)"
+        },
+        {
+          "prefix": "854141",
+          "note": "Light-emitting diodes (LED chips / packages)"
+        },
+        {
+          "prefix": "940599",
+          "note": "Parts of luminaires (LED light components)"
+        }
+      ]
+    },
+    {
+      "id": "pli_food",
+      "name": "PLI Scheme for Food Processing Industry",
+      "kind": "PLI",
+      "ministry_id": "mofpi",
+      "outlay_crore": 10900,
+      "launched": "2021",
+      "description": "Incentive on incremental sales of ready-to-cook / ready-to-eat foods (incl. millet-based products), processed fruits and vegetables, marine products and mozzarella cheese, plus support for branding Indian food products abroad.",
+      "url": "https://mofpi.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "1902",
+          "note": "Pasta and noodles (ready-to-cook)"
+        },
+        {
+          "prefix": "1904",
+          "note": "Prepared cereal foods (ready-to-eat)"
+        },
+        {
+          "prefix": "20",
+          "note": "Processed fruits and vegetables"
+        },
+        {
+          "prefix": "1604",
+          "note": "Prepared or preserved fish (marine products)"
+        },
+        {
+          "prefix": "1605",
+          "note": "Prepared or preserved crustaceans and molluscs (marine products)"
+        },
+        {
+          "prefix": "040610",
+          "note": "Fresh cheese (incl. mozzarella)"
+        }
+      ]
+    },
+    {
+      "id": "pli_textiles",
+      "name": "PLI Scheme for Textiles (MMF apparel, MMF fabrics and technical textiles)",
+      "kind": "PLI",
+      "ministry_id": "mot",
+      "outlay_crore": 10683,
+      "launched": "2021",
+      "description": "Incentive on incremental turnover from manufacture of man-made fibre (MMF) apparel, MMF fabrics and products of technical textiles, for five years.",
+      "url": "https://texmin.nic.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "5407",
+          "note": "Woven fabrics of synthetic filament yarn (MMF fabrics)"
+        },
+        {
+          "prefix": "5408",
+          "note": "Woven fabrics of artificial filament yarn (MMF fabrics)"
+        },
+        {
+          "prefix": "5512",
+          "note": "Woven fabrics of synthetic staple fibres >= 85%"
+        },
+        {
+          "prefix": "5513",
+          "note": "Woven fabrics of synthetic staple fibres < 85%, mixed with cotton (light)"
+        },
+        {
+          "prefix": "5514",
+          "note": "Woven fabrics of synthetic staple fibres < 85%, mixed with cotton (heavy)"
+        },
+        {
+          "prefix": "5515",
+          "note": "Other woven fabrics of synthetic staple fibres"
+        },
+        {
+          "prefix": "5516",
+          "note": "Woven fabrics of artificial staple fibres"
+        },
+        {
+          "prefix": "611030",
+          "note": "Jerseys and pullovers of man-made fibres (MMF apparel)"
+        },
+        {
+          "prefix": "610343",
+          "note": "Men's knitted trousers of synthetic fibres (MMF apparel)"
+        },
+        {
+          "prefix": "610463",
+          "note": "Women's knitted trousers of synthetic fibres (MMF apparel)"
+        },
+        {
+          "prefix": "620343",
+          "note": "Men's woven trousers of synthetic fibres (MMF apparel)"
+        },
+        {
+          "prefix": "620463",
+          "note": "Women's woven trousers of synthetic fibres (MMF apparel)"
+        },
+        {
+          "prefix": "5603",
+          "note": "Nonwovens (technical textiles)"
+        },
+        {
+          "prefix": "5911",
+          "note": "Textile articles for technical uses (technical textiles)"
+        }
+      ]
+    },
+    {
+      "id": "pli_solar",
+      "name": "PLI Scheme for National Programme on High Efficiency Solar PV Modules",
+      "kind": "PLI",
+      "ministry_id": "mnre",
+      "outlay_crore": 24000,
+      "launched": "2021",
+      "description": "Sales-linked incentive for five years after commissioning of high-efficiency solar PV module capacity, favouring integrated manufacturing from polysilicon and wafers to cells and modules (Tranche I Rs 4,500 crore in 2021; Tranche II Rs 19,500 crore in 2022).",
+      "url": "https://mnre.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "854143",
+          "note": "Photovoltaic cells assembled in modules or panels"
+        },
+        {
+          "prefix": "854142",
+          "note": "Photovoltaic cells not assembled in modules"
+        },
+        {
+          "prefix": "381800",
+          "note": "Doped wafers for electronics (solar wafers)"
+        },
+        {
+          "prefix": "280461",
+          "note": "Silicon >= 99.99% (polysilicon)"
+        }
+      ]
+    },
+    {
+      "id": "pli_acc",
+      "name": "PLI Scheme for National Programme on Advanced Chemistry Cell (ACC) Battery Storage",
+      "kind": "PLI",
+      "ministry_id": "mhi",
+      "outlay_crore": 18100,
+      "launched": "2021",
+      "description": "Incentive for setting up 50 GWh of giga-scale, technology-agnostic Advanced Chemistry Cell battery manufacturing capacity with domestic value-addition commitments.",
+      "url": "https://heavyindustries.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "850760",
+          "note": "Lithium-ion accumulators (cells and batteries)"
+        },
+        {
+          "prefix": "850780",
+          "note": "Other accumulators (other advanced chemistries)"
+        },
+        {
+          "prefix": "850790",
+          "note": "Parts of accumulators (incl. separators)"
+        }
+      ]
+    },
+    {
+      "id": "pli_drones",
+      "name": "PLI Scheme for Drones and Drone Components",
+      "kind": "PLI",
+      "ministry_id": "moca",
+      "outlay_crore": 120,
+      "launched": "2021",
+      "description": "Incentive of 20% of value addition for manufacturers of drones and drone components, spread over three financial years (FY 2021-22 to FY 2023-24).",
+      "url": "https://www.civilaviation.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "8806",
+          "note": "Unmanned aircraft (drones)"
+        },
+        {
+          "prefix": "8807",
+          "note": "Parts of aircraft incl. unmanned aircraft (drone components) - indicative"
+        }
+      ]
+    },
+    {
+      "id": "qco_toys",
+      "name": "Toys (Quality Control) Order, 2020",
+      "kind": "QCO",
+      "ministry_id": "dpiit",
+      "outlay_crore": null,
+      "launched": "2020",
+      "description": "Toys for children must conform to IS 9873 (safety of toys) and IS 15644 (electric toys) and carry the BIS Standard Mark; applies to domestic and imported toys.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "9503",
+          "note": "Toys, dolls, scale models and puzzles"
+        }
+      ]
+    },
+    {
+      "id": "qco_tyres",
+      "name": "Pneumatic Tyres and Tubes for Automotive Vehicles (Quality Control) Order, 2009",
+      "kind": "QCO",
+      "ministry_id": "dpiit",
+      "outlay_crore": null,
+      "launched": "2009",
+      "description": "New pneumatic tyres and inner tubes for automotive vehicles must conform to the notified Indian Standards and carry the BIS Standard Mark.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "4011",
+          "note": "New pneumatic tyres (automotive types)"
+        },
+        {
+          "prefix": "4013",
+          "note": "Inner tubes"
+        }
+      ]
+    },
+    {
+      "id": "qco_steel",
+      "name": "Steel and Steel Products (Quality Control) Order",
+      "kind": "QCO",
+      "ministry_id": "mos",
+      "outlay_crore": null,
+      "launched": null,
+      "description": "Notified steel products (hot- and cold-rolled flat products, coated sheets, bars, rods, wire rods, stainless and alloy steel) must carry the BIS Standard Mark; coverage has been extended through successive orders.",
+      "url": "https://steel.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use (product coverage changes with each order)",
+      "hs_prefixes": [
+        {
+          "prefix": "7208",
+          "note": "Hot-rolled flat products"
+        },
+        {
+          "prefix": "7209",
+          "note": "Cold-rolled flat products"
+        },
+        {
+          "prefix": "7210",
+          "note": "Coated / plated flat products"
+        },
+        {
+          "prefix": "7213",
+          "note": "Wire rods"
+        },
+        {
+          "prefix": "7214",
+          "note": "Bars and rods (e.g. TMT bars)"
+        },
+        {
+          "prefix": "7219",
+          "note": "Stainless steel flat products"
+        },
+        {
+          "prefix": "7225",
+          "note": "Alloy steel flat products"
+        }
+      ]
+    },
+    {
+      "id": "qco_footwear",
+      "name": "Footwear Quality Control Orders (leather, rubber and polymeric materials)",
+      "kind": "QCO",
+      "ministry_id": "dpiit",
+      "outlay_crore": null,
+      "launched": "2020",
+      "description": "Footwear made from leather, rubber and polymeric materials must conform to notified Indian Standards with BIS certification; enforcement began in 2023 for large and medium manufacturers.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "6401",
+          "note": "Waterproof rubber / plastic footwear"
+        },
+        {
+          "prefix": "6402",
+          "note": "Other rubber / plastic footwear"
+        },
+        {
+          "prefix": "6403",
+          "note": "Footwear with leather uppers"
+        },
+        {
+          "prefix": "6404",
+          "note": "Footwear with textile uppers"
+        },
+        {
+          "prefix": "6405",
+          "note": "Other footwear"
+        }
+      ]
+    },
+    {
+      "id": "qco_helmets",
+      "name": "Helmet for Riders of Two-Wheeler Motor Vehicles (Quality Control) Order, 2020",
+      "kind": "QCO",
+      "ministry_id": null,
+      "outlay_crore": null,
+      "launched": "2020",
+      "description": "Two-wheeler rider helmets must conform to IS 4151 and carry the BIS Standard Mark. Issued by the Ministry of Road Transport and Highways, which is not one of the Atlas's 31 product-owning ministries.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "650610",
+          "note": "Safety headgear (two-wheeler helmets)"
+        }
+      ]
+    },
+    {
+      "id": "qco_pressure_cookers",
+      "name": "Domestic Pressure Cooker (Quality Control) Order, 2020",
+      "kind": "QCO",
+      "ministry_id": "dpiit",
+      "outlay_crore": null,
+      "launched": "2020",
+      "description": "Domestic pressure cookers must conform to IS 2347 and carry the BIS Standard Mark.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "73239310",
+          "note": "Pressure cookers of stainless steel"
+        },
+        {
+          "prefix": "76151011",
+          "note": "Pressure cookers of aluminium"
+        }
+      ]
+    },
+    {
+      "id": "qco_electrical",
+      "name": "Electrical Wires, Cables, Appliances, Protection Devices and Accessories (Quality Control) Order, 2020",
+      "kind": "QCO",
+      "ministry_id": "dpiit",
+      "outlay_crore": null,
+      "launched": "2020",
+      "description": "Notified electrical products - PVC-insulated cables, switches, circuit breakers, plugs and sockets, electric irons, water and room heaters and similar household appliances - require BIS certification.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use (title and coverage indicative)",
+      "hs_prefixes": [
+        {
+          "prefix": "8544",
+          "note": "Insulated wires and cables"
+        },
+        {
+          "prefix": "8536",
+          "note": "Switches, circuit breakers, plugs and sockets"
+        },
+        {
+          "prefix": "8516",
+          "note": "Electric water heaters, room heaters, irons and similar appliances"
+        }
+      ]
+    },
+    {
+      "id": "qco_air_conditioners",
+      "name": "Air Conditioner and its Related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Order, 2019",
+      "kind": "QCO",
+      "ministry_id": "dpiit",
+      "outlay_crore": null,
+      "launched": "2019",
+      "description": "Room air conditioners, hermetic compressors and temperature-sensing controls must conform to the notified Indian Standards with BIS certification.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "8415",
+          "note": "Air conditioning machines"
+        },
+        {
+          "prefix": "841430",
+          "note": "Hermetic compressors for refrigerating / AC equipment"
+        },
+        {
+          "prefix": "903210",
+          "note": "Thermostats (temperature-sensing controls)"
+        }
+      ]
+    },
+    {
+      "id": "qco_cement",
+      "name": "Cement (Quality Control) Order, 2003",
+      "kind": "QCO",
+      "ministry_id": "dpiit",
+      "outlay_crore": null,
+      "launched": "2003",
+      "description": "Portland and other notified cement types must conform to the relevant Indian Standards and carry the BIS Standard Mark.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "2523",
+          "note": "Portland, slag and other hydraulic cements"
+        }
+      ]
+    },
+    {
+      "id": "qco_aluminium",
+      "name": "Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      "kind": "QCO",
+      "ministry_id": "mom",
+      "outlay_crore": null,
+      "launched": "2023",
+      "description": "Notified unwrought aluminium and aluminium bars, rods, wire, plates, sheets and foil must carry the BIS Standard Mark.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "7601",
+          "note": "Unwrought aluminium"
+        },
+        {
+          "prefix": "7604",
+          "note": "Aluminium bars, rods and profiles"
+        },
+        {
+          "prefix": "7605",
+          "note": "Aluminium wire"
+        },
+        {
+          "prefix": "7606",
+          "note": "Aluminium plates, sheets and strip"
+        },
+        {
+          "prefix": "7607",
+          "note": "Aluminium foil"
+        }
+      ]
+    },
+    {
+      "id": "qco_kitchen_utensils",
+      "name": "Kitchen and domestic utensils of stainless steel and aluminium (Quality Control Order, 2024)",
+      "kind": "QCO",
+      "ministry_id": "dpiit",
+      "outlay_crore": null,
+      "launched": "2024",
+      "description": "Stainless-steel and aluminium kitchen and domestic utensils must conform to the notified Indian Standards with BIS certification.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use (title indicative)",
+      "hs_prefixes": [
+        {
+          "prefix": "7323",
+          "note": "Household articles of iron or steel (stainless-steel utensils)"
+        },
+        {
+          "prefix": "7615",
+          "note": "Household articles of aluminium (aluminium utensils)"
+        }
+      ]
+    },
+    {
+      "id": "qco_ceiling_fans",
+      "name": "Electric Ceiling Type Fans (Quality Control) Order, 2023",
+      "kind": "QCO",
+      "ministry_id": "dpiit",
+      "outlay_crore": null,
+      "launched": "2023",
+      "description": "Electric ceiling fans must conform to IS 374 with BIS certification.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use",
+      "hs_prefixes": [
+        {
+          "prefix": "841451",
+          "note": "Table, floor, wall, window, ceiling or roof fans (ceiling fans)"
+        }
+      ]
+    },
+    {
+      "id": "qco_caustic_soda",
+      "name": "Caustic Soda (Quality Control) Order",
+      "kind": "QCO",
+      "ministry_id": "dcpc",
+      "outlay_crore": null,
+      "launched": null,
+      "description": "Sodium hydroxide (caustic soda) must conform to IS 252 with BIS certification. Several chemical and petrochemical QCOs were deferred or rescinded in 2025, so the current status must be checked.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use (status may have changed)",
+      "hs_prefixes": [
+        {
+          "prefix": "281511",
+          "note": "Caustic soda, solid"
+        },
+        {
+          "prefix": "281512",
+          "note": "Caustic soda, in aqueous solution (lye)"
+        }
+      ]
+    },
+    {
+      "id": "qco_mmf_fibres",
+      "name": "Man-made fibre and yarn Quality Control Orders (polyester staple fibre, polyester filament yarn, viscose staple fibre)",
+      "kind": "QCO",
+      "ministry_id": "mot",
+      "outlay_crore": null,
+      "launched": null,
+      "description": "Polyester staple fibre, polyester filament yarns and viscose staple fibre were brought under BIS certification by Ministry of Textiles orders. Some textile-input QCOs were rescinded or deferred in 2025, so the current status must be checked.",
+      "url": "https://www.bis.gov.in",
+      "source": "Compiled from public GoI/PIB sources; verify before official use (status may have changed)",
+      "hs_prefixes": [
+        {
+          "prefix": "550320",
+          "note": "Polyester staple fibre"
+        },
+        {
+          "prefix": "540246",
+          "note": "Polyester partially oriented filament yarn"
+        },
+        {
+          "prefix": "540247",
+          "note": "Other polyester filament yarn (single, untwisted)"
+        },
+        {
+          "prefix": "550410",
+          "note": "Viscose staple fibre"
+        }
+      ]
+    }
+  ],
+  "agreements": [
+    {
+      "id": "ind_lka_isfta",
+      "name": "India-Sri Lanka Free Trade Agreement",
+      "short_name": "ISFTA",
+      "partners": [
+        "aslka"
+      ],
+      "status": "in_force",
+      "year": 2000,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed December 1998; in force from March 2000."
+    },
+    {
+      "id": "safta",
+      "name": "Agreement on South Asian Free Trade Area",
+      "short_name": "SAFTA",
+      "partners": [
+        "asafg",
+        "asbgd",
+        "asbtn",
+        "asmdv",
+        "asnpl",
+        "aspak",
+        "aslka"
+      ],
+      "status": "in_force",
+      "year": 2006,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed 2004; in force from 1 January 2006. Bilateral trade with Pakistan has been largely suspended since 2019, so concessions to Pakistan are effectively inoperative."
+    },
+    {
+      "id": "ind_npl_treaty",
+      "name": "India-Nepal Treaty of Trade",
+      "short_name": "India-Nepal Treaty",
+      "partners": [
+        "asnpl"
+      ],
+      "status": "in_force",
+      "year": 2009,
+      "url": "https://commerce.gov.in",
+      "notes": "Bilateral preferential trade treaty first concluded in 1991, revised in 2009 and renewed periodically - verify the current renewal."
+    },
+    {
+      "id": "ind_btn_agreement",
+      "name": "India-Bhutan Agreement on Trade, Commerce and Transit",
+      "short_name": "India-Bhutan Agreement",
+      "partners": [
+        "asbtn"
+      ],
+      "status": "in_force",
+      "year": 2017,
+      "url": "https://commerce.gov.in",
+      "notes": "Free-trade regime between India and Bhutan; current agreement signed in 2016 and in force from 2017 - verify dates."
+    },
+    {
+      "id": "ind_sgp_ceca",
+      "name": "India-Singapore Comprehensive Economic Cooperation Agreement",
+      "short_name": "India-Singapore CECA",
+      "partners": [
+        "assgp"
+      ],
+      "status": "in_force",
+      "year": 2005,
+      "url": "https://commerce.gov.in",
+      "notes": "In force from 1 August 2005; reviews have been held since."
+    },
+    {
+      "id": "aitiga",
+      "name": "ASEAN-India Trade in Goods Agreement",
+      "short_name": "AITIGA",
+      "partners": [
+        "asbrn",
+        "askhm",
+        "asidn",
+        "aslao",
+        "asmys",
+        "asmmr",
+        "asphl",
+        "assgp",
+        "astha",
+        "asvnm"
+      ],
+      "status": "in_force",
+      "year": 2010,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed August 2009; in force from 1 January 2010 (phased by member). A joint review of AITIGA has been under way since 2023. Myanmar appears in OEC data as 'Burma' (asmmr)."
+    },
+    {
+      "id": "ind_kor_cepa",
+      "name": "India-Republic of Korea Comprehensive Economic Partnership Agreement",
+      "short_name": "India-Korea CEPA",
+      "partners": [
+        "askor"
+      ],
+      "status": "in_force",
+      "year": 2010,
+      "url": "https://commerce.gov.in",
+      "notes": "In force from 1 January 2010; upgrade negotiations have been held - verify their status."
+    },
+    {
+      "id": "ind_jpn_cepa",
+      "name": "India-Japan Comprehensive Economic Partnership Agreement",
+      "short_name": "India-Japan CEPA",
+      "partners": [
+        "asjpn"
+      ],
+      "status": "in_force",
+      "year": 2011,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed February 2011; in force from 1 August 2011."
+    },
+    {
+      "id": "ind_mys_ceca",
+      "name": "India-Malaysia Comprehensive Economic Cooperation Agreement",
+      "short_name": "India-Malaysia CECA",
+      "partners": [
+        "asmys"
+      ],
+      "status": "in_force",
+      "year": 2011,
+      "url": "https://commerce.gov.in",
+      "notes": "In force from 1 July 2011."
+    },
+    {
+      "id": "apta",
+      "name": "Asia-Pacific Trade Agreement",
+      "short_name": "APTA",
+      "partners": [
+        "asbgd",
+        "aschn",
+        "askor",
+        "aslao",
+        "aslka",
+        "asmng"
+      ],
+      "status": "in_force",
+      "year": 1976,
+      "url": "https://commerce.gov.in",
+      "notes": "Originally the Bangkok Agreement (1975, in force 1976), renamed APTA in 2005; limited tariff preferences. Mongolia acceded later - verify the date."
+    },
+    {
+      "id": "ind_mercosur_pta",
+      "name": "India-MERCOSUR Preferential Trade Agreement",
+      "short_name": "India-MERCOSUR PTA",
+      "partners": [
+        "saarg",
+        "sabra",
+        "sapry",
+        "saury"
+      ],
+      "status": "in_force",
+      "year": 2009,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed 2004; in force from 1 June 2009 with preferences on a limited set of tariff lines; expansion has been discussed."
+    },
+    {
+      "id": "ind_chl_pta",
+      "name": "India-Chile Preferential Trade Agreement",
+      "short_name": "India-Chile PTA",
+      "partners": [
+        "sachl"
+      ],
+      "status": "in_force",
+      "year": 2007,
+      "url": "https://commerce.gov.in",
+      "notes": "In force from 2007 and expanded in 2017; negotiations towards a CEPA have been reported - verify."
+    },
+    {
+      "id": "ind_mus_cecpa",
+      "name": "India-Mauritius Comprehensive Economic Cooperation and Partnership Agreement",
+      "short_name": "India-Mauritius CECPA",
+      "partners": [
+        "afmus"
+      ],
+      "status": "in_force",
+      "year": 2021,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed February 2021; in force from 1 April 2021. India's first trade agreement with an African country."
+    },
+    {
+      "id": "ind_uae_cepa",
+      "name": "India-UAE Comprehensive Economic Partnership Agreement",
+      "short_name": "India-UAE CEPA",
+      "partners": [
+        "asare"
+      ],
+      "status": "in_force",
+      "year": 2022,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed February 2022; in force from 1 May 2022."
+    },
+    {
+      "id": "ind_aus_ecta",
+      "name": "India-Australia Economic Cooperation and Trade Agreement",
+      "short_name": "India-Australia ECTA",
+      "partners": [
+        "ocaus"
+      ],
+      "status": "in_force",
+      "year": 2022,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed April 2022; in force from 29 December 2022. Negotiations on a broader Comprehensive Economic Cooperation Agreement (CECA) continue."
+    },
+    {
+      "id": "ind_efta_tepa",
+      "name": "India-EFTA Trade and Economic Partnership Agreement",
+      "short_name": "India-EFTA TEPA",
+      "partners": [
+        "euche",
+        "euisl",
+        "eunor"
+      ],
+      "status": "in_force",
+      "year": 2025,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed 10 March 2024 with Iceland, Liechtenstein, Norway and Switzerland; entry into force reported from 1 October 2025 - verify. Liechtenstein has no separate OEC/BACI country id (its trade is reported with Switzerland)."
+    },
+    {
+      "id": "ind_gbr_ceta",
+      "name": "India-United Kingdom Comprehensive Economic and Trade Agreement",
+      "short_name": "India-UK CETA",
+      "partners": [
+        "eugbr"
+      ],
+      "status": "signed",
+      "year": 2025,
+      "url": "https://commerce.gov.in",
+      "notes": "Signed 24 July 2025; entry into force depends on completion of domestic ratification procedures - verify current status."
+    },
+    {
+      "id": "ind_eu_fta",
+      "name": "India-European Union Free Trade Agreement",
+      "short_name": "India-EU FTA",
+      "partners": [
+        "euaut",
+        "eubel",
+        "eubgr",
+        "euhrv",
+        "ascyp",
+        "eucze",
+        "eudnk",
+        "euest",
+        "eufin",
+        "eufra",
+        "eudeu",
+        "eugrc",
+        "euhun",
+        "euirl",
+        "euita",
+        "eulva",
+        "eultu",
+        "eulux",
+        "eumlt",
+        "eunld",
+        "eupol",
+        "euprt",
+        "eurou",
+        "eusvk",
+        "eusvn",
+        "euesp",
+        "euswe"
+      ],
+      "status": "negotiating",
+      "year": 2022,
+      "url": "https://commerce.gov.in",
+      "notes": "Negotiations relaunched in June 2022 (with separate investment-protection and GI tracks); political conclusion of negotiations was reported in early 2026 but signature and ratification were pending - status kept conservative, verify. Cyprus is classified under Asia in OEC ids (ascyp)."
+    },
+    {
+      "id": "ind_omn_cepa",
+      "name": "India-Oman Comprehensive Economic Partnership Agreement",
+      "short_name": "India-Oman CEPA",
+      "partners": [
+        "asomn"
+      ],
+      "status": "negotiating",
+      "year": 2023,
+      "url": "https://commerce.gov.in",
+      "notes": "Negotiations launched in November 2023; signature was reported in December 2025 - status kept conservative, verify."
+    },
+    {
+      "id": "ind_nzl_fta",
+      "name": "India-New Zealand Free Trade Agreement",
+      "short_name": "India-New Zealand FTA",
+      "partners": [
+        "ocnzl"
+      ],
+      "status": "negotiating",
+      "year": 2025,
+      "url": "https://commerce.gov.in",
+      "notes": "Negotiations launched in March 2025; conclusion of negotiations was reported in December 2025 - status kept conservative, verify."
+    },
+    {
+      "id": "ind_usa_bta",
+      "name": "India-United States Bilateral Trade Agreement",
+      "short_name": "India-US BTA",
+      "partners": [
+        "nausa"
+      ],
+      "status": "negotiating",
+      "year": 2025,
+      "url": "https://commerce.gov.in",
+      "notes": "Negotiations on a multi-sector bilateral trade agreement began in 2025 - verify current status."
+    },
+    {
+      "id": "ind_gcc_fta",
+      "name": "India-Gulf Cooperation Council Free Trade Agreement",
+      "short_name": "India-GCC FTA",
+      "partners": [
+        "assau",
+        "asare",
+        "asqat",
+        "askwt",
+        "asomn",
+        "asbhr"
+      ],
+      "status": "negotiating",
+      "year": 2004,
+      "url": "https://commerce.gov.in",
+      "notes": "Framework agreement on economic cooperation signed in 2004; FTA negotiations have proceeded intermittently and were revived after 2022 - verify current status."
+    },
+    {
+      "id": "ind_eaeu_fta",
+      "name": "India-Eurasian Economic Union Free Trade Agreement",
+      "short_name": "India-EAEU FTA",
+      "partners": [
+        "eurus",
+        "askaz",
+        "eublr",
+        "asarm",
+        "askgz"
+      ],
+      "status": "negotiating",
+      "year": 2025,
+      "url": "https://commerce.gov.in",
+      "notes": "Terms of reference for FTA negotiations were reported in 2025 - verify current status."
+    },
+    {
+      "id": "ind_can_cepa",
+      "name": "India-Canada Comprehensive Economic Partnership Agreement",
+      "short_name": "India-Canada CEPA",
+      "partners": [
+        "nacan"
+      ],
+      "status": "negotiating",
+      "year": 2010,
+      "url": "https://commerce.gov.in",
+      "notes": "Talks launched in 2010 (with an Early Progress Trade Agreement track from 2022) and paused in 2023; resumption has been discussed - verify current status."
+    },
+    {
+      "id": "ind_isr_fta",
+      "name": "India-Israel Free Trade Agreement",
+      "short_name": "India-Israel FTA",
+      "partners": [
+        "asisr"
+      ],
+      "status": "negotiating",
+      "year": 2010,
+      "url": "https://commerce.gov.in",
+      "notes": "Negotiations launched in 2010 and held intermittently - verify current status."
+    }
+  ],
+  "skill_councils": [
+    {
+      "id": "tsc",
+      "name": "Textile Sector Skill Council",
+      "sector_ids": [
+        "textiles"
+      ],
+      "chain_ids": [
+        "cotton_apparel"
+      ],
+      "url": "https://www.texskill.in"
+    },
+    {
+      "id": "amhssc",
+      "name": "Apparel, Made-Ups & Home Furnishing Sector Skill Council",
+      "sector_ids": [
+        "textiles"
+      ],
+      "chain_ids": [
+        "cotton_apparel"
+      ],
+      "url": "https://www.sscamh.com"
+    },
+    {
+      "id": "asdc",
+      "name": "Automotive Skills Development Council",
+      "sector_ids": [
+        "automotive"
+      ],
+      "chain_ids": [
+        "auto_components",
+        "ev_battery",
+        "tyre"
+      ],
+      "url": "https://www.asdc.org.in"
+    },
+    {
+      "id": "essci",
+      "name": "Electronics Sector Skills Council of India",
+      "sector_ids": [
+        "electronics"
+      ],
+      "chain_ids": [
+        "mobile_electronics",
+        "ev_battery"
+      ],
+      "url": "https://essc-india.org"
+    },
+    {
+      "id": "tssc",
+      "name": "Telecom Sector Skill Council",
+      "sector_ids": [
+        "electronics"
+      ],
+      "chain_ids": [
+        "mobile_electronics"
+      ],
+      "url": "https://tsscindia.com"
+    },
+    {
+      "id": "rcpsdc",
+      "name": "Rubber, Chemical and Petrochemical Skill Development Council",
+      "sector_ids": [
+        "rubber_tyre",
+        "chemicals",
+        "plastics"
+      ],
+      "chain_ids": [
+        "tyre",
+        "natural_rubber"
+      ],
+      "url": null
+    },
+    {
+      "id": "lssc",
+      "name": "Leather Sector Skill Council",
+      "sector_ids": [
+        "leather"
+      ],
+      "chain_ids": [
+        "leather_footwear"
+      ],
+      "url": "https://www.leatherskill.net"
+    },
+    {
+      "id": "lsssdc",
+      "name": "Life Sciences Sector Skill Development Council",
+      "sector_ids": [
+        "pharma"
+      ],
+      "chain_ids": [
+        "pharma_api"
+      ],
+      "url": "https://www.lsssdc.in"
+    },
+    {
+      "id": "ficsi",
+      "name": "Food Industry Capacity and Skill Initiative",
+      "sector_ids": [
+        "food_processing"
+      ],
+      "chain_ids": [],
+      "url": "https://www.ficsi.in"
+    },
+    {
+      "id": "asci",
+      "name": "Agriculture Skill Council of India",
+      "sector_ids": [
+        "agriculture"
+      ],
+      "chain_ids": [
+        "natural_rubber",
+        "cotton_apparel"
+      ],
+      "url": "https://asci-india.com"
+    },
+    {
+      "id": "iisssc",
+      "name": "Indian Iron & Steel Sector Skill Council",
+      "sector_ids": [
+        "iron_steel"
+      ],
+      "chain_ids": [
+        "steel"
+      ],
+      "url": "https://www.iisssc.org"
+    },
+    {
+      "id": "scgj",
+      "name": "Skill Council for Green Jobs",
+      "sector_ids": [
+        "electronics"
+      ],
+      "chain_ids": [
+        "solar_pv",
+        "ev_battery"
+      ],
+      "url": "https://sscgj.in"
+    },
+    {
+      "id": "cgsc",
+      "name": "Capital Goods Skill Council",
+      "sector_ids": [
+        "engineering"
+      ],
+      "chain_ids": [
+        "auto_components"
+      ],
+      "url": "https://www.cgsc.in"
+    },
+    {
+      "id": "ffsc",
+      "name": "Furniture & Fittings Skill Council",
+      "sector_ids": [
+        "consumer_goods",
+        "wood_paper"
+      ],
+      "chain_ids": [],
+      "url": "https://ffsc.in"
+    },
+    {
+      "id": "hcssc",
+      "name": "Handicrafts and Carpet Sector Skill Council",
+      "sector_ids": [
+        "consumer_goods",
+        "art_antiques",
+        "textiles"
+      ],
+      "chain_ids": [
+        "toys"
+      ],
+      "url": "https://www.hcssc.in"
+    },
+    {
+      "id": "gjsci",
+      "name": "Gem & Jewellery Skill Council of India",
+      "sector_ids": [
+        "gems_jewellery"
+      ],
+      "chain_ids": [],
+      "url": "https://gjsci.org"
+    },
+    {
+      "id": "scms",
+      "name": "Skill Council for Mining Sector",
+      "sector_ids": [
+        "minerals"
+      ],
+      "chain_ids": [],
+      "url": null
+    },
+    {
+      "id": "hssc",
+      "name": "Hydrocarbon Sector Skill Council",
+      "sector_ids": [
+        "energy"
+      ],
+      "chain_ids": [],
+      "url": null
+    },
+    {
+      "id": "pcsc",
+      "name": "Paints and Coatings Skill Council",
+      "sector_ids": [
+        "chemicals"
+      ],
+      "chain_ids": [],
+      "url": null
+    },
+    {
+      "id": "smsc",
+      "name": "Strategic Manufacturing Skill Council",
+      "sector_ids": [
+        "defence",
+        "transport_equipment"
+      ],
+      "chain_ids": [],
+      "url": null
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "p0_architecture",
+      "phase": "Phase 0",
+      "workstream": "Convert Static Guidebook → Digital Platform",
+      "title": "Platform architecture",
+      "description": "Modular API (FastAPI) + single-page dashboard (React) over one HSN-keyed database, with a scripted, repeatable ETL build.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "done",
+      "owner": "DPIIT / platform team",
+      "platform_route": "/about",
+      "sort_order": 1
+    },
+    {
+      "id": "p0_hsn_digitization",
+      "phase": "Phase 0",
+      "workstream": "Convert Static Guidebook → Digital Platform",
+      "title": "Digitize HSN codes with ministry mapping",
+      "description": "All current 8-digit lines of the GST HSN master on the WCO HS2022 hierarchy, with an indicative rule-based ministry mapping; DPIIT can upload the official Guidebook mapping.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "done",
+      "owner": "DPIIT / platform team",
+      "platform_route": "/explore",
+      "sort_order": 2
+    },
+    {
+      "id": "p0_search_drilldown",
+      "phase": "Phase 0",
+      "workstream": "Convert Static Guidebook → Digital Platform",
+      "title": "Search by HSN / product / ministry with drill-down",
+      "description": "Global typeahead search, HS tree from section to 8-digit line, faceted search and product pages.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/explore",
+      "sort_order": 3
+    },
+    {
+      "id": "p0_official_mapping",
+      "phase": "Phase 0",
+      "workstream": "Convert Static Guidebook → Digital Platform",
+      "title": "Load the official Guidebook mapping",
+      "description": "Upload, validation and apply pipeline is live; the official DPIIT mapping file has not been uploaded yet, so the mapping remains indicative.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "in_progress",
+      "owner": "DPIIT",
+      "platform_route": "/data-hub",
+      "sort_order": 4
+    },
+    {
+      "id": "p0_basic_dashboard",
+      "phase": "Phase 0",
+      "workstream": "Develop Ministry-Specific Dashboards",
+      "title": "Guidebook dashboard",
+      "description": "KPI tiles, distribution by ministry, Enter-HSN lookup, ministry-wise HS table, sectoral distribution and info cards.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/",
+      "sort_order": 5
+    },
+    {
+      "id": "p0_ministry_dashboards",
+      "phase": "Phase 0",
+      "workstream": "Develop Ministry-Specific Dashboards",
+      "title": "Ministry-specific dashboards",
+      "description": "Each ministry sees its HSN codes, trade performance, domestic production (where available) and value-chain linkages.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/ministries",
+      "sort_order": 6
+    },
+    {
+      "id": "p0_reports",
+      "phase": "Phase 0",
+      "workstream": "Develop Ministry-Specific Dashboards",
+      "title": "Downloadable reports",
+      "description": "PDF, XLSX and CSV reports for products, ministries, sectors, value chains and search results.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/ministries",
+      "sort_order": 7
+    },
+    {
+      "id": "p0_trade_data",
+      "phase": "Phase 0",
+      "workstream": "Integrate Multi-Source Data at HSN Level",
+      "title": "Trade data: exports, imports, BCD, RCA",
+      "description": "CEPII BACI (via OEC) HS6 trade 2018-2024, partner and world-supplier detail, WITS/TRAINS MFN applied tariffs, RCA and shares.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/data-hub",
+      "sort_order": 8
+    },
+    {
+      "id": "p0_governance",
+      "phase": "Phase 0",
+      "workstream": "Convert Static Guidebook → Digital Platform",
+      "title": "Access control, data ownership and audit",
+      "description": "Role-based access (public, industry, analyst, ministry, admin) with ministry-scoped rights and an audit log of every change.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "done",
+      "owner": "DPIIT / platform team",
+      "platform_route": "/admin",
+      "sort_order": 9
+    },
+    {
+      "id": "p0_phase_plan",
+      "phase": "Phase 0",
+      "workstream": "Launch in Phases",
+      "title": "Phase plan and risk register",
+      "description": "Phase 0 / I / II tracker across the 8 workstreams, with a live risk and mitigation register.",
+      "start_month": 0,
+      "end_month": 3,
+      "status": "done",
+      "owner": "DPIIT",
+      "platform_route": "/roadmap",
+      "sort_order": 10
+    },
+    {
+      "id": "p1_pilot_sectors",
+      "phase": "Phase I",
+      "workstream": "Launch in Phases",
+      "title": "Sectoral deep-dives for 10 pilot sectors",
+      "description": "Tyre, natural rubber, cotton apparel, auto components, pharma APIs, mobile electronics, solar PV, steel, EV battery and leather footwear (plus toys).",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "DPIIT + line ministries",
+      "platform_route": "/value-chains",
+      "sort_order": 11
+    },
+    {
+      "id": "p1_vc_mapping",
+      "phase": "Phase I",
+      "workstream": "Build HSN Code - Value Chain Interlinkages",
+      "title": "Ministry-wise product mapping across value chains",
+      "description": "Stage-by-stage item tables with HS codes and concerned ministries (slides 14-17), linked to live 8-digit trade data.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/value-chains",
+      "sort_order": 12
+    },
+    {
+      "id": "p1_network_graph",
+      "phase": "Phase I",
+      "workstream": "Build HSN Code - Value Chain Interlinkages",
+      "title": "Network graph of the manufacturing ecosystem",
+      "description": "One HSN to many inputs and outputs: interactive graph with upstream / downstream trace and critical-input highlighting.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/network",
+      "sort_order": 13
+    },
+    {
+      "id": "p1_expert_validation",
+      "phase": "Phase I",
+      "workstream": "Build HSN Code - Value Chain Interlinkages",
+      "title": "Validate value-chain maps with industry experts",
+      "description": "Structured review of the curated chains with industry associations and line ministries; edge uploads are supported in the Data Hub.",
+      "start_month": 4,
+      "end_month": 6,
+      "status": "planned",
+      "owner": "Line ministries + industry associations",
+      "platform_route": "/data-hub",
+      "sort_order": 14
+    },
+    {
+      "id": "p1_export_potential",
+      "phase": "Phase I",
+      "workstream": "Build Analytics Layer",
+      "title": "Export potential and untapped market estimation",
+      "description": "Export-potential score and untapped potential (US$) per HS6 with an opportunity matrix.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/analytics",
+      "sort_order": 15
+    },
+    {
+      "id": "p1_import_dependency",
+      "phase": "Phase I",
+      "workstream": "Build Analytics Layer",
+      "title": "Import dependency and substitution",
+      "description": "Dependency ratio, source concentration (HHI), China share and import-substitution scores.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/analytics",
+      "sort_order": 16
+    },
+    {
+      "id": "p1_rca",
+      "phase": "Phase I",
+      "workstream": "Build Analytics Layer",
+      "title": "RCA-based competitiveness",
+      "description": "Balassa RCA distribution by sector and product.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/analytics",
+      "sort_order": 17
+    },
+    {
+      "id": "p1_demand_supply",
+      "phase": "Phase I",
+      "workstream": "Build Analytics Layer",
+      "title": "Demand-supply gaps",
+      "description": "Apparent consumption and self-sufficiency need domestic production in value terms; sourced figures are available for the pilot chains, with broader coverage still to come.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "in_progress",
+      "owner": "Platform team + line ministries",
+      "platform_route": "/analytics",
+      "sort_order": 18
+    },
+    {
+      "id": "p1_production_data",
+      "phase": "Phase I",
+      "workstream": "Integrate Multi-Source Data at HSN Level",
+      "title": "Domestic production data from sectoral ministries",
+      "description": "Production upload template and validation are live; sectoral ministries have not yet supplied HSN-level production data.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "in_progress",
+      "owner": "Line ministries",
+      "platform_route": "/data-hub",
+      "sort_order": 19
+    },
+    {
+      "id": "p1_policy_use_cases",
+      "phase": "Phase I",
+      "workstream": "Enable Policy Use Cases",
+      "title": "Policy use cases",
+      "description": "Import substitution, PLI targeting, trade negotiations (offensive / defensive interests), skilling and quality-control interventions.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "DPIIT + Department of Commerce",
+      "platform_route": "/policy",
+      "sort_order": 20
+    },
+    {
+      "id": "p1_tariff_simulator",
+      "phase": "Phase I",
+      "workstream": "Enable Policy Use Cases",
+      "title": "Tariff (BCD) scenario simulator",
+      "description": "Import, revenue and downstream input-cost effects of a tariff change, with all assumptions shown.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/policy",
+      "sort_order": 21
+    },
+    {
+      "id": "p1_helpdesk",
+      "phase": "Phase I",
+      "workstream": "Enable Policy Use Cases",
+      "title": "Industry and Government interface",
+      "description": "Helpdesk where industry raises HSN-specific queries that are auto-routed to the owning ministry.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "DPIIT + line ministries",
+      "platform_route": "/helpdesk",
+      "sort_order": 22
+    },
+    {
+      "id": "p1_residual_ownership",
+      "phase": "Phase I",
+      "workstream": "Convert Static Guidebook → Digital Platform",
+      "title": "Ownership of residual products",
+      "description": "Residual workbench where ministries claim unmapped codes and DPIIT approves the claims.",
+      "start_month": 3,
+      "end_month": 6,
+      "status": "done",
+      "owner": "DPIIT",
+      "platform_route": "/residual",
+      "sort_order": 23
+    },
+    {
+      "id": "p2_scale_all_sectors",
+      "phase": "Phase II",
+      "workstream": "Launch in Phases",
+      "title": "Scale-up across all sectors",
+      "description": "Ministry and sector dashboards already cover every chapter; curated value chains still cover only the pilots, extended automatically by HS-text 'parts-of' links.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "in_progress",
+      "owner": "DPIIT + line ministries",
+      "platform_route": "/network",
+      "sort_order": 24
+    },
+    {
+      "id": "p2_ai_insights",
+      "phase": "Phase II",
+      "workstream": "Build Analytics Layer",
+      "title": "AI/ML insights",
+      "description": "Supply-chain vulnerability index, k-means product archetypes and automated alerts for import-dependence hotspots.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/risk",
+      "sort_order": 25
+    },
+    {
+      "id": "p2_forecasts",
+      "phase": "Phase II",
+      "workstream": "Build Analytics Layer",
+      "title": "Predictive features: trade forecasts",
+      "description": "Two-year export and import forecasts per HS6 with uncertainty bands (model estimates).",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/analytics",
+      "sort_order": 26
+    },
+    {
+      "id": "p2_residual_ml",
+      "phase": "Phase II",
+      "workstream": "Build Analytics Layer",
+      "title": "ML ministry suggestion for residual codes",
+      "description": "Text-similarity model suggests the likely owning ministry for each residual code.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/residual",
+      "sort_order": 27
+    },
+    {
+      "id": "p2_ai_assistant",
+      "phase": "Phase II",
+      "workstream": "Build Analytics Layer",
+      "title": "AI assistant over platform data",
+      "description": "Conversational assistant ('Ask Atlas', available on every page) that answers from the Atlas's own data with citations; works offline without an API key.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/",
+      "sort_order": 28
+    },
+    {
+      "id": "p2_cross_validation",
+      "phase": "Phase II",
+      "workstream": "Integrate Multi-Source Data at HSN Level",
+      "title": "Cross-validation and data confidence scores",
+      "description": "BACI values cross-checked against UN Comtrade; provenance labels and a data-quality score on every product.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "done",
+      "owner": "Platform team",
+      "platform_route": "/data-hub",
+      "sort_order": 29
+    },
+    {
+      "id": "p2_auto_refresh",
+      "phase": "Phase II",
+      "workstream": "Develop Real-Time Updating Mechanism",
+      "title": "Automated refresh cycles",
+      "description": "Connectors for OEC (BACI), WITS and UN Comtrade run as admin-triggered refresh jobs; scheduled (cron) execution is not yet enabled.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "in_progress",
+      "owner": "Platform team",
+      "platform_route": "/data-hub",
+      "sort_order": 30
+    },
+    {
+      "id": "p2_cbic_api",
+      "phase": "Phase II",
+      "workstream": "Develop Real-Time Updating Mechanism",
+      "title": "CBIC customs tariff API integration",
+      "description": "Live BCD and notification data at tariff-line level; needs CBIC / ICEGATE API access and credentials.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "planned",
+      "owner": "CBIC + DPIIT",
+      "platform_route": "/data-hub",
+      "sort_order": 31
+    },
+    {
+      "id": "p2_gstn_api",
+      "phase": "Phase II",
+      "workstream": "Develop Real-Time Updating Mechanism",
+      "title": "GSTN HSN-wise domestic supply integration",
+      "description": "Aggregated HSN-wise outward supply as a domestic production / consumption signal; needs a data-sharing arrangement and credentials from GSTN.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "planned",
+      "owner": "GSTN + DPIIT",
+      "platform_route": "/data-hub",
+      "sort_order": 32
+    },
+    {
+      "id": "p2_dgft_api",
+      "phase": "Phase II",
+      "workstream": "Develop Real-Time Updating Mechanism",
+      "title": "DGFT ITC-HS and trade data integration",
+      "description": "ITC-HS import / export policy conditions and official trade data; needs DGFT API onboarding and credentials.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "planned",
+      "owner": "DGFT + DPIIT",
+      "platform_route": "/data-hub",
+      "sort_order": 33
+    },
+    {
+      "id": "p2_public_module",
+      "phase": "Phase II",
+      "workstream": "Enable Policy Use Cases",
+      "title": "Public-facing module with controlled access",
+      "description": "Read-only public access for government, academia and industry; analytics, risk and data operations stay behind government roles.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "done",
+      "owner": "DPIIT",
+      "platform_route": "/explore",
+      "sort_order": 34
+    },
+    {
+      "id": "p2_cloud_hosting",
+      "phase": "Phase II",
+      "workstream": "Launch in Phases",
+      "title": "Secure, scalable cloud deployment",
+      "description": "Hosting on government-approved cloud infrastructure with load testing, encryption at rest and a security audit against government standards.",
+      "start_month": 6,
+      "end_month": 12,
+      "status": "planned",
+      "owner": "DPIIT + hosting agency",
+      "platform_route": null,
+      "sort_order": 35
+    }
+  ],
+  "risks": [
+    {
+      "id": 1,
+      "area": "Data Integration",
+      "risk": "Multiple data sources (CBIC, GSTN, DGFT, Ministries) leading to inconsistencies and delays",
+      "mitigation": "Establish HSN-first data standard, build API-based pipelines, start with priority datasets",
+      "likelihood": 4,
+      "impact": 4,
+      "status": "mitigating",
+      "owner": "DPIIT (platform team)",
+      "platform_control": "HSN-first keys: every table is keyed on the 8-digit HSN line or its HS6 with leading zeros. API connectors (OEC/BACI, WITS, UN Comtrade) run as tracked refresh jobs, ministry files go through validated CSV/XLSX uploads with row-level errors, and CBIC/GSTN/DGFT connectors are registered as not_configured until credentials exist. Trade and tariff data were integrated first as the priority datasets."
+    },
+    {
+      "id": 2,
+      "area": "Data Quality & Reliability",
+      "risk": "Incomplete/incorrect production, GST, and cluster data",
+      "mitigation": "Use AI-based data validation, cross-check datasets, introduce data confidence scores, start with high-confidence trade data",
+      "likelihood": 4,
+      "impact": 4,
+      "status": "mitigating",
+      "owner": "DPIIT + line ministries",
+      "platform_control": "Every number carries provenance (Verified / Not verified / Not available); each product has a data-quality score and each mapping a confidence score. BACI trade is cross-checked against UN Comtrade, uploads are validated before an admin applies them, and missing production is shown as 'Not available' instead of being estimated."
+    },
+    {
+      "id": 3,
+      "area": "Technology & Scalability",
+      "risk": "Handling large database (12,000+ HSN codes) and real-time analytics",
+      "mitigation": "Deploy cloud-based scalable architecture (Google Cloud), use modular design, perform load testing, follow phased rollout",
+      "likelihood": 2,
+      "impact": 3,
+      "status": "mitigating",
+      "owner": "Platform team",
+      "platform_control": "Modular design (independent API routers, ETL steps and connectors), precomputed metric and score tables, indexes and full-text search are designed to keep endpoints within a 1.5 s budget on the full database. Cloud deployment with load testing is a planned Phase II roadmap item."
+    },
+    {
+      "id": 4,
+      "area": "Data Security & Privacy",
+      "risk": "Risk of sensitive data exposure or misuse",
+      "mitigation": "Implement role-based access control (RBAC), ensure encryption, follow government security standards, define clear access protocols",
+      "likelihood": 3,
+      "impact": 5,
+      "status": "mitigating",
+      "owner": "DPIIT (IT security)",
+      "platform_control": "RBAC with five roles and ministry-scoped rights, signed expiring access tokens, salted PBKDF2 password hashing, and an audit log of every mutating action (logins, mapping changes, claims, uploads). Encryption at rest and a government security audit are part of the planned cloud deployment."
+    },
+    {
+      "id": 5,
+      "area": "Value Chain Mapping Complexity",
+      "risk": "Difficulty in mapping input-output relationships across HSN codes",
+      "mitigation": "Start with pilot sectors, use AI/graph analytics, validate with industry experts, refine iteratively",
+      "likelihood": 4,
+      "impact": 3,
+      "status": "mitigating",
+      "owner": "DPIIT + line ministries",
+      "platform_control": "Pilot chains first (eleven sectors), graph analytics (network BFS, upstream/downstream trace, critical inputs), HS-text 'parts-of' links that extend the graph automatically, and value-chain edge uploads so experts can refine the maps iteratively."
+    },
+    {
+      "id": 6,
+      "area": "Scope Creep / Over-Ambition",
+      "risk": "Trying to cover all sectors and features at once",
+      "mitigation": "Adopt phased implementation strategy",
+      "likelihood": 3,
+      "impact": 3,
+      "status": "mitigating",
+      "owner": "DPIIT (programme management)",
+      "platform_control": "Phased roadmap tracker (Phase 0 / I / II) with status per item and admin-editable progress, plus this live risk register, so scope is added phase by phase."
+    }
+  ]
+}

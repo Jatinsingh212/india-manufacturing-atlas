@@ -1,0 +1,397 @@
+slide size: 13.33 x 7.50 in
+
+====================================================================================================
+SLIDE 1  (slides/slide1.xml)  layout=['../slideLayouts/slideLayout87.xml']
+[sp Title 1 @(1.4,1.9 6.3x2.4)] INDIA PLAYBOOK: INTEGRATED MANUFACTURING ATLAS
+[sp Text Placeholder 2 @(1.4,4.5 6.3x0.9)] Interlinking of HSN codes to map key industrial matrices – One stop repository manufacturing toolkit for real time evidence led decision making
+
+====================================================================================================
+SLIDE 2  (slides/slide2.xml)  layout=['../slideLayouts/slideLayout9.xml']
+[sp Title 1 @(0.7,0.3 11.6x0.6)] Overview of HSN Code Mapping Exercise
+[sp Rectangle: Rounded Corners 1 @(0.0,1.2 13.2x0.7)] Department for Promotion of Industry and Internal Trade (DPIIT) through support of KPMG has developed a Guidebook on HSN Code Mapping which maps 12,167 HSN Codes to its respective Ministries/Departments in GoI. 
+[pic Graphic 2 @(0.1,2.5 0.7x0.7)  descr='Badge 1 outline']
+[sp Rectangle: Rounded Corners 3 @(0.9,2.0 12.2x1.7)] What are HSN Codes? | HSN Codes are used to classify products for trade. India uses over 12,000 unique codes at the 8-digit level for specific product classification.
+[sp Rectangle: Rounded Corners 11 @(0.9,3.5 12.3x1.7)] What was the need for HSN Code Mapping? | No central repository was present which contained the mapping of HSN Codes to various Ministries/Departments | Led to bottlenecks in trade negotiations, import substitution efforts , addressing industry concerns etc. | Unmapped HSN Codes were often classified as ‘Residual Products’, underscoring need for clear product ownership.
+[pic Graphic 16 @(0.1,3.8 0.7x0.7)  descr='Badge outline']
+[sp Rectangle: Rounded Corners 19 @(0.9,5.0 12.2x1.7)] Present Limitations | Static, document-based format → no real-time updates | Manual lookup → time-consuming and error-prone | Fragmented data across ministries → limited interoperability | Lacks analytics and cross-sectoral insights
+[pic Graphic 22 @(0.2,5.5 0.7x0.7)  descr='Badge 3 outline']
+[sp TextBox 23 @(1.3,7.1 11.8x0.4)] © 2026 KPMG Advisory Services Private Limited, an Indian Private Limited Company and a member firm of the KPMG global organization of independent member firms affiliated with KPMG International Limited, a private English company limited by guarantee. All rights reserved.
+
+====================================================================================================
+SLIDE 3  (slides/slide3.xml)  layout=['../slideLayouts/slideLayout9.xml']
+[sp Title 1 @(0.7,0.3 11.6x0.6)] Why India Needs a Centralized HSN Intelligence Platform?
+[sp Rectangle 38 @(0.3,3.0 2.9x0.8)] Enables Data-Driven Policymaking
+[sp TextBox 39 @(3.4,3.0 8.8x0.8)] Supports product-centric policy formulation | Provides insights for value chain integration and sectoral planning | Facilitates evidence-based decision making across Ministries 
+[sp Rectangle 41 @(0.3,4.9 2.9x0.8)] Advanced Analytics & Insights
+[sp TextBox 42 @(3.5,5.0 8.7x0.6)] Cross-sectoral analytics across ministries | Identification of High-potential export products, Import substitution opportunities, Emerging industry trends | Supports Whole-Of-Government industrial planning 
+[sp Rectangle 44 @(0.3,3.9 2.9x0.8)] Strengthens Trade  Negotiation
+[sp TextBox 45 @(3.5,4.1 8.5x0.4)] Granular product-level intelligence for Tariff decisions, Rules of Origin (RoO) and Non-tariff barrier analysis | Enhances effectiveness of FTA/CEPA negotiations
+[sp Rectangle 47 @(0.3,1.0 3.0x0.8)] Real-Time Decision Support
+[sp TextBox 48 @(3.5,1.1 8.7x0.6)] Live tracking of trade flows, imports, exports, and dependencies | Early identification of supply chain vulnerabilities | Enables timely policy interventions and recalibration
+[sp Rectangle 57 @(0.3,5.9 2.9x0.8)] Enhances Stakeholder Engagement
+[sp TextBox 58 @(3.5,5.9 8.7x0.6)] Improves inter-ministerial coordination | Enables industry to identify correct ministry quickly | Acts as a shared platform for government–industry collaboration
+[sp Rectangle 62 @(0.3,1.9 3.0x0.8)] Strengthens Value Chain Integration
+[sp TextBox 63 @(3.5,2.1 8.7x0.6)] Maps entire product lifecycle: Raw materials → components → finished goods | Helps ministries identify: Critical dependencies & Gaps in domestic manufacturing | Enables end-to-end ecosystem development
+[sp TextBox 68 @(1.3,7.1 11.8x0.4)] © 2026 KPMG Advisory Services Private Limited, an Indian Private Limited Company and a member firm of the KPMG global organization of independent member firms affiliated with KPMG International Limited, a private English company limited by guarantee. All rights reserved.
+
+====================================================================================================
+SLIDE 4  (slides/slide4.xml)  layout=['../slideLayouts/slideLayout70.xml']
+[sp Title 4 ] From Concept to Execution: What Needs to Be Done                                                       (1/2)
+[sp Rectangle 28 @(0.9,1.4 0.5x0.5)] 1
+[sp TextBox 29 @(0.9,2.0 2.2x0.6)] Convert Static Guidebook → Digital Platform (Core Task)
+[sp Rectangle 42 @(0.9,2.8 0.5x0.5)] 2
+[sp TextBox 43 @(0.9,3.6 2.2x0.4)] Integrate Multi-Source Data at HSN Level
+[sp Rectangle 46 @(0.9,4.2 0.5x0.5)] 3
+[sp TextBox 47 @(0.9,5.0 2.2x0.2)] Build Analytics Layer
+[sp Rectangle 50 @(0.9,5.6 0.5x0.5)] 4
+[sp TextBox 51 @(0.9,6.3 1.9x0.4)] Develop Ministry-Specific Dashboards
+[sp Rectangle 52 @(3.9,1.4 3.6x1.3)] Digitize 12,000+ HSN codes with ministry mapping | Build a centralized Dashboard | Enable: | Search by HSN / product / ministry | Drill-down to product-level details | Shift from document → live, interoperable system
+[sp Rectangle 53 @(3.9,2.8 3.6x1.3)] Trade Data (Exports, Imports, BCD, RCA) | Domestic Data (Production) | Value Chain Data | Input-output linkages across HSN codes | Raw material → intermediate → finished product mapping
+[sp Rectangle 54 @(3.9,4.2 3.6x1.3)] Export potential analysis | Import dependency identification | RCA-based competitiveness | Demand-supply gaps | Untapped global market estimation
+[sp Rectangle 55 @(3.9,5.6 3.6x1.3)] Each ministry should view: | HSN codes | Trade performance | Domestic production | Value Chain Linkages 
+[pic Image 5 @(7.8,2.2 5.3x3.9) ../media/image33.jpeg descr=None]
+
+====================================================================================================
+SLIDE 5  (slides/slide5.xml)  layout=['../slideLayouts/slideLayout70.xml']
+[sp Title 4 ] From Concept to Execution: What Needs to Be Done                                                       (2/2)
+[sp Rectangle 28 @(0.9,1.4 0.5x0.5)] 5
+[sp TextBox 29 @(0.9,2.1 2.2x0.4)] Build HSN Code - Value Chain Interlinkages
+[sp Rectangle 42 @(0.9,2.8 0.5x0.5)] 6
+[sp TextBox 43 @(0.9,3.6 2.2x0.2)] Launch in Phases
+[sp Rectangle 46 @(0.9,4.2 0.5x0.5)] 7
+[sp TextBox 47 @(0.9,5.0 2.2x0.2)] Enable Policy Use Cases
+[sp Rectangle 50 @(0.9,5.6 0.5x0.5)] 8
+[sp TextBox 51 @(0.9,6.3 1.9x0.4)] Develop Real-Time Updating Mechanism
+[sp Rectangle 52 @(3.9,1.4 3.6x1.3)] Map: | One HSN → multiple inputs | One HSN → multiple outputs | Create network graph of manufacturing ecosystem
+[sp Rectangle 53 @(3.9,2.8 3.6x1.3)] Phase 0: Scope of work for Digital Platform  | Phase I: Sectoral Deep-Dive for select top 10 sectors (Ex. Engineering goods, Textiles) | Phase II: Scale-up across All Sectors 
+[sp Rectangle 54 @(3.9,4.2 3.6x1.3)] Ensure the platform directly supports: | Import substitution strategies | PLI scheme targeting | Trade negotiations | Skilling programs | Quality control interventions
+[sp Rectangle 55 @(3.9,5.6 3.6x1.3)] Integrate APIs from CBIC, GSTN, DGFT and Trade databases | Make it Dyanamic
+[pic Picture 8 @(7.8,1.1 5.2x6.0) ../media/image34.png descr=None]
+
+====================================================================================================
+SLIDE 6  (slides/slide6.xml)  layout=['../slideLayouts/slideLayout70.xml']
+[sp Title 4 @(0.7,0.5 12.6x0.6)] Illustration: Workflow of interlinkages to be developed amongst HSN codes 
+[pic Image 7 @(0.7,1.1 12.1x5.9) ../media/image35.jpeg descr=None]
+
+====================================================================================================
+SLIDE 7  (slides/slide7.xml)  layout=['../slideLayouts/slideLayout78.xml']
+[sp Title 1 ] Implementation Approach & Roadmap                                                                                            (1/2)
+[group Group 2 @(0.7,1.5 12.0x5.4)]
+  [sp Rectangle 8 @(3.8,2.5 5.5x1.1)] Build a central HSN Data Lake integrating: | Guidebook | CBIC (tariff & customs data) | DGFT (trade data) | GSTN (domestic sales) | Sectoral ministries (production data)
+  [sp Rectangle 9 @(3.8,4.0 5.5x1.1)] Use AI/ML models to generate insights: | Identify import dependence hotspots | Predict export potential & demand trends | Detect supply chain vulnerabilities | Recommend priority products for policy action
+  [sp Rectangle 10 @(3.8,5.5 5.5x1.1)] Build graph-based interlinkages across HSN codes | Input-output mapping | Upstream-downstream relationships
+  [sp Rectangle 202 @(3.8,1.2 5.5x1.1)] Develop the HSN Intelligence Dashboard on secure, scalable cloud infrastructure
+  [sp Rectangle 206 @(0.3,5.5 3.5x1.2)] HSN Code - Value Chain Mapping
+  [sp Rectangle 207 @(0.3,1.2 3.5x1.2)] Build a Cloud-Based Digital Dashboard Platform
+  [sp Rectangle 208 @(0.3,2.5 3.5x1.2)] Create Unified Data Lake
+  [sp Rectangle 213 @(0.3,4.0 3.5x1.2)] AI/ML-Based Analytics Layer
+  [group Group 215 @(0.6,1.5 0.6x0.5)]
+  [group Group 220 @(0.6,4.4 0.5x0.5)]
+  [group Group 223 @(0.6,2.8 0.6x0.6)]
+  [group Group 227 @(0.7,5.8 0.4x0.5)]
+  [sp Rectangle 3 @(9.9,1.2 3.1x1.1)] Scalable, real-time, and accessible platform
+  [sp Rectangle 4 @(9.9,2.5 3.1x1.1)] Integrated spource of Data
+  [sp Rectangle 5 @(9.9,4.0 3.1x1.1)] Move from dashboard to predictive intelligence platform
+  [sp Rectangle 6 @(9.9,5.5 3.1x1.1)] Visualize entire manufacturing ecosystem | Enable deep value chain analysis
+[sp Freeform 16 @(0.6,1.0 3.6x0.4)] Approach
+[sp Freeform 16 @(4.3,1.0 5.1x0.4)] Roadmap
+[sp Freeform 16 @(9.7,1.0 2.9x0.4)] Outcome
+
+====================================================================================================
+SLIDE 8  (slides/slide8.xml)  layout=['../slideLayouts/slideLayout78.xml']
+[sp Title 1 ] Implementation Approach & Roadmap                                                                                            (2/2)
+[group Group 2 @(0.7,1.4 12.0x5.4)]
+  [sp Rectangle 8 @(3.8,2.5 5.5x1.1)] Integrate APIs from CBIC, GSTN, DGFT and Trade databases | Automated refresh cycles
+  [sp Rectangle 9 @(3.8,4.0 5.5x1.1)] Define: | Data ownership (ministry-wise) | Access controls (role-based) | Ensure: | Data privacy | Secure cloud infrastructure
+  [sp Rectangle 10 @(3.8,5.5 5.5x1.1)] Public-facing module (controlled access) for: | Government | Academia | Industry 
+  [sp Rectangle 202 @(3.8,1.2 5.5x1.2)] Phase 0 (0–3 months): Platform architecture + HSN digitization and Basic dashboards + trade data | Phase I (3–6 months): Pilot 10 sectors and Add analytics + value chain mapping | Phase II (6–12 months): Scale to all sectors AI/ML + predictive features
+  [sp Rectangle 206 @(0.3,5.5 3.5x1.2)] Industry & Government  Interface 
+  [sp Rectangle 207 @(0.3,1.2 3.5x1.2)] Phased Agile Implementation
+  [sp Rectangle 208 @(0.3,2.5 3.5x1.2)] Real-Time Data Updating Framework
+  [sp Rectangle 213 @(0.3,4.0 3.5x1.2)] Governance & Security Framework
+  [group Group 215 @(0.6,1.5 0.6x0.5)]
+  [group Group 220 @(0.6,4.4 0.5x0.5)]
+  [group Group 223 @(0.6,2.8 0.6x0.6)]
+  [group Group 227 @(0.7,5.8 0.4x0.5)]
+  [sp Rectangle 3 @(9.9,1.2 3.1x1.1)] Phase wise implementation
+  [sp Rectangle 4 @(9.9,2.5 3.1x1.1)] Real time intelligence system
+  [sp Rectangle 5 @(9.9,4.0 3.1x1.1)] Development of Trusted Platform
+  [sp Rectangle 6 @(9.9,5.5 3.1x1.1)] Promotes investment & manufacturing ecosystem
+[sp Freeform 16 @(0.6,1.0 3.6x0.4)] Approach
+[sp Freeform 16 @(4.3,1.0 5.1x0.4)] Roadmap
+[sp Freeform 16 @(9.7,1.0 2.9x0.4)] Outcome
+
+====================================================================================================
+SLIDE 9  (slides/slide9.xml)  layout=['../slideLayouts/slideLayout78.xml']
+[sp Title 1 ] Risk & mitigation measures 
+[table Table 7 @(0.7,1.1 12.5x5.4)]
+   || S. No. || Risk Area || Key Risk || Mitigation Measures
+   || 1 || Data Integration || Multiple data sources (CBIC, GSTN, DGFT, Ministries) leading to inconsistencies and delays || Establish HSN-first data standard, build API-based pipelines, start with priority datasets
+   || 2 || Data Quality & Reliability || Incomplete/incorrect production, GST, and cluster data || Use AI-based data validation, cross-check datasets, introduce data confidence scores, start with high-confidence trade data
+   || 3 || Technology & Scalability || Handling large database (12,000+ HSN codes) and real-time analytics || Deploy cloud-based scalable architecture (Google Cloud), use modular design, perform load testing, follow phased rollout
+   || 4 || Data Security & Privacy || Risk of sensitive data exposure or misuse || Implement role-based access control (RBAC), ensure encryption, follow government security standards, define clear access protocols
+   || 5 || Value Chain Mapping Complexity || Difficulty in mapping input-output relationships across HSN codes || Start with pilot sectors, use AI/graph analytics, validate with industry experts, refine iteratively
+   || 6 || Scope Creep / Over-Ambition || Trying to cover all sectors and features at once || Adopt phased implementation strategy
+
+====================================================================================================
+SLIDE 10  (slides/slide10.xml)  layout=['../slideLayouts/slideLayout120.xml']
+[sp Text Placeholder 1 @(1.1,4.0 8.7x1.6)] The information contained herein is of a general nature and is not intended to address the circumstances of any particular individual or entity. Although we endeavor to provide accurate and timely information, there can be no guarantee that such information is accurate as of the date it is received or that it will continue to be accurate in the future.  | KPMG Advisory Services Private Limited, an Indian Private Limited Company and a member firm of the KPMG global organization of independent member firms affiliated with KPMG International Limited, a private English company limited by guarantee. All rights reserved. | The KPMG name and logo are trademarks used under license by the independent member firms of the KPMG global organization.
+[sp Text Placeholder 2 ] kpmg.com/socialmedia
+[sp Title 1 @(0.1,1.4 5.4x1.3)] Thank you
+
+====================================================================================================
+SLIDE 11  (slides/slide11.xml)  layout=['../slideLayouts/slideLayout96.xml']
+[sp Title 1 @(1.6,0.2 10.2x0.5)] GUIDEBOOK ON MAPPING OF HSN CODES
+[group Group 35 @(2.2,0.7 2.1x1.0)]
+  [sp TextBox 39 @(1.3,1.6 2.3x0.2)] Total HS Codes Mapped
+[group Group 79 @(3.2,1.9 4.4x2.7)]
+  [sp TextBox 81 @(10.4,2.7 1.8x0.2)] HS code Distribution by Ministry
+[pic Graphic 20 @(0.3,3.0 1.0x1.0)  descr='Closed book with solid fill']
+[pic Graphic 23 @(0.2,5.6 1.0x1.0)  descr='Address Book with solid fill']
+[pic Graphic 36 @(0.3,4.3 1.0x1.0)  descr='Puppet with solid fill']
+[pic Graphic 43 @(0.2,1.9 1.0x1.0)  descr='Information with solid fill']
+[sp TextBox 63 @(1.3,2.1 1.3x0.6)] A brief about HSN Code
+[sp TextBox 64 @(1.3,3.3 1.3x0.6)] What is Guidebook
+[sp TextBox 65 @(1.3,4.4 1.5x0.6)] How to use the Guidebook
+[sp TextBox 66 @(1.3,5.8 1.5x0.6)] CBIC Tariff Manual
+[sp Rectangle 67 @(2.8,1.1 1.0x0.4)] 12174
+[group Group 71 @(4.4,0.7 2.4x1.0)]
+  [sp TextBox 73 @(1.1,1.5 2.7x0.2)] Accepted HS Codes Mapped
+[sp Rectangle 78 @(5.1,1.1 1.0x0.4)] 11679
+[group Group 84 @(6.8,0.7 2.1x1.0)]
+  [sp TextBox 86 @(1.4,1.5 2.0x0.2)] Residual HSN Codes
+[sp Rectangle 87 @(7.4,1.1 1.0x0.4)] 495
+[group Group 88 @(9.0,0.7 2.1x1.0)]
+  [sp TextBox 90 @(1.5,1.6 2.0x0.2)] Ministries Assigned
+[sp Rectangle 92 @(9.8,1.1 0.5x0.4)] 31
+[pic Graphic 94 @(7.1,2.2 0.4x0.4)  descr='Magnifying glass with solid fill']
+[group Group 96 @(7.7,1.9 4.4x3.2)]
+  [sp TextBox 98 @(10.4,2.7 1.8x0.2)] Ministry Wise HS Code
+[pic Graphic 103 @(11.6,2.2 0.4x0.4)  descr='Magnifying glass with solid fill']
+[sp TextBox 105 @(7.8,2.6 3.8x0.3)] Entered - Ministry of Textiles
+[table Table 120 @(7.8,3.0 4.3x1.3)]
+   || Product code || Product label || India's exports to World ($ Mn.) || India's imports from World ($ Mn.) || BCD || RCA
+   || 61091000 || T-shirts, singlets and other vests of cotton, knitted or crocheted || 1723 || 81 || 20% || 1.2
+   || '62044290 || Women's or girls' dresses of cotton (excluding knitted or crocheted and petticoats): Othr dresses ... || 802 || 198 || 20% || 1.1
+[pic Picture 123 @(8.2,4.5 3.4x0.3) ../media/image41.png descr=None]
+[group Group 124 @(3.2,4.8 4.4x2.7)]
+  [sp TextBox 126 @(10.4,2.4 1.8x0.4)] Enter HSN Code
+[pic Graphic 127 @(7.2,4.9 0.4x0.3)  descr='Magnifying glass with solid fill']
+[sp TextBox 128 @(3.2,5.3 3.9x0.3)] Entered - 61091000
+[table Table 130 @(3.2,5.6 4.1x1.8)]
+   || Assigned Ministry || Ministry of Textiles
+   || Sector  || Textiles
+   || HS CODE || 61091000
+   || Product label || T-shirts, singlets and other vests of cotton, knitted or crocheted
+   || India's exports to World ($ Mn.) || 1723
+   || India's imports from World ($ Mn.) || 81
+   || BCD || 20%
+   || RCA || 1.2
+[pic Picture 3 @(7.7,5.2 4.4x2.3) ../media/image42.png descr='A chart with different colored circles\n\nAI-generated content may be incorrect.']
+
+====================================================================================================
+SLIDE 12  (slides/slide12.xml)  layout=['../slideLayouts/slideLayout133.xml']
+[sp Title 1 @(0.1,0.1 10.2x0.5)] Natural Rubber Sector (HS Code 4001)
+[sp TextBox 238 @(2.9,5.1 8.4x0.2)] Click on the Value Chain Heading for Ministry-Wise Product Mapping Across the natural rubber value chain. 
+[group Group 57 @(4.3,0.5 2.4x1.0)]
+  [group Group 42 @(5.3,1.4 2.5x1.0)]
+    [sp Rectangle 45 @(2.2,1.6 1.3x0.4)] 16 Bn
+    [sp TextBox 46 @(2.2,2.0 1.4x0.4)] Global Exports of Natural Rubber in 2024  | (in US$) 
+  [pic Graphic 51 @(5.6,1.5 0.6x0.6)  descr='Treasure chest with solid fill']
+[group Group 101 @(6.8,0.5 2.2x1.0)]
+  [group Group 58 @(6.8,0.5 2.7x1.0)]
+    [sp Rectangle 60 @(2.2,1.6 1.6x0.4)] 0.008 Bn
+    [sp TextBox 61 @(2.2,2.0 1.4x0.4)] India’s Exports of  Natural Rubber in 2024 (in US$) 
+  [pic Graphic 14 @(7.2,0.6 0.5x0.6)  descr='Money with solid fill']
+[group Group 102 @(9.0,0.5 2.1x1.0)]
+  [group Group 52 @(10.2,0.5 2.5x1.0)]
+    [sp Rectangle 54 @(2.2,1.6 1.4x0.4)] 0.05%
+    [sp TextBox 55 @(2.2,2.0 1.4x0.5)] India’s Share in Global Exports in 2024
+  [pic Graphic 16 @(10.5,0.7 0.6x0.6)  descr='Blog with solid fill']
+[group Group 79 @(10.5,1.9 2.8x3.2)]
+  [sp TextBox 81 @(10.6,2.5 1.7x0.4)] Top Global Markets of New Pneumatic Tyres in 2024                       (in US$ Bn)
+[sp Freeform: Shape 19 @(3.3,2.0 1.8x1.8)] Raw Materials | Rubber Tree | (HS Code 6029090)
+[sp Freeform: Shape 27 @(5.8,2.0 1.8x1.8)] Processing
+[sp Freeform: Shape 30 @(8.3,2.0 1.8x1.8)] Finished Goods | Tyre | Conveyor belts | HosesSeals  | Gaskets | Gloves | Footwear
+[sp Rectangle 24 @(3.8,1.6 5.7x0.3)] Natural Rubber Manufacturing Value Chain
+[sp Rectangle: Rounded Corners 76 @(3.3,3.9 1.7x1.1)] D/o AGRICULTURE & FARMERS WELFARE
+[sp Rectangle: Rounded Corners 83 @(8.3,3.9 1.8x1.1)] DPIIT, Ministry of Textiles 
+[group Group 2 @(0.0,1.8 2.8x3.2)]
+  [group Group 9 @(0.2,1.5 2.5x2.4)]
+    [sp TextBox 17 @(10.6,2.5 1.7x0.3)] Top Global Suppliers of Natural Rubber  in 2024                       (in US$ Bn)
+  [sp TextBox 13 @(0.3,3.5 2.2x0.3)] India’s Rank is 8th in Global Suppliers 
+[group Group 48 @(10.6,5.3 2.7x1.7)]
+  [sp Rectangle 50 @(1.1,1.6 2.5x0.2)] Leading Natural Ruber  Manufacturers in India
+[sp TextBox 95 @(10.8,5.8 2.5x1.1)] Thomson Rubbers (India) Pvt. Ltd. | Harrisons Malayalam Ltd. | Arasu Rubber Corporation Ltd.
+[group Group 104 @(11.1,0.5 2.1x1.0)]
+  [sp Rectangle 107 @(2.2,1.6 1.1x0.4)] 1 Bn
+  [sp TextBox 108 @(2.2,2.0 1.4x0.4)] India’s Imports of  Natural Rubber in 2024 (in US$) 
+[pic Graphic 111 @(11.3,0.8 0.5x0.5)  descr='Wallet with solid fill']
+[group Group 112 @(3.5,5.3 3.5x1.7)]
+  [sp Rectangle 114 @(0.0,5.4 2.5x0.2)] Major Import Partners of India 
+  [chart Chart 115 @(0.2,5.6 2.1x1.4) -> chart1.xml]
+    chart types: ['barChart']
+    series 'Column1': [("Côte d'Ivoire", '0.24880099999999999'), ('Viet Nam', '0.23995900000000001'), ('Indonesia', '0.21403'), ('Malaysia', '0.147228'), ('Thailand', '0.143759')]
+  [sp TextBox 116 @(1.5,5.7 1.1x0.2)] Value in US$ Bn
+[sp Rectangle 121 @(7.3,5.4 3.2x0.2)] India’s Top Natural Rubber  Categories Exports
+[chart Chart 25 @(7.4,5.7 2.9x1.2) -> chart2.xml]
+    chart types: ['barChart']
+    series 'Series 1': [('Technically specified natural rubber "TSNR"', '4.0829999999999998E-3'), ('Natural rubber latex, whether or not prevulcanised', '3.166E-3'), ('Smoked sheets of natural rubber', '1.111E-3')]
+[sp TextBox 31 @(9.5,5.7 1.5x0.2)] Value in US$ Bn
+[sp TextBox 21 @(1.1,7.3 1.0x0.1)] Verified
+[sp TextBox 23 @(1.1,7.1 1.0x0.1)] Not Verified
+[group Group 32 @(0.0,0.6 2.2x1.0)]
+  [group Group 36 @(0.2,1.3 2.5x1.0)]
+  [pic Graphic 41 @(0.5,1.5 0.5x0.5)  descr='Money with solid fill']
+[group Group 65 @(2.2,0.6 2.5x1.0)]
+  [group Group 66 @(2.8,0.6 2.5x1.0)]
+    [sp Rectangle 69 @(2.2,1.6 1.5x0.7)] 857,000 Tons
+    [sp TextBox 70 @(2.0,2.3 2.2x0.1)] India’s Natural Rubber Production
+  [pic Graphic 67 @(2.9,0.8 0.6x0.6)  descr='Coins with solid fill']
+[sp TextBox 72 @(0.9,1.2 1.2x0.3)] Global Natural Rubber Production 
+[sp TextBox 78 @(2.6,7.1 1.0x0.1)] Not Available
+[group Group 84 @(0.1,5.3 3.3x1.7)]
+  [sp Rectangle 86 @(0.0,5.4 2.5x0.2)] Major Export Destinations of India 
+  [chart Chart 87 @(0.2,5.6 2.1x1.4) -> chart3.xml]
+    chart types: ['barChart']
+    series 'Column1': [('Sri Lanka', '3.607E-3'), ('Viet Nam', '8.4900000000000004E-4'), ('Malaysia', '5.6999999999999998E-4')]
+  [sp TextBox 88 @(1.5,5.7 1.1x0.2)] Value in US$ Bn
+
+====================================================================================================
+SLIDE 13  (slides/slide13.xml)  layout=['../slideLayouts/slideLayout133.xml']
+[sp Title 1 @(0.1,0.1 10.2x0.5)] Tyre Sector (HS Code 4011)
+[sp TextBox 238 @(2.9,5.1 8.4x0.2)] Click on the Value Chain Heading for Ministry-Wise Product Mapping Across the Tyre Industry Value Chain. 
+[group Group 12 @(0.0,0.6 2.2x1.0)]
+  [group Group 3 @(0.2,1.3 2.5x1.0)]
+    [sp Rectangle 5 @(2.1,1.7 1.4x0.4)] 1.5  Bn
+  [pic Graphic 11 @(0.5,1.5 0.5x0.5)  descr='Money with solid fill']
+[group Group 57 @(4.3,0.5 2.4x1.0)]
+  [group Group 42 @(5.3,1.4 2.5x1.0)]
+    [sp Rectangle 45 @(2.2,1.6 1.3x0.4)] 100 Bn
+    [sp TextBox 46 @(2.2,2.0 1.4x0.5)] Global Exports of Tyres in 2024  | (in US$) 
+  [pic Graphic 51 @(5.6,1.5 0.6x0.6)  descr='Treasure chest with solid fill']
+[group Group 100 @(2.2,0.6 2.1x1.0)]
+  [group Group 35 @(2.8,0.6 2.1x1.0)]
+    [sp Rectangle 38 @(2.2,1.6 1.1x0.4)] 0.2 Bn.
+    [sp TextBox 39 @(2.2,2.0 1.5x0.3)] India’s Tyre Production
+  [pic Graphic 10 @(2.9,0.8 0.6x0.6)  descr='Coins with solid fill']
+[group Group 101 @(6.8,0.5 2.1x1.0)]
+  [group Group 58 @(6.8,0.5 2.5x1.0)]
+    [sp Rectangle 60 @(2.2,1.6 1.1x0.4)] 3 Bn
+    [sp TextBox 61 @(2.2,2.0 1.4x0.5)] India’s Exports of  Tyres in 2024  | (in US$) 
+  [pic Graphic 14 @(7.2,0.6 0.5x0.6)  descr='Money with solid fill']
+[group Group 102 @(9.0,0.5 2.1x1.0)]
+  [group Group 52 @(10.2,0.5 2.5x1.0)]
+    [sp Rectangle 54 @(2.2,1.6 1.1x0.4)] 3%
+    [sp TextBox 55 @(2.2,2.0 1.4x0.5)] India’s Share in Global Exports in 2024
+  [pic Graphic 16 @(10.5,0.7 0.6x0.6)  descr='Blog with solid fill']
+[group Group 79 @(10.5,1.9 2.8x3.2)]
+  [sp TextBox 81 @(10.6,2.5 1.7x0.4)] Top Global Markets of New Pneumatic Tyres in 2024                       (in US$ Bn)
+[sp Freeform: Shape 19 @(3.3,2.0 1.8x1.8)] Raw Materials | - Natural Rubber  | - Synthetic Rubber | - Carbon Black | - Silica  | - Oils and Plasticizers | - Vulcanizing Agents  | - Adhesives
+[sp Freeform: Shape 27 @(5.7,2.0 1.8x1.8)] Components | - Bead Assembly | - Carcass Ply​ | - Belt Package​ | - Inner Liner​ | - Sidewall Compound​ | - Tread Compound​ | - Curing Bladders | - Tyre Cord Fabric  | - Bead Wire
+[sp Freeform: Shape 30 @(8.3,2.0 1.8x1.8)] Finished Goods | - Passenger Car Tyres | - Truck and Bus Tyres | - Aircraft Tyres | - Motorcycle Tyres | - Other New Pneumatic Tyres
+[sp Rectangle 24 @(3.8,1.6 5.7x0.3)] Tyre Manufacturing Value Chain
+[sp Rectangle: Rounded Corners 76 @(3.3,3.9 1.7x1.1)] D/o Commerce, DCPC, M/o Mines, M/o Petroleum & Natural Gas, DPIIT 
+[sp Rectangle: Rounded Corners 77 @(5.8,3.9 1.7x1.1)] DPIIT, M/o Textiles, M/o Steel
+[sp Rectangle: Rounded Corners 83 @(8.3,3.9 1.8x1.1)] DPIIT
+[group Group 2 @(0.0,1.8 2.8x3.2)]
+  [group Group 9 @(0.2,1.5 2.5x2.4)]
+    [sp TextBox 17 @(10.6,2.5 1.7x0.5)] Top Global Suppliers of New Pneumatic Tyres in 2024                       (in US$ Bn)
+  [sp TextBox 13 @(0.3,3.5 2.2x0.3)] India’s Rank is 8th in Global Suppliers 
+[group Group 48 @(10.6,5.3 2.7x1.7)]
+  [sp Rectangle 50 @(1.1,1.6 2.5x0.1)] Leading Tyre  Manufacturers in India
+[sp TextBox 95 @(10.8,5.8 2.5x0.8)] MRF, Apollo Tyres, JK Tyre & Industries, CEAT, Birla Tyres, TVS Srichakra, Goodyear India, Bridgestone India
+[group Group 33 @(0.1,5.3 3.3x1.7)]
+  [sp Rectangle 22 @(0.0,5.4 2.5x0.2)] Major Export Destinations of India 
+  [chart Chart 26 @(0.2,5.6 2.1x1.4) -> chart4.xml]
+    chart types: ['barChart']
+    series 'Column1': [('USA', '0.51234199999999996'), ('Germany', '0.17252899999999999'), ('Brazil', '0.159222'), ('UAE', '0.12307800000000001'), ('Italy', '0.120502')]
+  [sp TextBox 28 @(1.5,5.7 1.1x0.2)] Value in US$ Bn
+[group Group 104 @(11.1,0.5 2.1x1.0)]
+  [sp Rectangle 107 @(2.2,1.6 1.1x0.4)] 0.2 Bn
+  [sp TextBox 108 @(2.2,2.0 1.4x0.5)] India’s Imports of  Tyres in 2024  | (in US$) 
+[pic Graphic 111 @(11.3,0.8 0.5x0.5)  descr='Wallet with solid fill']
+[group Group 112 @(3.6,5.3 3.5x1.7)]
+  [sp Rectangle 114 @(0.0,5.4 2.5x0.2)] Major Import Partners of India 
+  [chart Chart 115 @(0.2,5.6 2.1x1.4) -> chart5.xml]
+    chart types: ['barChart']
+    series 'Column1': [('Thailand ', '5.9962000000000001E-2'), ('China', '4.6900999999999998E-2'), ('Japan', '3.5111999999999997E-2'), ('Germany', '9.5259999999999997E-3'), ('USA', '9.3279999999999995E-3')]
+  [sp TextBox 116 @(1.5,5.7 1.1x0.2)] Value in US$ Bn
+[sp Rectangle 121 @(7.3,5.4 3.2x0.2)] India’s Top Tyre Categories Exports
+[chart Chart 25 @(7.4,5.7 2.9x1.2) -> chart6.xml]
+    chart types: ['barChart']
+    series 'Series 1': [('Tyres for agricultural  vehicles ', '1.1736660000000001'), ('Tyres  for buses ', '0.73929900000000004'), ('Tyres for on construction vehicles', '0.61977300000000002'), ('Tyres for motor cars', '0.25386399999999998'), ('Tyres for motorcycles', '0.12059400000000001')]
+[sp TextBox 31 @(9.5,5.7 1.5x0.2)] Value in US$ Bn
+[sp TextBox 20 @(1.0,1.2 1.2x0.3)] Global Tyre Production
+[sp TextBox 32 @(1.1,7.3 1.0x0.1)] Verified
+[sp TextBox 36 @(1.1,7.1 1.0x0.1)] Not Verified
+
+====================================================================================================
+SLIDE 14  (slides/slide14.xml)  layout=['../slideLayouts/slideLayout133.xml']
+[sp Title 1 @(0.1,0.1 10.2x0.5)] Ministry-Wise Product Mapping Across the Tyre Industry Value Chain (1/5)
+[table Table 3 @(0.1,0.5 13.1x6.9)]
+   || S.No.  || Item  || HS Code || Description || Concerned Ministry 
+   || Raw Materials  ||  ||  ||  || 
+   || 1.  || Natural Rubber  / (HS code 4001)  || 40012100 || Natural Rubber in Smoked Sheets || D/o Commerce
+   || 2.  ||  || 40012200 || Technically Specified Natural Rubber (TSNR) || 
+   || 3.  ||  || 40012910 || Natural Rubber in Hevea Form || 
+   || 4.  ||  || 40012920 || Natural Rubber in Pale Crepe Form || 
+   || 5.  ||  || 40012920 || Natural Rubber in Estate Brown Crepe Form || 
+   || 6. || Synthetic Rubber || 40021910  || Oil Extended Styrene Butadiene Rubber || D/o Chemicals and Petrochemicals
+   || 7.  ||  || 40021920 || Styrene Butadiene Rubber with Styrene Content Over 50% || 
+   || 8. ||  || 40021930 || Styrene Butadiene Styrede Oil Bound Copolymer || 
+   || 9. ||  || 40021990 || Other Synthetic Rubber and Practice Derived from Oils in Primary Forms/In Plates Sheets etc. Mixtures Excl. Latex || 
+   || 10.  ||  || 40022000 || Butadiene Rubber (BR) || 
+   ||  ||  || 40029920 || Tread Rubber Compound, Cushion Compound, Cushion Gum / Tread Gum for Resoling, Repairing, or Retreading Rubber Tyres || 
+   || 11.  ||  || 40029920 || Tread Rubber Compound, Cushion Compound, Cushion Gum / Tread Gum for Resoling, Repairing, or Retreading Rubber Tyres || 
+[sp Rectangle 1 @(12.3,7.0 0.7x0.4)] Back
+
+====================================================================================================
+SLIDE 15  (slides/slide15.xml)  layout=['../slideLayouts/slideLayout133.xml']
+[sp Title 1 @(0.1,0.1 10.2x0.5)] Ministry-Wise Product Mapping Across the Tyre Industry Value Chain (2/5)
+[table Table 3 @(0.1,0.5 13.1x6.0)]
+   || S.No.  || Item  || HS Code || Description || Concerned Ministry 
+   || Raw Materials  ||  ||  ||  || 
+   || 12. || Carbon Black || 28030010 || Carbon Blacks || D/o Chemicals and Petrochemicals, 
+   || 13. || Silica || 28112200 || Silicon Dioxide || Ministry of Mines & D/o Chemicals and Petrochemicals
+   || 14.  || Oils and Plasticizers || 27101990  || Other petroleum oils and oils obtained from bituminous minerals, not crude || Ministry of Petroleum and Natural Gas
+   || 15.  ||  || 38122010 || Phthalate Plasticizers || D/o Chemicals and Petrochemicals
+   || 16.  ||  || 38122090 || Other plasticizers for rubber or plastics || 
+   || 17. || Vulcanizing Agents  || 38123930 || Vulcanizing Agents For Rubber || D/o Chemicals and Petrochemicals
+   || 18.  ||  || 29342000 || Compounds containing a benzothiazole ring-system (whether or not hydrogenated) not further fused || 
+   || 19.  || Adhesives  || 35069190​ || Other adhesives based on polymers of headings 3901 to 3913 or on rubber || Department for Promotion of Industry and Internal Trade
+[sp Rectangle 4 @(12.5,6.8 0.7x0.4)] Back
+
+====================================================================================================
+SLIDE 16  (slides/slide16.xml)  layout=['../slideLayouts/slideLayout133.xml']
+[sp Title 1 @(0.1,0.1 10.2x0.5)] Ministry-Wise Product Mapping Across the Tyre Industry Value Chain (3/5)
+[table Table 3 @(0.2,0.8 13.0x5.6)]
+   || S.No.  || Item || HS Code  || Description || Concerned Ministry 
+   || Components ||  ||  ||  || 
+   || 1.  || Bead Assembly || 40169990 || Other articles of vulcanised rubber (excluding mats, gaskets, and inflatable articles) || Department for Promotion of Industry and Internal Trade
+   || 2.  || Carcass Ply​ ||  ||  || 
+   || 3.  || Belt Package​ ||  ||  || 
+   || 4.  || Inner Liner​ ||  ||  || 
+   || 5.  || Sidewall Compound​ ||  ||  || 
+   || 6.  || Tread Compound​ ||  ||  || 
+   || 7.  || Curing Bladders ||  ||  || 
+   || 8.  || TYRE CORD FABRIC || 5902 || Tyre cord fabric of nylon or other polyamides impregnated with rubber || Ministry of Textiles 
+   || 9.  || Bead Wire || 73262010​ || Tyre Bead Wire Rings Used In Manufacture Of Tyres For Cycles And Cyclerickshaws || Ministry of Steel
+[sp Rectangle 4 @(12.4,6.5 0.7x0.4)] Back
+
+====================================================================================================
+SLIDE 17  (slides/slide17.xml)  layout=['../slideLayouts/slideLayout133.xml']
+[sp Title 1 @(0.1,0.1 10.2x0.5)] Ministry-Wise Product Mapping Across the Tyre Industry Value Chain (4/5)
+[table Table 3 @(0.1,0.6 13.0x5.9)]
+   || S.No.  || Item  || HS Code || Description || Concerned Ministry 
+   || Finished Goods  ||  ||  ||  || 
+   || 1. || Passenger Car Tyres || 40111090 || Radial Tyres Used On Motor Cars (Including Station Wagons And Racing Cars) || Department for Promotion of Industry and Internal Trade
+   || 2. ||  || 40112010 || Other Tyres Used On Motor Cars (Including Station Wagons And Racing Cars) || 
+   || 3. || Truck and Bus Tyres || 40112090 || Radial Tyres Used On Buses/Lorries || 
+   || 4. ||  || 40113000 || Other Tyres Used On Buses/Lorries || 
+   || 5. || Aircraft Tyres || 40114010 || New Pneumatic Tyres Of A Kind Used On Aircraft || 
+   || 6. || Motorcycle Tyres || 40114020 || Tyres For Motorcycles || 
+   || 7. ||  || 40114090 || Tyres For Motor Scooters || 
+   || 8. ||  || 40115010 || Tyres Used Other Than Motorcycles/Scooters || 
+   || 9.  || Other New Pneumatic Tyres || 40111090 || Radial Tyres Used On Motor Cars (Including Station Wagons And Racing Cars) || 
+[sp Rectangle 1 @(12.4,6.6 0.7x0.4)] Back

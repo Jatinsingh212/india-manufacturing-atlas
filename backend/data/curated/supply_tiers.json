@@ -1,0 +1,256 @@
+{
+  "_note": "Supplier-tier structure of a value chain: how deep the supply chain runs behind the finished product. The tiers run the opposite way to the value-chain stages - Tier 1 are the direct suppliers of the sports goods manufacturer (the finished-goods specialists and the branded inputs they sell), Tier 2 supply Tier 1, Tier 3 source the basic materials and commodities Tier 2 works with. The tier levels, descriptions and example supplier types are taken from the sports goods study's supply-chain structure table; the items are the Atlas's own HS-coded grounding of each tier, mapped to the Atlas product mapping (the ministry shown is always the Atlas's mapping, never a second opinion). Codes must exist in the GST HSN master and in HS 2022; the loader rejects anything else.",
+  "as_of": "2026-11-11",
+  "chains": [
+    {
+      "chain_id": "sports_goods",
+      "source": "study",
+      "source_label": "Sports goods study - supply-chain tier structure (Tier 1/2/3 supplier levels)",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Tier 1 suppliers",
+          "description": "Direct suppliers to the sports goods manufacturer provide components and raw materials.",
+          "examples": [
+            "Bat manufacturers",
+            "Ball manufacturers",
+            "Leather apparel manufacturers",
+            "Synthetic turf manufacturers",
+            "Industrial adhesive manufacturers"
+          ],
+          "items": [
+            {
+              "item": "Cricket bats and leg pads",
+              "hs_code": "95069920",
+              "description": "Cane and willow bat makers supplying the manufacturer directly"
+            },
+            {
+              "item": "Cricket balls",
+              "hs_code": "95066920",
+              "description": "Leather-covered cricket ball makers supplying the manufacturer directly"
+            },
+            {
+              "item": "Footballs",
+              "hs_code": "95066210",
+              "description": "Inflatable football makers supplying the manufacturer directly"
+            },
+            {
+              "item": "Badminton shuttlecocks",
+              "hs_code": "95069910",
+              "description": "Feather shuttlecock makers supplying the manufacturer directly"
+            },
+            {
+              "item": "Hockey sticks and blades",
+              "hs_code": "95069940",
+              "description": "Composite hockey stick makers supplying the manufacturer directly"
+            },
+            {
+              "item": "Badminton and squash rackets",
+              "hs_code": "95065910",
+              "description": "Racket frame and stringing specialists supplying the manufacturer directly"
+            },
+            {
+              "item": "Boxing equipment",
+              "hs_code": "95069110",
+              "description": "Boxing glove and protective gear makers supplying the manufacturer directly"
+            },
+            {
+              "item": "Athletics and gymnastics equipment",
+              "hs_code": "95069190",
+              "description": "Athletics and gymnastics equipment makers supplying the manufacturer directly"
+            },
+            {
+              "item": "Protective guards and pads",
+              "hs_code": "95069980",
+              "description": "Shin, elbow and shoulder guard makers supplying the manufacturer directly"
+            },
+            {
+              "item": "Leather sports apparel",
+              "hs_code": "42032110",
+              "description": "Padded leather gloves and mitts for sports use"
+            },
+            {
+              "item": "Synthetic turf",
+              "hs_code": "57031090",
+              "description": "Tufted artificial turf and textile floor coverings for sports grounds"
+            },
+            {
+              "item": "Industrial adhesives",
+              "hs_code": "35069190",
+              "description": "Polymers- and rubber-based adhesives for bonding panels, covers and grips"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Tier 2 suppliers",
+          "description": "Supply raw materials, sub-components, and processing services to Tier 1 suppliers.",
+          "examples": [
+            "Raw base polymer producers",
+            "Rubber compound manufacturers",
+            "Textile manufacturers",
+            "Sewing machine manufacturers",
+            "Button makers",
+            "Marker and thread manufacturers"
+          ],
+          "items": [
+            {
+              "item": "Polypropylene",
+              "hs_code": "39021000",
+              "description": "Raw base polymer for moulded handles, fittings and structural parts"
+            },
+            {
+              "item": "Polyethylene (LLDPE)",
+              "hs_code": "39011010",
+              "description": "Raw base polymer for moulded fittings, covers and films"
+            },
+            {
+              "item": "Polyurethane",
+              "hs_code": "39095000",
+              "description": "Base polymer for ball covers, foams and panels"
+            },
+            {
+              "item": "Synthetic rubber (SBR)",
+              "hs_code": "40021990",
+              "description": "Rubber compound base for moulded and calendered sports goods"
+            },
+            {
+              "item": "Natural rubber (TSNR)",
+              "hs_code": "40012200",
+              "description": "Rubber compound base for cricket ball cores and grips"
+            },
+            {
+              "item": "Polyester filament yarn",
+              "hs_code": "54024700",
+              "description": "Textile yarn for strings, netting and sewing thread"
+            },
+            {
+              "item": "Glass fibre",
+              "hs_code": "70191900",
+              "description": "Textile reinforcement for composite hockey sticks and rackets"
+            },
+            {
+              "item": "PVC / PU coated fabric",
+              "hs_code": "59031090",
+              "description": "Coated textile panels for ball covers and nets"
+            },
+            {
+              "item": "Finished leather",
+              "hs_code": "41071100",
+              "description": "Ball covers, glove leather and grips"
+            },
+            {
+              "item": "Cork",
+              "hs_code": "45031000",
+              "description": "Grips, handles and shuttlecock bases"
+            },
+            {
+              "item": "Rubber bladders and inflatables",
+              "hs_code": "40169590",
+              "description": "Bladders for inflatable balls"
+            },
+            {
+              "item": "Sewing machine parts",
+              "hs_code": "84482000",
+              "description": "Parts and accessories of the machines that stitch panels, covers and seams"
+            },
+            {
+              "item": "Moulded plastic parts",
+              "hs_code": "39269099",
+              "description": "Buttons, fittings and trim for sports goods"
+            },
+            {
+              "item": "Sewing thread",
+              "hs_code": "55081000",
+              "description": "Thread for stitching leather and coated fabric"
+            },
+            {
+              "item": "Marking chalks and writing materials",
+              "hs_code": "96099090",
+              "description": "Chalks and writing materials for marking courts, pitches and bats"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Tier 3 suppliers",
+          "description": "Source basic materials and commodities used by Tier 2 suppliers.",
+          "examples": [
+            "Petrochemical companies producing nylon, rubber and chemical additives",
+            "Bolt and nut manufacturers",
+            "Chemical producers",
+            "Steel mills",
+            "Timber suppliers"
+          ],
+          "items": [
+            {
+              "item": "Polyamides (nylon)",
+              "hs_code": "39081011",
+              "description": "Petrochemical base polymer for nylon yarn, cord and composites"
+            },
+            {
+              "item": "Carbon black",
+              "hs_code": "28030010",
+              "description": "Petrochemical reinforcing filler for rubber compounds"
+            },
+            {
+              "item": "Rubber accelerators",
+              "hs_code": "38121000",
+              "description": "Chemical additives that speed vulcanisation"
+            },
+            {
+              "item": "Phthalate plasticisers",
+              "hs_code": "38122010",
+              "description": "Chemical additives that soften rubber compounds"
+            },
+            {
+              "item": "Anti-oxidising preparations",
+              "hs_code": "38123100",
+              "description": "Chemical stabilisers (TMQ) that keep rubber goods serviceable"
+            },
+            {
+              "item": "Vulcanising agents",
+              "hs_code": "38123930",
+              "description": "Chemical additives that cross-link rubber during curing"
+            },
+            {
+              "item": "Silica",
+              "hs_code": "28112200",
+              "description": "Mineral reinforcing filler and processing aid for rubber"
+            },
+            {
+              "item": "Screws and bolts",
+              "hs_code": "73181500",
+              "description": "Steel fasteners for frames and equipment assembly"
+            },
+            {
+              "item": "Nuts",
+              "hs_code": "73181600",
+              "description": "Steel fasteners for frames and equipment assembly"
+            },
+            {
+              "item": "Steel sections",
+              "hs_code": "72161000",
+              "description": "Hot-rolled steel sections for frames, gym equipment and fittings"
+            },
+            {
+              "item": "Willow timber",
+              "hs_code": "44039990",
+              "description": "Wood in the rough; English and Kashmir willow for cricket bat blanks"
+            },
+            {
+              "item": "Planed timber",
+              "hs_code": "44091010",
+              "description": "Coniferous timber for frames and general joinery"
+            },
+            {
+              "item": "Plywood and laminated panels",
+              "hs_code": "44121000",
+              "description": "Bamboo plywood and laminated panels for gym equipment and fittings"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

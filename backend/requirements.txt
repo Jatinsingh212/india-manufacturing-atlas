@@ -1,0 +1,29 @@
+# India Manufacturing Atlas - backend dependencies (Python 3.11).
+# Pinned to the versions installed and verified on the reference machine (2026-10-19).
+# Install from backend/:  python -m pip install -r requirements.txt
+#
+# Deliberately NOT used: PyJWT / cryptography (JWT is HS256 via hmac/hashlib/base64 in app/security.py),
+# pandas, SQLAlchemy (plain sqlite3).
+
+# --- API server (app/)
+fastapi==0.142.2
+starlette==1.7.0
+pydantic==2.13.5
+pydantic_core==2.46.5
+uvicorn==0.54.0
+python-multipart==0.0.32      # multipart uploads (Data Hub, C3)
+
+# --- ETL and data sources (scripts/)
+openpyxl==3.1.5               # GST HSN master .xlsx; XLSX reports
+requests==2.34.2              # scripts/fetch_sources.py and refresh connectors
+
+# --- analytics, reports, assistant (C2 / C3 services)
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.1           # k-means archetypes, TF-IDF residual suggestions
+reportlab==5.0.1              # PDF reports
+anthropic==1.15.0             # AI assistant (Claude mode, only when ANTHROPIC_API_KEY is set)
+
+# --- tests
+pytest==9.1.1
+httpx==0.28.1                 # fastapi.testclient

@@ -1,0 +1,36 @@
+{
+  "_note": "Broad industrial sectors used for the 'Sector' field and the Sectoral Distribution chart. Assignment is by HS chapter, with the heading-level exceptions listed in 'heading_overrides' (a heading override wins over its chapter).",
+  "sectors": [
+    {"id": "agriculture", "name": "Agriculture & Allied", "icon": "Sprout", "color": "#5C940D", "chapters": ["01", "03", "05", "06", "07", "08", "09", "10", "12", "13", "14", "24"], "description": "Live animals, fish, plants, vegetables, fruit, coffee, tea, spices, cereals, oilseeds, lac and tobacco."},
+    {"id": "food_processing", "name": "Food Processing", "icon": "Wheat", "color": "#2F9E44", "chapters": ["02", "04", "11", "15", "16", "17", "18", "19", "20", "21", "22", "23"], "description": "Meat, dairy, milling, edible oils, sugar, confectionery, bakery, prepared foods, beverages and feed."},
+    {"id": "minerals", "name": "Minerals & Mining", "icon": "Mountain", "color": "#868E96", "chapters": ["25", "26"], "description": "Salt, stone, cement, ores, slag and ash."},
+    {"id": "energy", "name": "Petroleum, Coal & Energy", "icon": "Flame", "color": "#5F3DC4", "chapters": ["27"], "description": "Coal, crude oil, petroleum products, gas and electrical energy."},
+    {"id": "chemicals", "name": "Chemicals & Petrochemicals", "icon": "FlaskConical", "color": "#7048E8", "chapters": ["28", "29", "32", "33", "34", "35", "36", "37", "38"], "description": "Inorganic and organic chemicals, dyes, paints, cosmetics, soaps, adhesives, explosives and specialty chemicals."},
+    {"id": "pharma", "name": "Pharmaceuticals", "icon": "Pill", "color": "#0C8599", "chapters": ["30"], "description": "Medicaments, vaccines, APIs (vitamins, hormones, alkaloids, antibiotics) and dressings."},
+    {"id": "fertilizers", "name": "Fertilizers", "icon": "Leaf", "color": "#8F5E15", "chapters": ["31"], "description": "Nitrogenous, phosphatic, potassic and mixed fertilizers."},
+    {"id": "plastics", "name": "Plastics & Polymers", "icon": "Package", "color": "#9775FA", "chapters": ["39"], "description": "Polymers in primary forms and plastic articles."},
+    {"id": "rubber_tyre", "name": "Rubber & Tyres", "icon": "CircleDot", "color": "#212529", "chapters": ["40"], "description": "Natural and synthetic rubber, tyres, tubes and rubber articles."},
+    {"id": "leather", "name": "Leather & Footwear", "icon": "Footprints", "color": "#A0522D", "chapters": ["41", "42", "43", "64"], "description": "Hides, leather, saddlery, handbags, furskins and footwear."},
+    {"id": "wood_paper", "name": "Wood, Paper & Printing", "icon": "Trees", "color": "#8D6E63", "chapters": ["44", "45", "46", "47", "48", "49"], "description": "Wood and articles, cork, basketware, pulp, paper, paperboard and printed matter."},
+    {"id": "textiles", "name": "Textiles & Apparel", "icon": "Shirt", "color": "#D9480F", "chapters": ["50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63"], "description": "Silk, wool, cotton, jute, man-made fibres, yarns, fabrics, technical textiles, apparel and made-ups."},
+    {"id": "ceramics_glass", "name": "Building Materials, Ceramics & Glass", "icon": "Building2", "color": "#ADB5BD", "chapters": ["68", "69", "70"], "description": "Articles of stone, plaster, cement, asbestos, ceramics and glass."},
+    {"id": "gems_jewellery", "name": "Gems & Jewellery", "icon": "Gem", "color": "#E64980", "chapters": ["71"], "description": "Pearls, precious stones, precious metals, jewellery and coin."},
+    {"id": "iron_steel", "name": "Iron & Steel", "icon": "Factory", "color": "#495057", "chapters": ["72", "73"], "description": "Iron and steel and articles of iron or steel."},
+    {"id": "nonferrous", "name": "Non-Ferrous Metals", "icon": "Layers", "color": "#74C0FC", "chapters": ["74", "75", "76", "78", "79", "80", "81"], "description": "Copper, nickel, aluminium, lead, zinc, tin and other base metals."},
+    {"id": "engineering", "name": "Engineering Goods & Machinery", "icon": "Cog", "color": "#1F4E9E", "chapters": ["82", "83", "84"], "description": "Tools, cutlery, base-metal articles, machinery, boilers and mechanical appliances."},
+    {"id": "electronics", "name": "Electronics & Electrical", "icon": "Cpu", "color": "#1C7ED6", "chapters": ["85"], "description": "Electrical machinery, telecom equipment, consumer electronics, semiconductors and components."},
+    {"id": "automotive", "name": "Automobiles & Auto Components", "icon": "Car", "color": "#C2255C", "chapters": ["87"], "description": "Tractors, cars, commercial vehicles, two-wheelers, bicycles and their parts."},
+    {"id": "transport_equipment", "name": "Rail, Aerospace & Shipbuilding", "icon": "Plane", "color": "#4DABF7", "chapters": ["86", "88", "89"], "description": "Railway rolling stock, aircraft, spacecraft, drones, ships and boats."},
+    {"id": "instruments", "name": "Medical & Precision Instruments", "icon": "Stethoscope", "color": "#0B7285", "chapters": ["90", "91", "92"], "description": "Optical, measuring, medical and surgical instruments, clocks and musical instruments."},
+    {"id": "defence", "name": "Arms & Defence", "icon": "Shield", "color": "#2B8A3E", "chapters": ["93"], "description": "Arms, ammunition and military vehicles."},
+    {"id": "consumer_goods", "name": "Furniture, Toys & Misc. Manufactures", "icon": "Armchair", "color": "#F59F00", "chapters": ["65", "66", "67", "94", "95", "96"], "description": "Headgear, umbrellas, furniture, lighting, toys, sports goods and miscellaneous manufactures."},
+    {"id": "art_antiques", "name": "Art & Antiques", "icon": "Palette", "color": "#BE4BDB", "chapters": ["97"], "description": "Works of art, collectors' pieces and antiques."},
+    {"id": "special", "name": "Special Classification", "icon": "Boxes", "color": "#CED4DA", "chapters": ["98", "99"], "description": "Project imports, personal baggage and other special national classifications."}
+  ],
+  "heading_overrides": {
+    "2936": "pharma", "2937": "pharma", "2938": "pharma", "2939": "pharma", "2940": "pharma", "2941": "pharma", "2942": "pharma",
+    "3002": "pharma",
+    "8710": "defence",
+    "4001": "rubber_tyre"
+  }
+}

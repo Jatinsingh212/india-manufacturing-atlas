@@ -1,0 +1,26 @@
+﻿Funnel / bar chart data embedded in the deck (ppt/charts/chartEx*.xml and embedded worksheets)
+
+Slide 11 - HS code Distribution by Ministry: DPIIT 2684, MOT 2176, DCPC 1900, MOFPI 869, MHI 841
+Slide 12 - Natural Rubber (HS 4001), 2024, US$ bn
+  Top global suppliers: Thailand 4.97, Indonesia 2.90, Cote d'Ivoire 2.46, Viet Nam 1.30, Malaysia 0.99  (India's rank 8th per deck text)
+  Top global markets:   China 3.96, United States 1.82, Malaysia 1.66, Viet Nam 1.62, Japan 1.26
+  Major import partners of India: Cote d'Ivoire 0.249, Viet Nam 0.240, Indonesia 0.214, Malaysia 0.147, Thailand 0.144
+  Major export destinations of India: Sri Lanka 0.0036, Viet Nam 0.00085, Malaysia 0.00057
+  India's top NR export categories: TSNR 0.0041, NR latex 0.0032, Smoked sheets 0.0011
+  KPIs: Global exports 16 Bn; India exports 0.008 Bn; India share 0.05%; India imports 1 Bn; India production 857,000 tons; global production: not available
+  Value chain: Raw materials (Rubber tree, HS 06029090; D/o Agriculture & Farmers Welfare) -> Processing -> Finished goods (Tyre, Conveyor belts, Hoses, Seals, Gaskets, Gloves, Footwear; DPIIT, Ministry of Textiles)
+  Leading manufacturers: Thomson Rubbers (India) Pvt. Ltd., Harrisons Malayalam Ltd., Arasu Rubber Corporation Ltd.
+Slide 13 - Tyres (HS 4011), 2024, US$ bn
+  Top global suppliers: China 22.25, Thailand 7.36, Germany 5.75, Japan 5.18, USA 4.94  (India's rank 8th)
+  Top global markets:   USA 19.96, Germany 8.13, France 4.94, Mexico 4.08, Canada 3.57
+  Major export destinations of India: USA 0.512, Germany 0.173, Brazil 0.159, UAE 0.123, Italy 0.121
+  Major import partners of India: Thailand 0.060, China 0.047, Japan 0.035, Germany 0.0095, USA 0.0093
+  India's top tyre export categories: agricultural vehicles 1.174, buses 0.739, construction vehicles 0.620, motor cars 0.254, motorcycles 0.121
+  KPIs: Global tyre production 1.5 Bn; India's tyre production 0.2 Bn; Global exports 100 Bn; India exports 3 Bn; share 3%; India imports 0.2 Bn
+  Leading manufacturers (with links): MRF https://www.mrftyres.com/, Apollo Tyres https://www.apollotyres.com/en-in/, JK Tyre & Industries https://www.jktyre.com/, CEAT https://www.ceat.com/, Birla Tyres https://birlatyre.com/, TVS Srichakra https://tvsmobility.in/manufacturing/, Goodyear India https://www.goodyear.co.in/, Bridgestone India https://www.bridgestone.co.in/
+  Legend used on sector pages: Verified (green) / Not Verified (red) / Not Available (orange)
+
+Live check (CEPII BACI 2024 via OEC, fetched by scripts/fetch_sources.py) reproduces the deck:
+  Tyres 4011: world 101.22 bn, India exports 3.106 bn, share 3.07%, India imports 0.216 bn, India rank 8
+  Natural rubber 4001: world 16.87 bn, India exports 0.012 bn, India imports 1.029 bn
+  India total merchandise exports 2024: 454.8 bn = 1.98% of world (22.94 tn)

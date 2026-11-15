@@ -1,0 +1,139 @@
+{
+  "source": "DGFT / DGCIS TRADESTAT (EIDB)",
+  "url": "https://tradestat.commerce.gov.in/eidb/commodity_wise_export",
+  "import_url": "https://tradestat.commerce.gov.in/eidb/commodity_wise_import",
+  "method": "commodity-wise all commodities, 8-digit level, US$ million",
+  "years": {
+    "2018": {
+      "export": {
+        "fy": "2018-19",
+        "rows": 10942,
+        "official_total_usd_m": 330078.09,
+        "raw_sum_usd_m": 330077.79,
+        "factor": 1.00000091
+      },
+      "import": {
+        "fy": "2018-19",
+        "rows": 10264,
+        "official_total_usd_m": 514078.42,
+        "raw_sum_usd_m": 514078.36,
+        "factor": 1.00000012
+      }
+    },
+    "2019": {
+      "export": {
+        "fy": "2019-20",
+        "rows": 10952,
+        "official_total_usd_m": 313361.04,
+        "raw_sum_usd_m": 313360.803,
+        "factor": 1.00000076
+      },
+      "import": {
+        "fy": "2019-20",
+        "rows": 10379,
+        "official_total_usd_m": 474709.28,
+        "raw_sum_usd_m": 474709.045,
+        "factor": 1.0000005
+      }
+    },
+    "2020": {
+      "export": {
+        "fy": "2020-21",
+        "rows": 11198,
+        "official_total_usd_m": 291808.48,
+        "raw_sum_usd_m": 291808.219,
+        "factor": 1.00000089
+      },
+      "import": {
+        "fy": "2020-21",
+        "rows": 10555,
+        "official_total_usd_m": 394435.88,
+        "raw_sum_usd_m": 394435.708,
+        "factor": 1.00000044
+      }
+    },
+    "2021": {
+      "export": {
+        "fy": "2021-22",
+        "rows": 11127,
+        "official_total_usd_m": 422004.4,
+        "raw_sum_usd_m": 422004.16,
+        "factor": 1.00000057
+      },
+      "import": {
+        "fy": "2021-22",
+        "rows": 10344,
+        "official_total_usd_m": 613052.05,
+        "raw_sum_usd_m": 613051.913,
+        "factor": 1.00000022
+      }
+    },
+    "2022": {
+      "export": {
+        "fy": "2022-23",
+        "rows": 11538,
+        "official_total_usd_m": 451070.0,
+        "raw_sum_usd_m": 451069.769,
+        "factor": 1.00000051
+      },
+      "import": {
+        "fy": "2022-23",
+        "rows": 10740,
+        "official_total_usd_m": 715968.9,
+        "raw_sum_usd_m": 715968.749,
+        "factor": 1.00000021
+      }
+    },
+    "2023": {
+      "export": {
+        "fy": "2023-24",
+        "rows": 11535,
+        "official_total_usd_m": 437072.03,
+        "raw_sum_usd_m": 874143.62,
+        "factor": 0.50000025
+      },
+      "import": {
+        "fy": "2023-24",
+        "rows": 10769,
+        "official_total_usd_m": 673991.95,
+        "raw_sum_usd_m": 673991.82,
+        "factor": 1.00000019
+      }
+    },
+    "2024": {
+      "export": {
+        "fy": "2024-25",
+        "rows": 11434,
+        "official_total_usd_m": 437704.58,
+        "raw_sum_usd_m": 437704.444,
+        "factor": 1.00000031
+      },
+      "import": {
+        "fy": "2024-25",
+        "rows": 10681,
+        "official_total_usd_m": 721200.22,
+        "raw_sum_usd_m": 721200.052,
+        "factor": 1.00000023
+      }
+    }
+  },
+  "rows": 12738,
+  "columns": [
+    "hs8",
+    "export_2018",
+    "import_2018",
+    "export_2019",
+    "import_2019",
+    "export_2020",
+    "import_2020",
+    "export_2021",
+    "import_2021",
+    "export_2022",
+    "import_2022",
+    "export_2023",
+    "import_2023",
+    "export_2024",
+    "import_2024"
+  ],
+  "note": "Values are official DGCIS FY figures in US$ million. An HS8 code absent from a flow's published table is blank (not zero). Export FY2023-24 is scaled by 0.5 because the published commodity-wise column is doubled."
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="India Manufacturing Atlas - a live, evidence-led HSN-code intelligence platform: ministry mapping, trade, tariffs, value chains and policy analytics." />
+    <meta name="theme-color" content="#0B1F3A" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>India Manufacturing Atlas</title>
+    <script>
+      // Resolve the colour theme before first paint (no light/dark flash).
+      // Mirrors src/theme/ThemeContext.tsx: localStorage 'atlas.theme' = 'light' | 'dark' | 'system'.
+      (function () {
+        var pref = 'system';
+        try { pref = localStorage.getItem('atlas.theme') || 'system'; } catch (e) {}
+        var dark = pref === 'dark' || (pref !== 'light' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+        document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>The India Manufacturing Atlas needs JavaScript enabled.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

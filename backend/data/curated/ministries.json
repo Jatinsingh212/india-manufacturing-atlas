@@ -1,0 +1,485 @@
+{
+  "_note": "Government of India ministries/departments that own HSN codes in the Atlas, plus the 'residual' bucket for codes without an accepted owner. 'aliases' are alternative spellings used in official documents; use them to resolve free-text ministry names to ids.",
+  "ministries": [
+    {
+      "id": "dpiit",
+      "short_name": "DPIIT",
+      "name": "Department for Promotion of Industry and Internal Trade",
+      "parent_ministry": "Ministry of Commerce and Industry",
+      "kind": "department",
+      "website": "https://dpiit.gov.in",
+      "color": "#1F4E9E",
+      "aliases": [
+        "DPIIT",
+        "Department for Promotion of Industry and Internal Trade",
+        "D/o Promotion of Industry and Internal Trade"
+      ]
+    },
+    {
+      "id": "mot",
+      "short_name": "MoT",
+      "name": "Ministry of Textiles",
+      "parent_ministry": "Ministry of Textiles",
+      "kind": "ministry",
+      "website": "https://texmin.nic.in",
+      "color": "#D9480F",
+      "aliases": [
+        "MOT",
+        "MoT",
+        "Ministry of Textiles",
+        "M/o Textiles"
+      ]
+    },
+    {
+      "id": "dcpc",
+      "short_name": "DCPC",
+      "name": "Department of Chemicals and Petrochemicals",
+      "parent_ministry": "Ministry of Chemicals and Fertilizers",
+      "kind": "department",
+      "website": "https://chemicals.gov.in",
+      "color": "#7048E8",
+      "aliases": [
+        "DCPC",
+        "D/o Chemicals and Petrochemicals",
+        "Department of Chemicals and Petrochemicals",
+        "D/o Chemicals & Petrochemicals"
+      ]
+    },
+    {
+      "id": "mofpi",
+      "short_name": "MoFPI",
+      "name": "Ministry of Food Processing Industries",
+      "parent_ministry": "Ministry of Food Processing Industries",
+      "kind": "ministry",
+      "website": "https://mofpi.gov.in",
+      "color": "#2F9E44",
+      "aliases": [
+        "MOFPI",
+        "MoFPI",
+        "Ministry of Food Processing Industries",
+        "M/o Food Processing Industries"
+      ]
+    },
+    {
+      "id": "mhi",
+      "short_name": "MHI",
+      "name": "Ministry of Heavy Industries",
+      "parent_ministry": "Ministry of Heavy Industries",
+      "kind": "ministry",
+      "website": "https://heavyindustries.gov.in",
+      "color": "#C2255C",
+      "aliases": [
+        "MHI",
+        "Ministry of Heavy Industries",
+        "M/o Heavy Industries"
+      ]
+    },
+    {
+      "id": "dop",
+      "short_name": "DoP",
+      "name": "Department of Pharmaceuticals",
+      "parent_ministry": "Ministry of Chemicals and Fertilizers",
+      "kind": "department",
+      "website": "https://pharmaceuticals.gov.in",
+      "color": "#0C8599",
+      "aliases": [
+        "DoP",
+        "D/o Pharmaceuticals",
+        "Department of Pharmaceuticals"
+      ]
+    },
+    {
+      "id": "dofert",
+      "short_name": "DoF",
+      "name": "Department of Fertilizers",
+      "parent_ministry": "Ministry of Chemicals and Fertilizers",
+      "kind": "department",
+      "website": "https://fert.nic.in",
+      "color": "#8F5E15",
+      "aliases": [
+        "D/o Fertilizers",
+        "Department of Fertilizers"
+      ]
+    },
+    {
+      "id": "doc",
+      "short_name": "DoC",
+      "name": "Department of Commerce",
+      "parent_ministry": "Ministry of Commerce and Industry",
+      "kind": "department",
+      "website": "https://commerce.gov.in",
+      "color": "#E67700",
+      "aliases": [
+        "D/o Commerce",
+        "Department of Commerce",
+        "DoC"
+      ]
+    },
+    {
+      "id": "dafw",
+      "short_name": "DA&FW",
+      "name": "Department of Agriculture and Farmers Welfare",
+      "parent_ministry": "Ministry of Agriculture and Farmers Welfare",
+      "kind": "department",
+      "website": "https://agriwelfare.gov.in",
+      "color": "#5C940D",
+      "aliases": [
+        "D/o Agriculture & Farmers Welfare",
+        "D/o AGRICULTURE & FARMERS WELFARE",
+        "Department of Agriculture and Farmers Welfare",
+        "DA&FW",
+        "DAFW"
+      ]
+    },
+    {
+      "id": "dahd",
+      "short_name": "DAHD",
+      "name": "Department of Animal Husbandry and Dairying",
+      "parent_ministry": "Ministry of Fisheries, Animal Husbandry and Dairying",
+      "kind": "department",
+      "website": "https://dahd.gov.in",
+      "color": "#A61E4D",
+      "aliases": [
+        "DAHD",
+        "D/o Animal Husbandry and Dairying",
+        "Department of Animal Husbandry and Dairying"
+      ]
+    },
+    {
+      "id": "dofish",
+      "short_name": "D/o Fisheries",
+      "name": "Department of Fisheries",
+      "parent_ministry": "Ministry of Fisheries, Animal Husbandry and Dairying",
+      "kind": "department",
+      "website": "https://dof.gov.in",
+      "color": "#1098AD",
+      "aliases": [
+        "D/o Fisheries",
+        "Department of Fisheries"
+      ]
+    },
+    {
+      "id": "mos",
+      "short_name": "MoS",
+      "name": "Ministry of Steel",
+      "parent_ministry": "Ministry of Steel",
+      "kind": "ministry",
+      "website": "https://steel.gov.in",
+      "color": "#495057",
+      "aliases": [
+        "Ministry of Steel",
+        "M/o Steel",
+        "MoS"
+      ]
+    },
+    {
+      "id": "mom",
+      "short_name": "MoM",
+      "name": "Ministry of Mines",
+      "parent_ministry": "Ministry of Mines",
+      "kind": "ministry",
+      "website": "https://mines.gov.in",
+      "color": "#868E96",
+      "aliases": [
+        "Ministry of Mines",
+        "M/o Mines",
+        "MoM"
+      ]
+    },
+    {
+      "id": "mocoal",
+      "short_name": "MoC",
+      "name": "Ministry of Coal",
+      "parent_ministry": "Ministry of Coal",
+      "kind": "ministry",
+      "website": "https://coal.gov.in",
+      "color": "#343A40",
+      "aliases": [
+        "Ministry of Coal",
+        "M/o Coal"
+      ]
+    },
+    {
+      "id": "mopng",
+      "short_name": "MoPNG",
+      "name": "Ministry of Petroleum and Natural Gas",
+      "parent_ministry": "Ministry of Petroleum and Natural Gas",
+      "kind": "ministry",
+      "website": "https://mopng.gov.in",
+      "color": "#5F3DC4",
+      "aliases": [
+        "MoPNG",
+        "Ministry of Petroleum and Natural Gas",
+        "M/o Petroleum & Natural Gas",
+        "M/o Petroleum and Natural Gas"
+      ]
+    },
+    {
+      "id": "meity",
+      "short_name": "MeitY",
+      "name": "Ministry of Electronics and Information Technology",
+      "parent_ministry": "Ministry of Electronics and Information Technology",
+      "kind": "ministry",
+      "website": "https://www.meity.gov.in",
+      "color": "#1C7ED6",
+      "aliases": [
+        "MeitY",
+        "Ministry of Electronics and Information Technology",
+        "M/o Electronics & IT"
+      ]
+    },
+    {
+      "id": "mnre",
+      "short_name": "MNRE",
+      "name": "Ministry of New and Renewable Energy",
+      "parent_ministry": "Ministry of New and Renewable Energy",
+      "kind": "ministry",
+      "website": "https://mnre.gov.in",
+      "color": "#F59F00",
+      "aliases": [
+        "MNRE",
+        "Ministry of New and Renewable Energy",
+        "M/o New & Renewable Energy"
+      ]
+    },
+    {
+      "id": "mop",
+      "short_name": "MoP",
+      "name": "Ministry of Power",
+      "parent_ministry": "Ministry of Power",
+      "kind": "ministry",
+      "website": "https://powermin.gov.in",
+      "color": "#FAB005",
+      "aliases": [
+        "Ministry of Power",
+        "M/o Power"
+      ]
+    },
+    {
+      "id": "dot",
+      "short_name": "DoT",
+      "name": "Department of Telecommunications",
+      "parent_ministry": "Ministry of Communications",
+      "kind": "department",
+      "website": "https://dot.gov.in",
+      "color": "#3B5BDB",
+      "aliases": [
+        "DoT",
+        "Department of Telecommunications",
+        "D/o Telecommunications"
+      ]
+    },
+    {
+      "id": "ddp",
+      "short_name": "DDP",
+      "name": "Department of Defence Production",
+      "parent_ministry": "Ministry of Defence",
+      "kind": "department",
+      "website": "https://ddpmod.gov.in",
+      "color": "#2B8A3E",
+      "aliases": [
+        "DDP",
+        "Department of Defence Production",
+        "Ministry of Defence",
+        "M/o Defence"
+      ]
+    },
+    {
+      "id": "moca",
+      "short_name": "MoCA",
+      "name": "Ministry of Civil Aviation",
+      "parent_ministry": "Ministry of Civil Aviation",
+      "kind": "ministry",
+      "website": "https://www.civilaviation.gov.in",
+      "color": "#4DABF7",
+      "aliases": [
+        "MoCA",
+        "Ministry of Civil Aviation",
+        "M/o Civil Aviation"
+      ]
+    },
+    {
+      "id": "mopsw",
+      "short_name": "MoPSW",
+      "name": "Ministry of Ports, Shipping and Waterways",
+      "parent_ministry": "Ministry of Ports, Shipping and Waterways",
+      "kind": "ministry",
+      "website": "https://shipmin.gov.in",
+      "color": "#0B7285",
+      "aliases": [
+        "MoPSW",
+        "Ministry of Ports, Shipping and Waterways",
+        "M/o Shipping"
+      ]
+    },
+    {
+      "id": "mor",
+      "short_name": "MoR",
+      "name": "Ministry of Railways",
+      "parent_ministry": "Ministry of Railways",
+      "kind": "ministry",
+      "website": "https://indianrailways.gov.in",
+      "color": "#862E9C",
+      "aliases": [
+        "Ministry of Railways",
+        "M/o Railways",
+        "MoR"
+      ]
+    },
+    {
+      "id": "moefcc",
+      "short_name": "MoEFCC",
+      "name": "Ministry of Environment, Forest and Climate Change",
+      "parent_ministry": "Ministry of Environment, Forest and Climate Change",
+      "kind": "ministry",
+      "website": "https://moef.gov.in",
+      "color": "#37B24D",
+      "aliases": [
+        "MoEFCC",
+        "Ministry of Environment, Forest and Climate Change",
+        "M/o Environment, Forest & Climate Change"
+      ]
+    },
+    {
+      "id": "dfpd",
+      "short_name": "DFPD",
+      "name": "Department of Food and Public Distribution",
+      "parent_ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+      "kind": "department",
+      "website": "https://dfpd.gov.in",
+      "color": "#74B816",
+      "aliases": [
+        "DFPD",
+        "Department of Food and Public Distribution",
+        "D/o Food & Public Distribution"
+      ]
+    },
+    {
+      "id": "msme",
+      "short_name": "MSME",
+      "name": "Ministry of Micro, Small and Medium Enterprises",
+      "parent_ministry": "Ministry of Micro, Small and Medium Enterprises",
+      "kind": "ministry",
+      "website": "https://msme.gov.in",
+      "color": "#F76707",
+      "aliases": [
+        "MSME",
+        "Ministry of MSME",
+        "Ministry of Micro, Small and Medium Enterprises",
+        "M/o MSME"
+      ]
+    },
+    {
+      "id": "mocul",
+      "short_name": "MoCul",
+      "name": "Ministry of Culture",
+      "parent_ministry": "Ministry of Culture",
+      "kind": "ministry",
+      "website": "https://www.indiaculture.gov.in",
+      "color": "#E64980",
+      "aliases": [
+        "Ministry of Culture",
+        "M/o Culture"
+      ]
+    },
+    {
+      "id": "mib",
+      "short_name": "MoI&B",
+      "name": "Ministry of Information and Broadcasting",
+      "parent_ministry": "Ministry of Information and Broadcasting",
+      "kind": "ministry",
+      "website": "https://mib.gov.in",
+      "color": "#BE4BDB",
+      "aliases": [
+        "MoI&B",
+        "MIB",
+        "Ministry of Information and Broadcasting",
+        "M/o I&B"
+      ]
+    },
+    {
+      "id": "dae",
+      "short_name": "DAE",
+      "name": "Department of Atomic Energy",
+      "parent_ministry": "Department of Atomic Energy",
+      "kind": "department",
+      "website": "https://dae.gov.in",
+      "color": "#9C36B5",
+      "aliases": [
+        "DAE",
+        "Department of Atomic Energy"
+      ]
+    },
+    {
+      "id": "ayush",
+      "short_name": "AYUSH",
+      "name": "Ministry of Ayush",
+      "parent_ministry": "Ministry of Ayush",
+      "kind": "ministry",
+      "website": "https://ayush.gov.in",
+      "color": "#66A80F",
+      "aliases": [
+        "AYUSH",
+        "Ministry of Ayush",
+        "Ministry of AYUSH",
+        "M/o AYUSH"
+      ]
+    },
+    {
+      "id": "mohfw",
+      "short_name": "MoHFW",
+      "name": "Ministry of Health and Family Welfare",
+      "parent_ministry": "Ministry of Health and Family Welfare",
+      "kind": "ministry",
+      "website": "https://mohfw.gov.in",
+      "color": "#F03E3E",
+      "aliases": [
+        "MoHFW",
+        "Ministry of Health and Family Welfare",
+        "M/o Health & Family Welfare"
+      ]
+    },
+    {
+      "id": "posts",
+      "short_name": "Posts",
+      "name": "Department of Posts",
+      "parent_ministry": "Ministry of Communications",
+      "kind": "department",
+      "website": "https://www.indiapost.gov.in",
+      "color": "#C92A2A",
+      "aliases": [
+        "D/o Posts",
+        "Department of Posts",
+        "Posts"
+      ]
+    },
+    {
+      "id": "sports",
+      "short_name": "Sports",
+      "name": "Department of Sports",
+      "parent_ministry": "Ministry of Youth Affairs and Sports",
+      "kind": "department",
+      "website": "https://yas.nic.in",
+      "color": "#087F5B",
+      "aliases": [
+        "D/o Sports",
+        "Department of Sports",
+        "Ministry of Youth Affairs and Sports",
+        "Sports"
+      ]
+    },
+    {
+      "id": "residual",
+      "short_name": "Residual",
+      "name": "Residual (unmapped) products",
+      "parent_ministry": null,
+      "kind": "residual",
+      "website": null,
+      "color": "#ADB5BD",
+      "aliases": [
+        "Residual",
+        "Residual Products"
+      ]
+    }
+  ]
+}
