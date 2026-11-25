@@ -4,9 +4,10 @@
   // The built dashboard (frontend/dist) is served by Cloudflare. build.mjs adds _worker.js (from worker.js), which
   // forwards every /api/* request to the FastAPI backend on Vercel (API_ORIGIN), so data and sign-ins match the
   // Vercel site. The Python backend, its 181 MB database and the daily cron stay on Vercel: deploy the backend there first.
-  // Deploys: Cloudflare builds every push to `main` itself (Git integration: build command `node cloudflare/build.mjs`,
-  // output directory `frontend/dist`; Cloudflare doesn't read this file for those builds, worker.js has the API origin).
-  // By hand: `npm run deploy` in this folder (rebuilds the dashboard, then `wrangler pages deploy`).
+  // Deploy: `npm run deploy` in this folder (rebuilds the dashboard, then `wrangler pages deploy`). Pushes to `main`
+  // do NOT deploy this site yet. For auto deploys, recreate the project in the Cloudflare dashboard with
+  // "Import an existing Git repository" (build command `node cloudflare/build.mjs`, output `frontend/dist`,
+  // NODE_VERSION 22); Cloudflare doesn't read this file for those builds, and worker.js has the API origin.
   "name": "india-manufacturing-atlas-lite",
   "pages_build_output_dir": "../frontend/dist",
   "compatibility_date": "2026-11-01",
