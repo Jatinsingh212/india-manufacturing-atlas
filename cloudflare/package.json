@@ -1,0 +1,9 @@
+{
+  "name": "india-manufacturing-atlas-lite-cloudflare",
+  "private": true,
+  "description": "Deploys the trimmed Atlas dashboard to Cloudflare Pages (see wrangler.jsonc).",
+  "scripts": {
+    "build": "node build.mjs",
+    "deploy": "node build.mjs && npx --yes wrangler@4.166.0 pages deploy --branch main --commit-dirty=true"
+  }
+}

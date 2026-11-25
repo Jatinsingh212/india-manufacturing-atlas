@@ -1,0 +1,14 @@
+{
+  // Cloudflare Pages hosting for the trimmed (Git) Atlas: https://india-manufacturing-atlas-lite.pages.dev
+  // (Pages, not a workers.dev Worker, so the URL carries the Atlas name only, not the account's workers.dev subdomain.)
+  // The built dashboard (frontend/dist) is served by Cloudflare. build.mjs adds _worker.js (from worker.js), which
+  // forwards every /api/* request to the FastAPI backend on Vercel (API_ORIGIN), so data and sign-ins match the
+  // Vercel site. The Python backend, its 181 MB database and the daily cron stay on Vercel: deploy the backend there first.
+  // Deploy: `npm run deploy` in this folder (rebuilds the dashboard, then `wrangler pages deploy`).
+  "name": "india-manufacturing-atlas-lite",
+  "pages_build_output_dir": "../frontend/dist",
+  "compatibility_date": "2026-11-01",
+  "vars": {
+    "API_ORIGIN": "https://india-manufacturing-atlas-git.vercel.app"
+  }
+}
